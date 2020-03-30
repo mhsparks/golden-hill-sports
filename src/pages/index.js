@@ -11,6 +11,7 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Welcome to your new GHS site.</p>
     <p>Now go build something great.</p>
+    <p>Adding another paragraph of text to see if it deploys.</p>
     <img src={Logo} alt="Golden Hill Sports Logo" />
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
