@@ -4,8 +4,10 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 
 import cricket2 from "../images/cricket-2.png";
-
+import pavillion from "../images/pavillion.jpeg";
 import headerlogo from "../images/headerlogo.png";
+import sonicsteam from "../images/sonics-team.jpg";
+import pitp from "../images/pitp.jpg";
 import SEO from "../components/seo";
 
 const IndexPage = () => {
@@ -20,7 +22,7 @@ const IndexPage = () => {
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-3by2">
-                    <img src={cricket2} />
+                    <img src={pavillion} />
                   </figure>
                 </div>
               </div>
@@ -48,7 +50,7 @@ const IndexPage = () => {
                   <div class="container is-fluid">
                     <div class="buttons has-addons is-right">
                       <a class="button is-primary">
-                        <strong>Contact Us</strong>
+                        <strong>Find Us</strong>
                       </a>
                     </div>
                   </div>
@@ -80,7 +82,7 @@ const IndexPage = () => {
 
                       <p class="subtitle is-6">
                         <a href="https://twitter.com/GoldenHillCC">
-                          @GoldenHillCC{" "}
+                          @GoldenHillCC
                         </a>
                       </p>
                     </div>
@@ -110,7 +112,7 @@ const IndexPage = () => {
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-3by2">
-                    <img src={cricket2} alt="Placeholder image" />
+                    <img src={sonicsteam} alt="Placeholder image" />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -122,7 +124,9 @@ const IndexPage = () => {
                     </div>
                     <div class="media-content">
                       <p class="title is-4">Golden Hill Sonics</p>
-                      <p class="subtitle is-6">@johnsmith</p>
+                      <p class="subtitle is-6 has-text-primary">
+                        <a href="https://twitter.com/ghsonics">@ghsonics</a>
+                      </p>
                     </div>
                   </div>
 
@@ -153,7 +157,7 @@ const IndexPage = () => {
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-3by2">
-                    <img src={cricket2} alt="Placeholder image" />
+                    <img src={pitp} alt="Placeholder image" />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -165,28 +169,38 @@ const IndexPage = () => {
                     </div>
                     <div class="media-content">
                       <p class="title is-4">Golden Hill Social</p>
-                      <p class="subtitle is-6">@johnsmith</p>
+                      <p class="subtitle is-6">
+                        <a href="https://twitter.com/GoldenHillSport">
+                          @GoldenHillSport
+                          <span class="icon">
+                            <span class="fa-stack">
+                              <i class="fab fa-twitter"></i>
+                            </span>
+                          </span>
+                        </a>
+                      </p>
                     </div>
                   </div>
 
                   <div class="content">
                     <p>
-                      Golden Hill Sonics is a parent run football club, which
-                      welcomes boys and girls in school years 2 to 11. The club
-                      holds the FA Charter Standard Club accreditation.
+                      Golden Hill Sports & Social Club has a fully licensed bar,
+                      enabling us to sell alcoholic drinks to our members and
+                      guests. We also run the hugely popular Party in the Park.
                       <br />
                       <br />
-                      U7’s to U11’s meet between at varying times 9:30am and
-                      midday on Saturdays during the school term at the Golden
-                      Hill Sports Ground just off Kellaway Ave, Golden Hill,
-                      Bristol.
-                      <br />
-                      U11’s to U16’s all play in local competitive leagues
-                      either on Saturday or Sunday mornings.
+                      For those of you that don’t know about PITP, it’s a
+                      community event that raises money to pay for the upkeep of
+                      the community owned YMCA field at Golden Hill. It’s a
+                      great event with a variety of stalls and entertainment on
+                      offer for all the family.
                       <br />
                       <br />
-                      For more information on Golden Hill Sonics Football Club
-                      please visit their website www.goldenhillsonics.co.uk .
+                      If you know of anyone who would like to be a stall holder
+                      please ask them to contact us as the event continues to
+                      grow in stature year on year. .
+                      <br />
+                      <br />
                     </p>
                   </div>
                 </div>
