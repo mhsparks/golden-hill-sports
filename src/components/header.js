@@ -1,6 +1,7 @@
 import React from "react";
 import "./layout.scss";
 import headerlogo from "../images/headerlogo.png";
+import { Link } from "gatsby";
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
             <figure class="image">
-              <img src={headerlogo} />
+              <img src={headerlogo} alt="GHS Logo" />
             </figure>
           </a>
         </div>
@@ -26,9 +27,10 @@ const Header = () => {
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-primary">
+              <Link className="button is-primary" to="/cricket/">
                 <strong>Cricket</strong>
-              </a>
+              </Link>
+
               <a class="button is-primary">
                 <strong>Football</strong>
               </a>
