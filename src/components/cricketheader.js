@@ -8,10 +8,8 @@ const CricketHeader = () => {
     <div>
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            <figure class="image">
-              <img src={headerlogo} alt="GHS Logo" />
-            </figure>
+          <a class="navbar-item" href="http://www.goldenhillsports.com">
+            <img src={headerlogo} />
           </a>
 
           <a
@@ -29,40 +27,57 @@ const CricketHeader = () => {
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <div class="navbar-menu">
-              <a class="navbar-item">Senior Teams</a>
+            <div class="navbar-item">
+              <Link to="/cricket/senior/">Senior</Link>
+            </div>
 
-              <a class="navbar-item">Youth Cricket</a>
+            <div class="navbar-item">
+              <Link to="/cricket/junior/">Junior</Link>
+            </div>
+            <div class="navbar-item">
+              <Link to="/cricket/women/">Women & Girls</Link>
+            </div>
 
-              <a class="navbar-item">Women & Girls Cricket</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <div class="navbar-link">More</div>
 
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">More</a>
-
-                <div class="navbar-dropdown">
-                  <a class="navbar-item">Club Shop</a>
-                  <a class="navbar-item">Club Sponsors</a>
-                  <hr class="navbar-divider" />
-                  <a class="navbar-item">Club History</a>
-
-                  <a class="navbar-item">Club Policies</a>
+              <div class="navbar-dropdown">
+                <div class="navbar-item">
+                  <a
+                    href="https://www.logo-works.co.uk/webstore/Golden-Hill-CC-c28341020/"
+                    target="_blank"
+                  >
+                    Club Shop
+                  </a>
+                </div>
+                <hr class="navbar-divider" />
+                <div class="navbar-item">
+                  <Link to="/cricket/sponsors/">Sponsors</Link>
+                </div>
+                <hr class="navbar-divider" />
+                <div class="navbar-item">
+                  <Link to="/cricket/history/">History</Link>
+                </div>
+                <hr class="navbar-divider" />
+                <div class="navbar-item">
+                  <Link to="/cricket/policies/">Club Policies</Link>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
                 <Link className="button is-primary" to="/cricket/">
                   <strong>Cricket</strong>
                 </Link>
-
-                <a class="button is-primary">
+                <Link className="button is-primary" to="/cricket/">
                   <strong>Football</strong>
-                </a>
-                <a class="button is-primary">
+                </Link>
+                <Link className="button is-primary" to="/cricket/">
                   <strong>Social</strong>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

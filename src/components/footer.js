@@ -14,11 +14,19 @@ const Footer = () => {
         <div class="columns">
           <div class="column">
             <div class="content has-text-centered">
-              <p> © {new Date().getFullYear()}, Golden Hill Sport</p>
+              <p>
+                Wimbledon Road
+                <br />
+                Henleaze
+                <br />
+                Bristol
+                <br />
+                BS6 7YA
+              </p>
             </div>
           </div>
           <div class="column">
-            <div class="buttons has-addons has-text-centered">
+            <div class="buttons has-addons is-centered">
               <button class="button is-primary is-inverted is-outlined ">
                 <span class="icon">
                   <FontAwesomeIcon icon={faLocationArrow} />
@@ -45,6 +53,9 @@ const Footer = () => {
                   <strong> Facebook</strong>
                 </span>
               </button>
+            </div>
+            <div class="content has-text-centered">
+              <p>© {new Date().getFullYear()}, Golden Hill Sport</p>
             </div>
           </div>
         </div>
