@@ -8,7 +8,7 @@ const CricketHeader = () => {
     <div>
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="http://www.goldenhillsports.com">
+          <a class="navbar-item" href="/">
             <img src={headerlogo} />
           </a>
 
@@ -75,7 +75,7 @@ const CricketHeader = () => {
                 <Link className="button is-primary" to="/cricket/">
                   <strong>Football</strong>
                 </Link>
-                <Link className="button is-primary" to="/cricket/">
+                <Link className="button is-primary" to="/social/">
                   <strong>Social</strong>
                 </Link>
               </div>

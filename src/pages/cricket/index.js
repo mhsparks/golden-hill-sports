@@ -9,7 +9,7 @@ const CricketPage = () => {
         <section class="hero is-primary">
           <div class="hero-body">
             <div class="container">
-              <h1 class="title">Golden Hill Cricket Club</h1>
+              <h1 class="title is-size-4">Golden Hill Cricket Club</h1>
             </div>
           </div>
         </section>
@@ -17,7 +17,7 @@ const CricketPage = () => {
         <div class="card">
           <div class="card-image">
             <figure class="image is-3by1">
-              <img src={CricketHome} alt="Placeholder image" />
+              <img src={CricketHome} alt="Placeholder" />
             </figure>
           </div>
           <div class="container">

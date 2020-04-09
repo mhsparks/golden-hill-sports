@@ -10,6 +10,19 @@
     flex-grow: 1;
 }
 
+.team-list li {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 1.75rem;
+
+
+}
+
+.selection-container {
+    padding-bottom: 10px;
+}
+
 // If need, change your variables before importing Bulma
 $navbar-item-img-max-height: 4rem;
 $primary: #2c7814;

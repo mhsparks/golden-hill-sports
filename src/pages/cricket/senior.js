@@ -8,18 +8,20 @@ const SeniorPage = () => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title">Senior Teams</h1>
+            <h1 class="title is-size-4">Senior Teams</h1>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="section">
         <div class="container">
           <div class="columns">
             <div class="column">
               <div class="card">
                 <header class="card-header">
-                  <p class="card-header-title">1st XI</p>
+                  <p class="card-header-title has-background-primary has-text-white">
+                    1st XI
+                  </p>
                 </header>
                 <div class="card-content">
                   <div class="media">
@@ -27,7 +29,7 @@ const SeniorPage = () => {
                       <figure class="image is-48x48">
                         <img
                           src="https://bulma.io/images/placeholders/96x96.png"
-                          alt="Placeholder image"
+                          alt="Placeholder"
                         />
                       </figure>
                     </div>
@@ -40,6 +42,9 @@ const SeniorPage = () => {
                             john@myshine.co.uk
                           </a>
                         </span>
+                        <br />
+                        <span>Phone: </span>
+                        <span class="has-text-primary">07832 339738</span>
                       </p>
                     </div>
                   </div>
@@ -48,23 +53,23 @@ const SeniorPage = () => {
                 <footer class="card-footer">
                   <a
                     href="https://goldenhill.play-cricket.com/Teams/14724"
-                    class="card-footer-item has-background-primary has-text-white"
+                    class="card-footer-item"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Fixtures & Statistics
                   </a>
 
-                  <a
-                    href="#"
-                    class="card-footer-item has-background-primary has-text-white"
-                  >
-                    Team Selection
-                  </a>
+                  <span class="card-footer-item">
+                    <Link to="/cricket/selection/">Team Selection</Link>
+                  </span>
                 </footer>
               </div>
               <div class="card">
                 <header class="card-header">
-                  <p class="card-header-title">2nd XI</p>
+                  <p class="card-header-title has-background-primary has-text-white">
+                    2nd XI
+                  </p>
                 </header>
                 <div class="card-content">
                   <div class="media">
@@ -72,7 +77,7 @@ const SeniorPage = () => {
                       <figure class="image is-48x48">
                         <img
                           src="https://bulma.io/images/placeholders/96x96.png"
-                          alt="Placeholder image"
+                          alt="Placeholder"
                         />
                       </figure>
                     </div>
@@ -85,6 +90,9 @@ const SeniorPage = () => {
                             raziahmed01@hotmail.com
                           </a>
                         </span>
+                        <br />
+                        <span>Phone: </span>
+                        <span class="has-text-primary">07968 068576</span>
                       </p>
                     </div>
                   </div>
@@ -92,23 +100,23 @@ const SeniorPage = () => {
                 <footer class="card-footer">
                   <a
                     href="https://goldenhill.play-cricket.com/Teams/14725"
-                    class="card-footer-item has-background-primary has-text-white"
+                    class="card-footer-item"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Fixtures & Statistics
                   </a>
 
-                  <a
-                    href="#"
-                    class="card-footer-item has-background-primary has-text-white"
-                  >
-                    Team Selection
-                  </a>
+                  <span class="card-footer-item">
+                    <Link to="/cricket/selection/">Team Selection</Link>
+                  </span>
                 </footer>
               </div>
               <div class="card">
                 <header class="card-header">
-                  <p class="card-header-title">3rd XI</p>
+                  <p class="card-header-title has-background-primary has-text-white">
+                    3rd XI
+                  </p>
                 </header>
                 <div class="card-content">
                   <div class="media">
@@ -116,7 +124,7 @@ const SeniorPage = () => {
                       <figure class="image is-48x48">
                         <img
                           src="https://bulma.io/images/placeholders/96x96.png"
-                          alt="Placeholder image"
+                          alt="Placeholder"
                         />
                       </figure>
                     </div>
@@ -129,6 +137,9 @@ const SeniorPage = () => {
                             woodworthjamie@hotmail.com
                           </a>
                         </span>
+                        <br />
+                        <span>Phone: </span>
+                        <span class="has-text-primary">07910 066298</span>
                       </p>
                     </div>
                   </div>
@@ -136,23 +147,23 @@ const SeniorPage = () => {
                 <footer class="card-footer">
                   <a
                     href="https://goldenhill.play-cricket.com/Teams/14726"
-                    class="card-footer-item has-background-primary has-text-white"
+                    class="card-footer-item"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Fixtures & Statistics
                   </a>
 
-                  <a
-                    href="#"
-                    class="card-footer-item has-background-primary has-text-white"
-                  >
-                    Team Selection
-                  </a>
+                  <span class="card-footer-item">
+                    <Link to="/cricket/selection/">Team Selection</Link>
+                  </span>
                 </footer>
               </div>
               <div class="card">
                 <header class="card-header">
-                  <p class="card-header-title">4th XI</p>
+                  <p class="card-header-title has-background-primary has-text-white">
+                    4th XI
+                  </p>
                 </header>
                 <div class="card-content">
                   <div class="media">
@@ -160,7 +171,7 @@ const SeniorPage = () => {
                       <figure class="image is-48x48">
                         <img
                           src="https://bulma.io/images/placeholders/96x96.png"
-                          alt="Placeholder image"
+                          alt="Placeholder"
                         />
                       </figure>
                     </div>
@@ -173,6 +184,9 @@ const SeniorPage = () => {
                             shaunhp65@hotmail.co.uk
                           </a>
                         </span>
+                        <br />
+                        <span>Phone: </span>
+                        <span class="has-text-primary">07535 884588</span>
                       </p>
                     </div>
                   </div>
@@ -180,23 +194,23 @@ const SeniorPage = () => {
                 <footer class="card-footer">
                   <a
                     href="https://goldenhill.play-cricket.com/Teams/14727"
-                    class="card-footer-item has-background-primary has-text-white"
+                    class="card-footer-item"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Fixtures & Statistics
                   </a>
 
-                  <a
-                    href="#"
-                    class="card-footer-item has-background-primary has-text-white"
-                  >
-                    Team Selection
-                  </a>
+                  <span class="card-footer-item">
+                    <Link to="/cricket/selection/">Team Selection</Link>
+                  </span>
                 </footer>
               </div>
               <div class="card">
                 <header class="card-header">
-                  <p class="card-header-title">5th XI</p>
+                  <p class="card-header-title has-background-primary has-text-white">
+                    5th XI
+                  </p>
                 </header>
                 <div class="card-content">
                   <div class="media">
@@ -204,7 +218,7 @@ const SeniorPage = () => {
                       <figure class="image is-48x48">
                         <img
                           src="https://bulma.io/images/placeholders/96x96.png"
-                          alt="Placeholder image"
+                          alt="Placeholder"
                         />
                       </figure>
                     </div>
@@ -217,6 +231,9 @@ const SeniorPage = () => {
                             gerrymdavis@aol.com
                           </a>
                         </span>
+                        <br />
+                        <span>Phone: </span>
+                        <span class="has-text-primary">07877 612930</span>
                       </p>
                     </div>
                   </div>
@@ -224,18 +241,16 @@ const SeniorPage = () => {
                 <footer class="card-footer">
                   <a
                     href="https://goldenhill.play-cricket.com/Teams/105276"
-                    class="card-footer-item has-background-primary has-text-white"
+                    class="card-footer-item"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Fixtures & Statistics
                   </a>
 
-                  <a
-                    href="#"
-                    class="card-footer-item has-background-primary has-text-white"
-                  >
-                    Team Selection
-                  </a>
+                  <span class="card-footer-item">
+                    <Link to="/cricket/selection/">Team Selection</Link>
+                  </span>
                 </footer>
               </div>
             </div>
