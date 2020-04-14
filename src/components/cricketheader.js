@@ -39,7 +39,7 @@ const CricketHeader = () => {
             </div>
 
             <div class="navbar-item has-dropdown is-hoverable">
-              <div class="navbar-link">More</div>
+              <div class="navbar-link has-text-primary">More</div>
 
               <div class="navbar-dropdown">
                 <div class="navbar-item">
@@ -72,7 +72,7 @@ const CricketHeader = () => {
                 <Link className="button is-primary" to="/cricket/">
                   <strong>Cricket</strong>
                 </Link>
-                <Link className="button is-primary" to="/cricket/">
+                <Link className="button is-primary" to="/football/">
                   <strong>Football</strong>
                 </Link>
                 <Link className="button is-primary" to="/social/">

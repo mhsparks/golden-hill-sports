@@ -1,9 +1,9 @@
 import React from "react";
-import Layout from "../../components/cricketlayout";
+import Layout from "../../components/layout";
 
 const SelectionPage = () => {
   return (
-    <Layout>
+    <Layout isCricket>
       <section>
         <section class="hero is-primary">
           <div class="hero-body">

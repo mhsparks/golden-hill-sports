@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../../components/cricketlayout";
+import Layout from "../../components/layout";
 import CricketHome from "../../images/cricket-home.jpg";
 
 const CricketPage = () => {
   return (
-    <Layout>
+    <Layout isCricket>
       <div class="container">
         <section class="hero is-primary">
           <div class="hero-body">

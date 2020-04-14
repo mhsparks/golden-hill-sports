@@ -10,6 +10,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "bulma": "^0.8.1",
+    "bulma-carousel": "^4.0.4",
     "gatsby": "^2.19.45",
     "gatsby-cli": "^2.11.3",
     "gatsby-image": "^2.2.44",
@@ -22,6 +23,7 @@
     "gatsby-transformer-sharp": "^2.3.19",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
+    "pure-react-carousel": "^1.27.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1"

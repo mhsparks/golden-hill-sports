@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 
 import cricket2 from "../images/cricket-2.png";
-import pavillion from "../images/pavillion.jpg";
+import pavilion from "../images/pavilion.jpg";
 import headerlogo from "../images/headerlogo.png";
 import sonicsteam from "../images/sonics-team.jpg";
 import pitp from "../images/pitp.jpg";
@@ -28,7 +28,7 @@ const IndexPage = () => {
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-5by4">
-                    <img src={pavillion} alt="Pavillion" />
+                    <img src={pavilion} alt="Pavilion" />
                   </figure>
                 </div>
               </div>

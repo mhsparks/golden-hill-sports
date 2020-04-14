@@ -31,9 +31,9 @@ const Header = () => {
                 <strong>Cricket</strong>
               </Link>
 
-              <a class="button is-primary">
+              <Link className="button is-primary" to="/football/">
                 <strong>Football</strong>
-              </a>
+              </Link>
               <Link className="button is-primary" to="/social/">
                 <strong>Social</strong>
               </Link>

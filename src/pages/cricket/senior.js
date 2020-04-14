@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../../components/cricketlayout";
+import Layout from "../../components/layout";
 import { Link } from "gatsby";
 
 const SeniorPage = () => {
   return (
-    <Layout>
+    <Layout isCricket>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
