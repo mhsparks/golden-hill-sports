@@ -1,7 +1,9 @@
 import React from "react";
 import Layout from "../../components/layout";
 import clubhouse1 from "../../images/clubhouse-1.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const VenuePage = () => {
   return (
     <Layout isSocial>
@@ -13,16 +15,12 @@ const VenuePage = () => {
         </div>
       </section>
       <section>
-        <div class="container">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-5by3">
-                <img src={clubhouse1} alt="Golden Hill Sonics" />
-              </figure>
-            </div>
-          </div>
-        </div>
         <div class="card">
+          <div class="card-image">
+            <figure class="image is-720x240">
+              <img src={clubhouse1} alt="Club House" />
+            </figure>
+          </div>
           <div class="card-content">
             <p>
               Hire charges for the pavilion start from £40 for the first hour
@@ -83,6 +81,70 @@ const VenuePage = () => {
               <br />
               <br />
             </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="columns">
+              <div class="column is-11">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Your Name" />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <span class="icon">
+                      <FontAwesomeIcon icon={faEnvelope} />
+                    </span>
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Email input"
+                      value="Email address"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Subject</label>
+                  <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>Select dropdown</option>
+                        <option>Venue Hire</option>
+                        <option>Pitch Hire</option>
+
+                        <option>Party in the Park</option>
+                        <option>General Enquiry</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Message here"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link">Submit</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

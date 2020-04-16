@@ -10,6 +10,8 @@ import SEO from "../components/seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -87,6 +89,9 @@ const IndexPage = () => {
                         <p class="title is-4">Golden Hill Cricket</p>
 
                         <p class="subtitle is-6">
+                          <span class="icon has-text-primary">
+                            <FontAwesomeIcon icon={faTwitter} />
+                          </span>
                           <a href="https://twitter.com/GoldenHillCC">
                             @GoldenHillCC
                           </a>
@@ -105,11 +110,15 @@ const IndexPage = () => {
                         with a successful women’s side and a hugely popular
                         girls programme.
                         <br />
-                        <br /> Come and join our friendly and welcoming club;
-                        membership for adults is £50 and for youth team players
+                        <br /> Come and join our friendly and welcoming club!
+                        Membership for adults is £50 and for youth team players
                         £40. Match fees are £10.00/£5.00. <br />
-                        Click here for details of how to contact us.
                       </p>
+                      <div class="buttons has-addons is-centered">
+                        <button class="button is-primary has-text-weight-bold">
+                          Contact Us
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -131,6 +140,9 @@ const IndexPage = () => {
                       <div class="media-content">
                         <p class="title is-4">Golden Hill Sonics</p>
                         <p class="subtitle is-6 has-text-primary">
+                          <span class="icon has-text-primary">
+                            <FontAwesomeIcon icon={faTwitter} />
+                          </span>
                           <a href="https://twitter.com/ghsonics">@ghsonics</a>
                         </p>
                       </div>
@@ -145,16 +157,22 @@ const IndexPage = () => {
                         <br />
                         U7’s to U11’s meet between at varying times 9:30am and
                         midday on Saturdays during the school term at the Golden
-                        Hill Sports Ground just off Kellaway Ave, Golden Hill,
-                        Bristol.
+                        Hill Sports Ground just off Kellaway Avenue.
+                        <br />
                         <br />
                         U11’s to U16’s all play in local competitive leagues
                         either on Saturday or Sunday mornings.
                         <br />
                         <br />
                         For more information on Golden Hill Sonics Football Club
-                        please visit their website www.goldenhillsonics.co.uk .
+                        please visit their website:
+                        <br />
                       </p>
+                      <div class="buttons has-addons is-centered">
+                        <button class="button is-primary has-text-weight-bold">
+                          Sonics Website
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -173,16 +191,15 @@ const IndexPage = () => {
                           <img src={headerlogo} alt="GHS Logo" />
                         </figure>
                       </div>
+
                       <div class="media-content">
                         <p class="title is-4">Golden Hill Social</p>
                         <p class="subtitle is-6">
+                          <span class="icon has-text-primary">
+                            <FontAwesomeIcon icon={faTwitter} />
+                          </span>
                           <a href="https://twitter.com/GoldenHillSport">
                             @GoldenHillSport
-                            <span class="icon">
-                              <span class="fa-stack">
-                                <i class="fab fa-twitter"></i>
-                              </span>
-                            </span>
                           </a>
                         </p>
                       </div>
@@ -192,23 +209,27 @@ const IndexPage = () => {
                       <p>
                         Golden Hill Sports & Social Club has a fully licensed
                         bar, enabling us to sell alcoholic drinks to our members
-                        and guests. We also run the hugely popular Party in the
-                        Park.
+                        and guests. <br />
+                        We also run the hugely popular Party in the Park.
                         <br />
                         <br />
                         For those of you that don’t know about PITP, it’s a
                         community event that raises money to pay for the upkeep
-                        of the community owned YMCA field at Golden Hill. It’s a
-                        great event with a variety of stalls and entertainment
-                        on offer for all the family.
+                        of the community owned field at Golden Hill.
+                        <br />
+                        <br /> It’s a great event with a variety of stalls and
+                        entertainment on offer for all the family.
                         <br />
                         <br />
-                        If you know of anyone who would like to be a stall
-                        holder please ask them to contact us as the event
-                        continues to grow in stature year on year. .
+                        Our venue is also available for hire.
                         <br />
                         <br />
                       </p>
+                      <div class="buttons has-addons is-centered">
+                        <button class="button is-primary has-text-weight-bold">
+                          Contact Us
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>

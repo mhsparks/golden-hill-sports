@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
-import pitp from "../../images/pitp.jpg";
+
+import bar from "../../images/bar.jpg";
 
 const SocialPage = () => {
   return (
@@ -13,15 +14,14 @@ const SocialPage = () => {
         </div>
       </section>
       <section>
-        <div class="container">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-5by3">
-                <img src={pitp} alt="Party in the Park" />
-              </figure>
-            </div>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src={bar} alt="Club bar" />
+            </figure>
           </div>
         </div>
+
         <div class="card">
           <div class="card-content">
             <p>

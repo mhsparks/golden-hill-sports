@@ -38,42 +38,24 @@ const SocialHeader = () => {
               <Link to="/social/gallery/">Gallery</Link>
             </div>
 
-            <div class="navbar-item has-dropdown is-hoverable">
-              <div class="navbar-link has-text-primary">Party in the Park</div>
-
-              <div class="navbar-dropdown">
-                <div class="navbar-item">
-                  <Link to="/social/pitp/">What is Party in the Park?</Link>
-                </div>
-                <hr class="navbar-divider" />
-                <div class="navbar-item">
-                  <Link to="/cricket/sponsors/">How can you help?</Link>
-                </div>
-                <hr class="navbar-divider" />
-                <div class="navbar-item">
-                  <Link to="/cricket/history/">Previous Years</Link>
-                </div>
-                <hr class="navbar-divider" />
-                <div class="navbar-item">
-                  <Link to="/cricket/policies/">Stallholder Booking Form</Link>
-                </div>
-              </div>
+            <div class="navbar-item">
+              <Link to="/social/pitp/">Party in the Park</Link>
             </div>
           </div>
+        </div>
 
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <Link className="button is-primary" to="/cricket/">
-                  <strong>Cricket</strong>
-                </Link>
-                <Link className="button is-primary" to="/football/">
-                  <strong>Football</strong>
-                </Link>
-                <Link className="button is-primary" to="/social/">
-                  <strong>Social</strong>
-                </Link>
-              </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <Link className="button is-primary" to="/cricket/">
+                <strong>Cricket</strong>
+              </Link>
+              <Link className="button is-primary" to="/football/">
+                <strong>Football</strong>
+              </Link>
+              <Link className="button is-primary" to="/social/">
+                <strong>Social</strong>
+              </Link>
             </div>
           </div>
         </div>
