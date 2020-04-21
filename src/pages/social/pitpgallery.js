@@ -1,37 +1,25 @@
 import React from "react";
 import Layout from "../../components/layout";
-import bar1 from "../../images/bar-1.jpg";
-import bar2 from "../../images/bar-2.jpg";
-import balcony from "../../images/balcony.jpg";
-import floor1 from "../../images/floor-1.jpg";
-import bench1 from "../../images/bench-1.jpg";
-import bench2 from "../../images/bench-2.jpg";
-import kitchen from "../../images/kitchen.jpg";
-import space from "../../images/space-1.jpg";
-import tables1 from "../../images/tables-1.jpg";
-import tables2 from "../../images/tables-2.jpg";
-import tables3 from "../../images/tables-3.jpg";
-import kitchen2 from "../../images/kitchen2.jpg";
 import { Link } from "gatsby";
+import pitp1 from "../../images/pitp-1.jpg";
+import pitp3 from "../../images/pitp-3.jpg";
+import pitp5 from "../../images/pitp-5.jpg";
 
-const GalleryPage = () => {
+const PitpGallery = () => {
   const pictures1 = [
-    { alt: "Some text", src: bar1 },
-    { alt: "Some different text", src: floor1 },
-    { alt: "Some more text", src: kitchen },
-    { alt: "Some more text", src: tables1 },
+    { alt: "Some text", src: pitp1 },
+    { alt: "Some different text", src: pitp3 },
+    { alt: "Some more text", src: pitp5 },
   ];
   const pictures2 = [
-    { alt: "Some text", src: bar2 },
-    { alt: "Some different text", src: bench1 },
-    { alt: "Some more text", src: kitchen2 },
-    { alt: "Some more text", src: tables2 },
+    { alt: "Some text", src: pitp1 },
+    { alt: "Some different text", src: pitp3 },
+    { alt: "Some more text", src: pitp5 },
   ];
   const pictures3 = [
-    { alt: "Some text", src: balcony },
-    { alt: "Some different text", src: bench2 },
-    { alt: "Some more text", src: space },
-    { alt: "Some more text", src: tables3 },
+    { alt: "Some text", src: pitp1 },
+    { alt: "Some different text", src: pitp3 },
+    { alt: "Some more text", src: pitp5 },
   ];
   const [pictureInModal, setPictureInModal] = React.useState("");
   return (
@@ -46,22 +34,23 @@ const GalleryPage = () => {
       <section>
         <div class="tabs">
           <ul>
-            <li class="is-active">
-              <a>Clubhouse</a>
+            <li>
+              <Link to="/social/gallery">Clubhouse</Link>
             </li>
             <li>
               <Link to="/social/fieldgallery">Sports Field</Link>
             </li>
-            <li>
+            <li class="is-active">
               <Link to="/social/pitpgallery">Party in the Park</Link>
             </li>
           </ul>
         </div>
+
         {pictureInModal ? (
           <div class="modal is-active">
             <div class="modal-background"></div>
             <div class="modal-content">
-              <p class="image">
+              <p class="image is-16by9">
                 <img src={pictureInModal.src} alt={pictureInModal.alt} />
               </p>
               <button onClick={() => setPictureInModal("")}>Close</button>
@@ -79,6 +68,7 @@ const GalleryPage = () => {
                 </figure>
               ))}
             </div>
+
             <div class="column">
               {pictures2.map(p => (
                 <figure class="image">
@@ -106,4 +96,4 @@ const GalleryPage = () => {
   );
 };
 
-export default GalleryPage;
+export default PitpGallery;

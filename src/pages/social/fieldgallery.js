@@ -1,37 +1,31 @@
 import React from "react";
 import Layout from "../../components/layout";
-import bar1 from "../../images/bar-1.jpg";
-import bar2 from "../../images/bar-2.jpg";
-import balcony from "../../images/balcony.jpg";
-import floor1 from "../../images/floor-1.jpg";
-import bench1 from "../../images/bench-1.jpg";
-import bench2 from "../../images/bench-2.jpg";
-import kitchen from "../../images/kitchen.jpg";
-import space from "../../images/space-1.jpg";
-import tables1 from "../../images/tables-1.jpg";
-import tables2 from "../../images/tables-2.jpg";
-import tables3 from "../../images/tables-3.jpg";
-import kitchen2 from "../../images/kitchen2.jpg";
 import { Link } from "gatsby";
+import field1 from "../../images/field-1.jpg";
+import field3 from "../../images/field-3.jpg";
+import field4 from "../../images/field-4.jpg";
+import field5 from "../../images/field-5.jpg";
+import pitch1 from "../../images/pitch-1.jpg";
+import pitch4 from "../../images/pitch-4.jpg";
+import aerial from "../../images/aerial.jpg";
+import pitch6 from "../../images/pitch-6.jpg";
+import pitch10 from "../../images/pitch-10.jpg";
 
-const GalleryPage = () => {
+const FieldGallery = () => {
   const pictures1 = [
-    { alt: "Some text", src: bar1 },
-    { alt: "Some different text", src: floor1 },
-    { alt: "Some more text", src: kitchen },
-    { alt: "Some more text", src: tables1 },
+    { alt: "Some text", src: field1 },
+    { alt: "Some different text", src: field3 },
+    { alt: "Some more text", src: field4 },
   ];
   const pictures2 = [
-    { alt: "Some text", src: bar2 },
-    { alt: "Some different text", src: bench1 },
-    { alt: "Some more text", src: kitchen2 },
-    { alt: "Some more text", src: tables2 },
+    { alt: "Some text", src: field5 },
+    { alt: "Some different text", src: pitch1 },
+    { alt: "Some more text", src: pitch4 },
   ];
   const pictures3 = [
-    { alt: "Some text", src: balcony },
-    { alt: "Some different text", src: bench2 },
-    { alt: "Some more text", src: space },
-    { alt: "Some more text", src: tables3 },
+    { alt: "Some text", src: aerial },
+    { alt: "Some different text", src: pitch6 },
+    { alt: "Some more text", src: pitch10 },
   ];
   const [pictureInModal, setPictureInModal] = React.useState("");
   return (
@@ -46,10 +40,10 @@ const GalleryPage = () => {
       <section>
         <div class="tabs">
           <ul>
-            <li class="is-active">
-              <a>Clubhouse</a>
-            </li>
             <li>
+              <Link to="/social/gallery">Clubhouse</Link>
+            </li>
+            <li class="is-active">
               <Link to="/social/fieldgallery">Sports Field</Link>
             </li>
             <li>
@@ -57,6 +51,7 @@ const GalleryPage = () => {
             </li>
           </ul>
         </div>
+
         {pictureInModal ? (
           <div class="modal is-active">
             <div class="modal-background"></div>
@@ -106,4 +101,4 @@ const GalleryPage = () => {
   );
 };
 
-export default GalleryPage;
+export default FieldGallery;
