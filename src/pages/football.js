@@ -1,9 +1,8 @@
+import Img from "gatsby-image";
 import React from "react";
 import Layout from "../components/layout";
 
-import sonicsteam2 from "../images/sonics-2.jpg";
-
-const FootballPage = () => {
+const FootballPage = ({ data }) => {
   return (
     <Layout>
       <section class="hero is-primary">
@@ -17,8 +16,11 @@ const FootballPage = () => {
         <div class="container">
           <div class="card">
             <div class="card-image">
-              <figure class="image is-5by3">
-                <img src={sonicsteam2} alt="Golden Hill Sonics" />
+              <figure class="image">
+                <Img
+                  fluid={data.sonicsteam2.childImageSharp.fluid}
+                  alt="Golden Hill Sonics"
+                />
               </figure>
             </div>
           </div>
@@ -81,3 +83,15 @@ const FootballPage = () => {
 };
 
 export default FootballPage;
+
+export const query = graphql`
+  query {
+    sonicsteam2: file(relativePath: { eq: "sonics-2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

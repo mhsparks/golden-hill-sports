@@ -1,9 +1,8 @@
+import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
 
-import bar from "../../images/bar.jpg";
-
-const SocialPage = () => {
+const SocialPage = ({ data }) => {
   return (
     <Layout isSocial>
       <section class="hero is-primary">
@@ -18,7 +17,7 @@ const SocialPage = () => {
           <div class="card">
             <div class="card-image">
               <figure class="image">
-                <img src={bar} alt="Club bar" />
+                <Img fluid={data.bar.childImageSharp.fluid} alt="Club bar" />
               </figure>
             </div>
           </div>
@@ -53,3 +52,15 @@ const SocialPage = () => {
 };
 
 export default SocialPage;
+
+export const query = graphql`
+  query {
+    bar: file(relativePath: { eq: "bar.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

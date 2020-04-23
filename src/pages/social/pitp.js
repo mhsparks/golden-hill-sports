@@ -1,11 +1,10 @@
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
-import pitplogo from "../../images/pitp-logoCrop.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
-const PitpPage = () => {
+const PitpPage = ({ data }) => {
   return (
     <Layout isSocial>
       <section class="hero is-primary">
@@ -19,8 +18,11 @@ const PitpPage = () => {
         <div class="container">
           <div class="card">
             <div class="card-image">
-              <figure class="image is-3by1">
-                <img src={pitplogo} alt="Party in the Park poster" />
+              <figure class="image">
+                <Img
+                  fluid={data.pitplogo.childImageSharp.fluid}
+                  alt="Party in the Park poster"
+                />
               </figure>
             </div>
           </div>
@@ -173,3 +175,15 @@ const PitpPage = () => {
 };
 
 export default PitpPage;
+
+export const query = graphql`
+  query {
+    pitplogo: file(relativePath: { eq: "pitp-logoCrop.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

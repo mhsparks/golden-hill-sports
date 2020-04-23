@@ -1,9 +1,9 @@
+import { Link } from "gatsby";
 import React from "react";
 import Layout from "../../components/layout";
-import { Link } from "gatsby";
-import cricket1 from "../../images/ghs-cricket1.jpg";
+import Img from "gatsby-image";
 
-const SeniorPage = () => {
+const SeniorPage = ({ data }) => {
   return (
     <Layout isCricket>
       <section class="hero is-primary">
@@ -17,8 +17,11 @@ const SeniorPage = () => {
         <div class="container">
           <div class="card">
             <div class="card-image">
-              <figure class="image is-3by1">
-                <img src={cricket1} alt="Placeholder" />
+              <figure class="image">
+                <Img
+                  fluid={data.cricket1.childImageSharp.fluid}
+                  alt="Placeholder"
+                />
               </figure>
             </div>
           </div>
@@ -334,3 +337,15 @@ const SeniorPage = () => {
 };
 
 export default SeniorPage;
+
+export const query = graphql`
+  query {
+    cricket1: file(relativePath: { eq: "ghs-cricket1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

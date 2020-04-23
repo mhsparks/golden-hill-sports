@@ -1,8 +1,8 @@
+import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
-import CricketHome from "../../images/cricket-home.jpg";
 
-const CricketPage = () => {
+const CricketPage = ({ data }) => {
   return (
     <Layout isCricket>
       <section class="hero is-primary">
@@ -16,8 +16,11 @@ const CricketPage = () => {
         <div class="container">
           <div class="card">
             <div class="card-image">
-              <figure class="image is-3by1">
-                <img src={CricketHome} alt="Placeholder" />
+              <figure class="image">
+                <Img
+                  fluid={data.CricketHome.childImageSharp.fluid}
+                  alt="Placeholder"
+                />
               </figure>
             </div>
             <div class="container">
@@ -63,3 +66,15 @@ const CricketPage = () => {
 };
 
 export default CricketPage;
+
+export const query = graphql`
+  query {
+    CricketHome: file(relativePath: { eq: "cricket-home.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

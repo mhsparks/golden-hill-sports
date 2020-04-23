@@ -1,10 +1,10 @@
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
-import clubhouse1 from "../../images/clubhouse-1.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-const VenuePage = () => {
+const VenuePage = ({ data }) => {
   return (
     <Layout isSocial>
       <section class="hero is-primary">
@@ -19,7 +19,10 @@ const VenuePage = () => {
           <div class="card">
             <div class="card-image">
               <figure class="image is-720x240">
-                <img src={clubhouse1} alt="Club House" />
+                <Img
+                  fluid={data.clubhouse1.childImageSharp.fluid}
+                  alt="Club House"
+                />
               </figure>
             </div>
             <div class="card-content">
@@ -159,3 +162,15 @@ const VenuePage = () => {
 };
 
 export default VenuePage;
+
+export const query = graphql`
+  query {
+    clubhouse1: file(relativePath: { eq: "clubhouse-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
