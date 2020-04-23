@@ -57,7 +57,9 @@ const FieldGallery = () => {
             <div class="modal-background"></div>
             <div class="modal-content">
               <p class="image is-16by9">
-                <img src={pictureInModal.src} alt={pictureInModal.alt} />
+                <button onClick={() => setPictureInModal("")}>
+                  <img src={pictureInModal.src} alt={pictureInModal.alt} />
+                </button>
               </p>
               <button onClick={() => setPictureInModal("")}>Close</button>
             </div>
@@ -67,7 +69,10 @@ const FieldGallery = () => {
             <div class="column">
               {pictures1.map(p => (
                 <figure class="image">
-                  <button onClick={() => setPictureInModal(p)}>
+                  <button
+                    class="ghs-imageButton"
+                    onClick={() => setPictureInModal(p)}
+                  >
                     <img src={p.src} alt={p.alt} />
                   </button>
                   <div class="column"></div>
@@ -77,7 +82,10 @@ const FieldGallery = () => {
             <div class="column">
               {pictures2.map(p => (
                 <figure class="image">
-                  <button onClick={() => setPictureInModal(p)}>
+                  <button
+                    class="ghs-imageButton"
+                    onClick={() => setPictureInModal(p)}
+                  >
                     <img src={p.src} alt={p.alt} />
                   </button>
                   <div class="column"></div>
@@ -87,7 +95,10 @@ const FieldGallery = () => {
             <div class="column">
               {pictures3.map(p => (
                 <figure class="image">
-                  <button onClick={() => setPictureInModal(p)}>
+                  <button
+                    class="ghs-imageButton"
+                    onClick={() => setPictureInModal(p)}
+                  >
                     <img src={p.src} alt={p.alt} />
                   </button>
                   <div class="column"></div>

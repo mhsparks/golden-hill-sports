@@ -1,30 +1,36 @@
 @charset "utf-8";
 
 .site {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .site-content {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .team-list li {
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-    line-height: 1.75rem;
-
-
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 1.75rem;
 }
 
 .list-spacing li {
-    line-height: 1.75rem;
+  line-height: 1.75rem;
 }
 
 .selection-container {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.ghs-imageButton {
+  -webkit-appearance: none;
+  border: 0;
+}
+.ghs-imageButton:hover {
+  cursor: pointer;
 }
 
 // If need, change your variables before importing Bulma
