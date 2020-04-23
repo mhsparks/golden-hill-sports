@@ -27,16 +27,8 @@ const Layout = ({ children, isCricket, isSocial }) => {
 
   return (
     <div className="site">
-      <div class="container">
-        {isCricket ? (
-          <CricketHeader />
-        ) : isSocial ? (
-          <SocialHeader />
-        ) : (
-          <Header />
-        )}
-        <main className="site-content">{children}</main>
-      </div>
+      {isCricket ? <CricketHeader /> : isSocial ? <SocialHeader /> : <Header />}
+      <main className="site-content">{children}</main>
       <Footer />
     </div>
   );

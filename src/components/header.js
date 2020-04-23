@@ -5,8 +5,8 @@ import { Link } from "gatsby";
 
 const Header = () => {
   return (
-    <div>
-      <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
             <figure class="image">
@@ -40,8 +40,8 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 

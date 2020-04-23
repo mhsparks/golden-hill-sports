@@ -34,20 +34,22 @@ const PitpGallery = ({ data }) => {
         </div>
       </section>
       <section>
-        <div class="tabs">
-          <ul>
-            <li>
-              <Link to="/social/gallery">Clubhouse</Link>
-            </li>
-            <li>
-              <Link to="/social/fieldgallery">Sports Field</Link>
-            </li>
-            <li class="is-active">
-              <Link to="/social/pitpgallery">Party in the Park</Link>
-            </li>
-          </ul>
+        <div class="container">
+          <div class="tabs">
+            <ul>
+              <li>
+                <Link to="/social/gallery">Clubhouse</Link>
+              </li>
+              <li>
+                <Link to="/social/fieldgallery">Sports Field</Link>
+              </li>
+              <li class="is-active">
+                <Link to="/social/pitpgallery">Party in the Park</Link>
+              </li>
+            </ul>
+          </div>
+          <Gallery data={data} pictures={pictures} />
         </div>
-        <Gallery data={data} pictures={pictures} />
       </section>
     </Layout>
   );

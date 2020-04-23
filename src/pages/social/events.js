@@ -11,50 +11,52 @@ const EventsPage = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div class="card">
-          <div class="card-content">
-            <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
-            <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
+      <section class="section">
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
+              <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
 
-            <p>
-              We like to invite you along to our second social event of 2019 in
-              the newly refurbished clubhouse which now features a brand new
-              bar! Fun for all the family!
-            </p>
+              <p>
+                We like to invite you along to our second social event of 2019
+                in the newly refurbished clubhouse which now features a brand
+                new bar! Fun for all the family!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
-            <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
-            <p>
-              We like to invite you along to our second social event of 2019 in
-              the newly refurbished clubhouse which now features a brand new
-              bar! Fun for all the family!
-            </p>
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
+              <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
+              <p>
+                We like to invite you along to our second social event of 2019
+                in the newly refurbished clubhouse which now features a brand
+                new bar! Fun for all the family!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
-            <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
-            <p>
-              We like to invite you along to our second social event of 2019 in
-              the newly refurbished clubhouse which now features a brand new
-              bar! Fun for all the family!
-            </p>
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
+              <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
+              <p>
+                We like to invite you along to our second social event of 2019
+                in the newly refurbished clubhouse which now features a brand
+                new bar! Fun for all the family!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
-            <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
-            <p>
-              We like to invite you along to our second social event of 2019 in
-              the newly refurbished clubhouse which now features a brand new
-              bar! Fun for all the family!
-            </p>
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
+              <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
+              <p>
+                We like to invite you along to our second social event of 2019
+                in the newly refurbished clubhouse which now features a brand
+                new bar! Fun for all the family!
+              </p>
+            </div>
           </div>
         </div>
       </section>

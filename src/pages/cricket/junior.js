@@ -50,8 +50,10 @@ const JuniorPage = ({ data }) => {
           </div>
         </div>
       </section>
-      <section>
-        <Gallery data={data} pictures={pictures} />
+      <section class="section">
+        <div class="container">
+          <Gallery data={data} pictures={pictures} />
+        </div>
       </section>
     </Layout>
   );
