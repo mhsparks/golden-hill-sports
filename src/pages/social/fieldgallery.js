@@ -1,33 +1,26 @@
-import React from "react";
-import Layout from "../../components/layout";
 import { Link } from "gatsby";
-import field1 from "../../images/field-1.jpg";
-import field3 from "../../images/field-3.jpg";
-import field4 from "../../images/field-4.jpg";
-import field5 from "../../images/field-5.jpg";
-import pitch1 from "../../images/pitch-1.jpg";
-import pitch4 from "../../images/pitch-4.jpg";
-import aerial from "../../images/aerial.jpg";
-import pitch6 from "../../images/pitch-6.jpg";
-import pitch10 from "../../images/pitch-10.jpg";
+import React from "react";
+import Gallery from "../../components/gallery";
+import Layout from "../../components/layout";
 
-const FieldGallery = () => {
-  const pictures1 = [
-    { alt: "Some text", src: field1 },
-    { alt: "Some different text", src: field3 },
-    { alt: "Some more text", src: field4 },
+const FieldGallery = ({ data }) => {
+  const pictures = [
+    [
+      { alt: "Some text", src: "field1" },
+      { alt: "Some different text", src: "field3" },
+      { alt: "Some more text", src: "field4" },
+    ],
+    [
+      { alt: "Some text", src: "field5" },
+      { alt: "Some different text", src: "pitch1" },
+      { alt: "Some more text", src: "pitch4" },
+    ],
+    [
+      { alt: "Some text", src: "aerial" },
+      { alt: "Some different text", src: "pitch6" },
+      { alt: "Some more text", src: "pitch10" },
+    ],
   ];
-  const pictures2 = [
-    { alt: "Some text", src: field5 },
-    { alt: "Some different text", src: pitch1 },
-    { alt: "Some more text", src: pitch4 },
-  ];
-  const pictures3 = [
-    { alt: "Some text", src: aerial },
-    { alt: "Some different text", src: pitch6 },
-    { alt: "Some more text", src: pitch10 },
-  ];
-  const [pictureInModal, setPictureInModal] = React.useState("");
   return (
     <Layout isSocial>
       <section class="hero is-primary">
@@ -51,65 +44,52 @@ const FieldGallery = () => {
             </li>
           </ul>
         </div>
-
-        {pictureInModal ? (
-          <div class="modal is-active">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-              <p class="image is-16by9">
-                <button onClick={() => setPictureInModal("")}>
-                  <img src={pictureInModal.src} alt={pictureInModal.alt} />
-                </button>
-              </p>
-              <button onClick={() => setPictureInModal("")}>Close</button>
-            </div>
-          </div>
-        ) : (
-          <div class="columns">
-            <div class="column">
-              {pictures1.map(p => (
-                <figure class="image">
-                  <button
-                    class="ghs-imageButton"
-                    onClick={() => setPictureInModal(p)}
-                  >
-                    <img src={p.src} alt={p.alt} />
-                  </button>
-                  <div class="column"></div>
-                </figure>
-              ))}
-            </div>
-            <div class="column">
-              {pictures2.map(p => (
-                <figure class="image">
-                  <button
-                    class="ghs-imageButton"
-                    onClick={() => setPictureInModal(p)}
-                  >
-                    <img src={p.src} alt={p.alt} />
-                  </button>
-                  <div class="column"></div>
-                </figure>
-              ))}
-            </div>
-            <div class="column">
-              {pictures3.map(p => (
-                <figure class="image">
-                  <button
-                    class="ghs-imageButton"
-                    onClick={() => setPictureInModal(p)}
-                  >
-                    <img src={p.src} alt={p.alt} />
-                  </button>
-                  <div class="column"></div>
-                </figure>
-              ))}
-            </div>
-          </div>
-        )}
+        <Gallery data={data} pictures={pictures} />
       </section>
     </Layout>
   );
 };
 
 export default FieldGallery;
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
+
+export const query = graphql`
+  query {
+    aerial: file(relativePath: { eq: "aerial.jpg" }) {
+      ...fluidImage
+    }
+    field1: file(relativePath: { eq: "field-1.jpg" }) {
+      ...fluidImage
+    }
+    field3: file(relativePath: { eq: "field-3.jpg" }) {
+      ...fluidImage
+    }
+    field4: file(relativePath: { eq: "field-4.jpg" }) {
+      ...fluidImage
+    }
+    field5: file(relativePath: { eq: "field-5.jpg" }) {
+      ...fluidImage
+    }
+    pitch1: file(relativePath: { eq: "pitch-1.jpg" }) {
+      ...fluidImage
+    }
+    pitch4: file(relativePath: { eq: "pitch-4.jpg" }) {
+      ...fluidImage
+    }
+    pitch6: file(relativePath: { eq: "pitch-6.jpg" }) {
+      ...fluidImage
+    }
+    pitch10: file(relativePath: { eq: "pitch-10.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;

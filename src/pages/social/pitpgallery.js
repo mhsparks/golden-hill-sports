@@ -1,39 +1,29 @@
 import React from "react";
 import Layout from "../../components/layout";
 import { Link } from "gatsby";
-import pitp1 from "../../images/pitp-1.jpg";
-import pitp3 from "../../images/pitp-3.jpg";
-import pitp5 from "../../images/pitp-5.jpg";
-import pitp6 from "../../images/pitp-6.jpg";
-import pitp7 from "../../images/pitp-7.jpg";
-import pitp8 from "../../images/pitp-8.jpg";
-import pitp9 from "../../images/pitp-9.jpg";
-import pitp10 from "../../images/pitp-10.jpg";
-import pitplogo from "../../images/pitp-logo.jpg";
-import fireworks1 from "../../images/pitp-firework1.jpg";
-import fireworks2 from "../../images/pitp-firework2.jpg";
-import bbq from "../../images/pitp-bbq.jpg";
+import Gallery from "../../components/gallery";
 
-const PitpGallery = () => {
-  const pictures1 = [
-    { alt: "Some text", src: pitplogo },
-    { alt: "Some different text", src: pitp7 },
-    { alt: "Some more text", src: pitp1 },
-    { alt: "Some more text", src: fireworks1 },
+const PitpGallery = ({ data }) => {
+  const pictures = [
+    [
+      { alt: "Some text", src: "pitplogo" },
+      { alt: "Some different text", src: "pitp7" },
+      { alt: "Some more text", src: "pitp1" },
+      { alt: "Some more text", src: "fireworks1" },
+    ],
+    [
+      { alt: "Some text", src: "pitp10" },
+      { alt: "Some different text", src: "bbq" },
+      { alt: "Some more text", src: "pitp3" },
+      { alt: "Some more text", src: "fireworks2" },
+    ],
+    [
+      { alt: "Some text", src: "pitp9" },
+      { alt: "Some different text", src: "pitp6" },
+      { alt: "Some more text", src: "pitp5" },
+      { alt: "Some more text", src: "pitp8" },
+    ],
   ];
-  const pictures2 = [
-    { alt: "Some text", src: pitp10 },
-    { alt: "Some different text", src: bbq },
-    { alt: "Some more text", src: pitp3 },
-    { alt: "Some more text", src: fireworks2 },
-  ];
-  const pictures3 = [
-    { alt: "Some text", src: pitp9 },
-    { alt: "Some different text", src: pitp6 },
-    { alt: "Some more text", src: pitp5 },
-    { alt: "Some more text", src: pitp8 },
-  ];
-  const [pictureInModal, setPictureInModal] = React.useState("");
   return (
     <Layout isSocial>
       <section class="hero is-primary">
@@ -57,66 +47,61 @@ const PitpGallery = () => {
             </li>
           </ul>
         </div>
-
-        {pictureInModal ? (
-          <div class="modal is-active">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-              <p class="image is-16by9">
-                <button onClick={() => setPictureInModal("")}>
-                  <img src={pictureInModal.src} alt={pictureInModal.alt} />
-                </button>
-              </p>
-              <button onClick={() => setPictureInModal("")}>Close</button>
-            </div>
-          </div>
-        ) : (
-          <div class="columns">
-            <div class="column">
-              {pictures1.map(p => (
-                <figure class="image">
-                  <button
-                    class="ghs-imageButton"
-                    onClick={() => setPictureInModal(p)}
-                  >
-                    <img src={p.src} alt={p.alt} />
-                  </button>
-                  <div class="column"></div>
-                </figure>
-              ))}
-            </div>
-
-            <div class="column">
-              {pictures2.map(p => (
-                <figure class="image">
-                  <button
-                    class="ghs-imageButton"
-                    onClick={() => setPictureInModal(p)}
-                  >
-                    <img src={p.src} alt={p.alt} />
-                  </button>
-                  <div class="column"></div>
-                </figure>
-              ))}
-            </div>
-            <div class="column">
-              {pictures3.map(p => (
-                <figure class="image">
-                  <button
-                    class="ghs-imageButton"
-                    onClick={() => setPictureInModal(p)}
-                  >
-                    <img src={p.src} alt={p.alt} />
-                  </button>
-                  <div class="column"></div>
-                </figure>
-              ))}
-            </div>
-          </div>
-        )}
+        <Gallery data={data} pictures={pictures} />
       </section>
     </Layout>
   );
 };
 
 export default PitpGallery;
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
+
+export const query = graphql`
+  query {
+    pitp1: file(relativePath: { eq: "pitp-1.jpg" }) {
+      ...fluidImage
+    }
+    pitp3: file(relativePath: { eq: "pitp-3.jpg" }) {
+      ...fluidImage
+    }
+    pitp5: file(relativePath: { eq: "pitp-5.jpg" }) {
+      ...fluidImage
+    }
+    pitp6: file(relativePath: { eq: "pitp-6.jpg" }) {
+      ...fluidImage
+    }
+    pitp7: file(relativePath: { eq: "pitp-7.jpg" }) {
+      ...fluidImage
+    }
+    pitp8: file(relativePath: { eq: "pitp-8.jpg" }) {
+      ...fluidImage
+    }
+    pitp9: file(relativePath: { eq: "pitp-9.jpg" }) {
+      ...fluidImage
+    }
+    pitp10: file(relativePath: { eq: "pitp-10.jpg" }) {
+      ...fluidImage
+    }
+    pitplogo: file(relativePath: { eq: "pitp-logo.jpg" }) {
+      ...fluidImage
+    }
+    fireworks1: file(relativePath: { eq: "pitp-firework1.jpg" }) {
+      ...fluidImage
+    }
+    fireworks2: file(relativePath: { eq: "pitp-firework2.jpg" }) {
+      ...fluidImage
+    }
+    bbq: file(relativePath: { eq: "pitp-bbq.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;
