@@ -32,7 +32,7 @@ const CricketHeader = () => {
             </div>
 
             <div class="navbar-item">
-              <Link to="/cricket/junior/">Junior</Link>
+              <Link to="/cricket/junior/">Youth</Link>
             </div>
             <div class="navbar-item">
               <Link to="/cricket/women/">Women & Girls</Link>

@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
+import pitplogo from "../../images/pitp-logoCrop.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -15,6 +16,14 @@ const PitpPage = () => {
         </div>
       </section>
       <section>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-3by1">
+              <img src={pitplogo} alt="Party in the Park poster" />
+            </figure>
+          </div>
+        </div>
+
         <div class="card">
           <div class="card-content">
             <p class="title is-size-6 has-text-primary">

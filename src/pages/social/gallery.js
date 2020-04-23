@@ -61,8 +61,10 @@ const GalleryPage = () => {
           <div class="modal is-active">
             <div class="modal-background"></div>
             <div class="modal-content">
-              <p class="image">
-                <img src={pictureInModal.src} alt={pictureInModal.alt} />
+              <p class="image image is-16by9">
+                <button onClick={() => setPictureInModal("")}>
+                  <img src={pictureInModal.src} alt={pictureInModal.alt} />
+                </button>
               </p>
               <button onClick={() => setPictureInModal("")}>Close</button>
             </div>
@@ -72,7 +74,10 @@ const GalleryPage = () => {
             <div class="column">
               {pictures1.map(p => (
                 <figure class="image">
-                  <button onClick={() => setPictureInModal(p)}>
+                  <button
+                    class="ghs-imageButton"
+                    onClick={() => setPictureInModal(p)}
+                  >
                     <img src={p.src} alt={p.alt} />
                   </button>
                   <div class="column"></div>
@@ -82,7 +87,10 @@ const GalleryPage = () => {
             <div class="column">
               {pictures2.map(p => (
                 <figure class="image">
-                  <button onClick={() => setPictureInModal(p)}>
+                  <button
+                    class="ghs-imageButton"
+                    onClick={() => setPictureInModal(p)}
+                  >
                     <img src={p.src} alt={p.alt} />
                   </button>
                   <div class="column"></div>
@@ -92,7 +100,10 @@ const GalleryPage = () => {
             <div class="column">
               {pictures3.map(p => (
                 <figure class="image">
-                  <button onClick={() => setPictureInModal(p)}>
+                  <button
+                    class="ghs-imageButton"
+                    onClick={() => setPictureInModal(p)}
+                  >
                     <img src={p.src} alt={p.alt} />
                   </button>
                   <div class="column"></div>
