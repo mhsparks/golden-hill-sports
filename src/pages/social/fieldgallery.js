@@ -56,7 +56,7 @@ const FieldGallery = () => {
           <div class="modal is-active">
             <div class="modal-background"></div>
             <div class="modal-content">
-              <p class="image">
+              <p class="image is-16by9">
                 <img src={pictureInModal.src} alt={pictureInModal.alt} />
               </p>
               <button onClick={() => setPictureInModal("")}>Close</button>
