@@ -4,6 +4,7 @@ import headerlogo from "../images/headerlogo.png";
 import { Link } from "gatsby";
 
 const SocialHeader = () => {
+  const [navBarOpen, setNavBarOpen] = React.useState(false);
   return (
     <div>
       <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -14,10 +15,15 @@ const SocialHeader = () => {
 
           <a
             role="button"
-            class="navbar-burger burger"
+            class={
+              navBarOpen
+                ? "navbar-burger burger is-active"
+                : "navbar-burger burger"
+            }
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
+            onClick={() => setNavBarOpen(!navBarOpen)}
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -25,7 +31,10 @@ const SocialHeader = () => {
           </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div
+          id="navbarBasicExample"
+          class={navBarOpen ? "navbar-menu is-active" : "navbar-menu"}
+        >
           <div class="navbar-start">
             <div class="navbar-item">
               <Link to="/social/venue/">Venue Hire</Link>
