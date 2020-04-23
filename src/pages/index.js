@@ -1,18 +1,14 @@
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import React from "react";
 import Layout from "../components/layout";
-
-import cricket2 from "../images/cricket-2.png";
-import pavilion from "../images/pavilion.jpg";
-import headerlogo from "../images/headerlogo.png";
-import sonicsteam from "../images/sonics-team.jpg";
-import pitp from "../images/pitp.jpg";
 import SEO from "../components/seo";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import headerlogo from "../images/headerlogo.png";
 
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
@@ -29,8 +25,11 @@ const IndexPage = () => {
             <div class="column is-half">
               <div class="card">
                 <div class="card-image">
-                  <figure class="image is-5by4">
-                    <img src={pavilion} alt="Pavilion" />
+                  <figure class="image">
+                    <Img
+                      fluid={data.pavilion.childImageSharp.fluid}
+                      alt="Pavilion"
+                    />
                   </figure>
                 </div>
               </div>
@@ -74,8 +73,11 @@ const IndexPage = () => {
               <div class="column">
                 <div class="card">
                   <div class="card-image">
-                    <figure class="image is-3by2">
-                      <img src={cricket2} alt="Cricket" />
+                    <figure class="image">
+                      <Img
+                        fluid={data.cricket2.childImageSharp.fluid}
+                        alt="Cricket"
+                      />
                     </figure>
                   </div>
                   <div class="card-content">
@@ -126,8 +128,11 @@ const IndexPage = () => {
               <div class="column">
                 <div class="card">
                   <div class="card-image">
-                    <figure class="image is-3by2">
-                      <img src={sonicsteam} alt="Sonics" />
+                    <figure class="image">
+                      <Img
+                        fluid={data.sonicsteam.childImageSharp.fluid}
+                        alt="Sonics"
+                      />
                     </figure>
                   </div>
                   <div class="card-content">
@@ -180,8 +185,11 @@ const IndexPage = () => {
               <div class="column">
                 <div class="card">
                   <div class="card-image">
-                    <figure class="image is-3by2">
-                      <img src={pitp} alt="Party in the Park" />
+                    <figure class="image">
+                      <Img
+                        fluid={data.pitp.childImageSharp.fluid}
+                        alt="Party in the Park"
+                      />
                     </figure>
                   </div>
                   <div class="card-content">
@@ -243,3 +251,30 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
+
+export const query = graphql`
+  query {
+    pavilion: file(relativePath: { eq: "pavilion.jpg" }) {
+      ...fluidImage
+    }
+    cricket2: file(relativePath: { eq: "cricket-2.png" }) {
+      ...fluidImage
+    }
+    pitp: file(relativePath: { eq: "pitp.jpg" }) {
+      ...fluidImage
+    }
+    sonicsteam: file(relativePath: { eq: "sonics-team.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;
