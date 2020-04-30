@@ -37,7 +37,7 @@ const GalleryPage = ({ data }) => {
         <div class="container">
           <div class="tabs">
             <ul>
-              <li class="is-active">
+              <li class="is-active has-text-weight-bold">
                 <a>Clubhouse</a>
               </li>
               <li>

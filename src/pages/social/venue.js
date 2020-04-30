@@ -27,6 +27,9 @@ const VenuePage = ({ data }) => {
             </div>
             <div class="card-content">
               <p>
+                <p class="has-text-weight-bold has-text-primary">
+                  Hiring charges
+                </p>
                 Hire charges for the pavilion start from £40 for the first hour
                 and then £20 an hour thereafter. Additional charges will apply
                 for use of the bar and a member of staff will be supplied to run
@@ -47,8 +50,9 @@ const VenuePage = ({ data }) => {
                 mid-September by the club.
                 <br />
                 <br />
-                The Pavilion
-                <br />
+                <p class="has-text-weight-bold has-text-primary">
+                  The Pavilion
+                </p>
                 Includes a function room with laminate flooring, LED lighting,
                 kitchen on the first floor, and a fully licensed bar. Function
                 room The function room has a capacity of 80 people with access
@@ -56,20 +60,20 @@ const VenuePage = ({ data }) => {
                 music for birthday parties through.
                 <br />
                 <br />
-                Kitchen
-                <br />
+                <p class="has-text-weight-bold has-text-primary">Kitchen</p>
                 A newly fitted kitchen with oven, hob, microwave, dishwasher,
                 fridge and freezer. Separate handwash basin and instant boiling
                 water tap, including a 5* Hygiene rating.
                 <br />
                 <br />
-                Disabled Access
-                <br />A newly fitted stairlift has been fitted so that disabled
-                access is available to gain access to the first floor.
+                <p class="has-text-weight-bold has-text-primary">
+                  Disabled Access
+                </p>
+                A newly fitted stairlift has been fitted so that disabled access
+                is available to gain access to the first floor.
                 <br />
                 <br />
-                Catering
-                <br />
+                <p class="has-text-weight-bold has-text-primary">Catering</p>
                 We are able to provide you with subcontracted catering services.
                 Alternatively, you can provide your own food and refreshments as
                 the kitchen is stocked with 48 sets of plates, side plates,
@@ -77,18 +81,14 @@ const VenuePage = ({ data }) => {
                 the essential items required.
                 <br />
                 <br />
-                Booking
-                <br />
+                <p class="has-text-weight-bold has-text-primary">Booking</p>
                 Please feel free to fill in the below contact form regarding
                 your booking or alternatively you can call 07306034621 to
                 discuss it over the phone.
                 <br />
                 <br />
               </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
+
               <div class="columns">
                 <div class="column is-11">
                   <div class="field">
@@ -153,7 +153,7 @@ const VenuePage = ({ data }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>{" "}
           </div>
         </div>
       </section>

@@ -59,7 +59,7 @@ const FootballPage = ({ data }) => {
                 <br />
                 <br />
                 For more information on Golden Hill Sonics Football Club, please
-                visit our website:
+                visit our website at&nbsp;
                 <span>
                   <a
                     href="http://www.goldenhillsonics.co.uk"
@@ -71,10 +71,20 @@ const FootballPage = ({ data }) => {
                     </span>
                   </a>
                 </span>
-                <br />
-                <br />
               </p>
             </div>
+            <a
+              href="http://www.goldenhillsonics.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="buttons has-addons is-centered">
+                <button class="button is-primary has-text-weight-bold">
+                  Sonics Website
+                </button>
+              </div>
+            </a>
+            <br />
           </div>
         </div>
       </section>

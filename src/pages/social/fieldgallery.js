@@ -37,7 +37,7 @@ const FieldGallery = ({ data }) => {
               <li>
                 <Link to="/social/gallery">Clubhouse</Link>
               </li>
-              <li class="is-active">
+              <li class="is-active has-text-weight-bold">
                 <Link to="/social/fieldgallery">Sports Field</Link>
               </li>
               <li>

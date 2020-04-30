@@ -43,7 +43,7 @@ const PitpGallery = ({ data }) => {
               <li>
                 <Link to="/social/fieldgallery">Sports Field</Link>
               </li>
-              <li class="is-active">
+              <li class="is-active has-text-weight-bold">
                 <Link to="/social/pitpgallery">Party in the Park</Link>
               </li>
             </ul>

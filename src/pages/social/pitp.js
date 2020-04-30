@@ -25,18 +25,15 @@ const PitpPage = ({ data }) => {
                 />
               </figure>
             </div>
-          </div>
 
-          <div class="card">
             <div class="card-content">
-              <p class="title is-size-6 has-text-primary">
-                What is Party in the Park?
-              </p>
               <p>
+                <p class="has-text-weight-bold has-text-primary">
+                  What is Party in the Park?
+                </p>
                 For those of you that don’t know about PITP, it’s a community
                 event that raises money to pay for the upkeep of the community
                 owned field at Golden Hill. <br />
-                <br />
                 It’s a great event with a variety of stalls and entertainment on
                 offer for all the family. We print 10,000 programmes that are
                 hand delivered to homes in the local area and thousands of
@@ -45,17 +42,16 @@ const PitpPage = ({ data }) => {
                 <br /> If you know of anyone who would like to be a stall holder
                 please ask them to contact us as the event continues to grow in
                 stature year on year.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-size-6 has-text-primary">How can you help?</p>
-              <p>
+                <br />
+                <br />
+                <p class="has-text-weight-bold has-text-primary">
+                  How can you help?
+                </p>
                 Party in the Park is our major fund raising event of the year
                 and allows us to continue to invest in grass-roots football and
                 cricket. This event takes a tremendous amount of effort and
                 co-ordination.
+                <br />
                 <br />
                 All Golden Hill members can help by doing the following things:
                 <br />
@@ -89,19 +85,12 @@ const PitpPage = ({ data }) => {
                     organising committee?
                   </li>
                 </ul>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-size-6 has-text-primary">Contact us</p>
-              <p>
+                <br />
+                <p class="has-text-weight-bold has-text-primary">Contact us</p>
                 If you would like a stall at PITP, or would like to be involved,
                 please contact us using the form below.
-                <br />
-                <br />
               </p>
-
+              <br />
               <div class="columns">
                 <div class="column is-11">
                   <div class="field">
