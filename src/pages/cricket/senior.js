@@ -9,7 +9,21 @@ const SeniorPage = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Senior Teams</h1>
+            <h1 class="title is-size-4">Golden Hill Senior Cricket</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs">
+            <ul>
+              <li class="is-active has-text-weight-bold">
+                <Link to="/cricket/senior/">Senior Cricket</Link>
+              </li>
+              <li>
+                <Link to="/cricket/seniorgallery/">Gallery</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -27,6 +41,7 @@ const SeniorPage = ({ data }) => {
 
             <div class="columns">
               <div class="column">
+                <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
                     <p class="card-header-title has-background-primary has-text-white">
@@ -75,6 +90,7 @@ const SeniorPage = ({ data }) => {
                     </span>
                   </footer>
                 </div>
+                <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
                     <p class="card-header-title has-background-primary has-text-white">
@@ -122,6 +138,7 @@ const SeniorPage = ({ data }) => {
                     </span>
                   </footer>
                 </div>
+                <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
                     <p class="card-header-title has-background-primary has-text-white">
@@ -169,6 +186,7 @@ const SeniorPage = ({ data }) => {
                     </span>
                   </footer>
                 </div>
+                <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
                     <p class="card-header-title has-background-primary has-text-white">
@@ -216,6 +234,7 @@ const SeniorPage = ({ data }) => {
                     </span>
                   </footer>
                 </div>
+                <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
                     <p class="card-header-title has-background-primary has-text-white">
@@ -268,9 +287,10 @@ const SeniorPage = ({ data }) => {
 
               <div class="column">
                 <div class="card-content">
-                  <div class="title has-text-primary">
+                  <p class="has-text-primary has-text-weight-bold is-size-4">
                     Golden Hill Cricket Club
-                  </div>
+                  </p>
+                  <br />
                   <p>
                     <p class="has-text-weight-bold has-text-primary">
                       Our teams

@@ -92,9 +92,12 @@ const VenuePage = ({ data }) => {
               <div class="columns">
                 <div class="column is-11">
                   <div class="field">
-                    <label class="label">Name</label>
+                    <label class="label" for="contactName">
+                      Name
+                    </label>
                     <div class="control">
                       <input
+                        id="contactName"
                         class="input"
                         type="text"
                         placeholder="Your Name"
@@ -103,12 +106,15 @@ const VenuePage = ({ data }) => {
                   </div>
 
                   <div class="field">
-                    <label class="label">Email</label>
+                    <label class="label" for="contactEmail">
+                      Email
+                    </label>
                     <div class="control has-icons-left has-icons-right">
                       <span class="icon">
                         <FontAwesomeIcon icon={faEnvelope} />
                       </span>
                       <input
+                        id="contactEmail"
                         class="input"
                         type="email"
                         placeholder="Email input"
@@ -118,11 +124,12 @@ const VenuePage = ({ data }) => {
                   </div>
 
                   <div class="field">
-                    <label class="label">Subject</label>
+                    <label class="label" for="contactSubject">
+                      Subject
+                    </label>
                     <div class="control">
                       <div class="select">
-                        <select>
-                          <option>Select dropdown</option>
+                        <select id="contactSubject">
                           <option>Venue Hire</option>
                           <option>Pitch Hire</option>
 
@@ -134,9 +141,12 @@ const VenuePage = ({ data }) => {
                   </div>
 
                   <div class="field">
-                    <label class="label">Message</label>
+                    <label class="label" for="contactMessage">
+                      Message
+                    </label>
                     <div class="control">
                       <textarea
+                        id="contactMessage"
                         class="textarea"
                         placeholder="Message here"
                       ></textarea>

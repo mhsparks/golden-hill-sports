@@ -27,15 +27,30 @@ const Header = () => {
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <Link className="button is-primary" to="/cricket/">
+              <Link
+                className="button is-primary is-size-6-desktop is-size-7-mobile"
+                to="/cricket/"
+              >
                 <strong>Cricket</strong>
               </Link>
 
-              <Link className="button is-primary" to="/football/">
+              <Link
+                className="button is-primary is-size-6-desktop is-size-7-mobile"
+                to="/football/"
+              >
                 <strong>Football</strong>
               </Link>
-              <Link className="button is-primary" to="/social/">
+              <Link
+                className="button is-primary is-size-6-desktop is-size-7-mobile"
+                to="/social/"
+              >
                 <strong>Social</strong>
+              </Link>
+              <Link
+                className="button is-primary is-size-6-desktop is-size-7-mobile"
+                to="/social/pitp/"
+              >
+                <strong>Party in the Park</strong>
               </Link>
             </div>
           </div>
