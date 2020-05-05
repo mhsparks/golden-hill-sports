@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import Gallery from "../../components/gallery";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 const WomenGallery = ({ data }) => {
   const pictures = [

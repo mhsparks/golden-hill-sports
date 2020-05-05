@@ -25,8 +25,8 @@ const SocialPage = ({ data }) => {
             <div class="card-content">
               <p>
                 <strong>Golden Hill Sports & Social Club </strong>
-                has a fully licensed bar, enabling us to sell alcoholic drinks
-                to our members and guests.
+                has a licensed bar, enabling us to sell alcoholic drinks to our
+                members and guests.
                 <br />
                 <br />
                 Under 18s are welcome at the club but must be accompanied by an

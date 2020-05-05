@@ -29,7 +29,7 @@ const PitpGallery = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Golden Hill Gallery</h1>
+            <h1 class="title is-size-4">Gallery</h1>
           </div>
         </div>
       </section>
@@ -38,13 +38,13 @@ const PitpGallery = ({ data }) => {
           <div class="tabs">
             <ul>
               <li>
-                <Link to="/social/gallery">Clubhouse</Link>
-              </li>
-              <li>
-                <Link to="/social/fieldgallery">Sports Field</Link>
+                <Link to="/social/pitp/">Party in the Park</Link>
               </li>
               <li class="is-active has-text-weight-bold">
-                <Link to="/social/pitpgallery">Party in the Park</Link>
+                <Link to="/social/pitpgallery/">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>

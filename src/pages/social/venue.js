@@ -1,8 +1,7 @@
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
+import { Link } from "gatsby";
 
 const VenuePage = ({ data }) => {
   return (
@@ -11,6 +10,23 @@ const VenuePage = ({ data }) => {
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-size-4">Venue Hire</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs">
+            <ul>
+              <li class="is-active has-text-weight-bold">
+                <Link to="/social/venue/">Venue Hire</Link>
+              </li>
+              <li>
+                <Link to="/social/gallery/">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/social/contact/">Contact Form</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -82,88 +98,13 @@ const VenuePage = ({ data }) => {
                 <br />
                 <br />
                 <p class="has-text-weight-bold has-text-primary">Booking</p>
-                Please feel free to fill in the below contact form regarding
-                your booking or alternatively you can call 07306034621 to
-                discuss it over the phone.
+                Please feel free to fill in the contact form using the link
+                above regarding your booking or alternatively you can call
+                07306034621 to discuss it over the phone.
                 <br />
                 <br />
               </p>
-
-              <div class="columns">
-                <div class="column is-11">
-                  <div class="field">
-                    <label class="label" for="contactName">
-                      Name
-                    </label>
-                    <div class="control">
-                      <input
-                        id="contactName"
-                        class="input"
-                        type="text"
-                        placeholder="Your Name"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="field">
-                    <label class="label" for="contactEmail">
-                      Email
-                    </label>
-                    <div class="control has-icons-left has-icons-right">
-                      <span class="icon">
-                        <FontAwesomeIcon icon={faEnvelope} />
-                      </span>
-                      <input
-                        id="contactEmail"
-                        class="input"
-                        type="email"
-                        placeholder="Email input"
-                        value="Email address"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="field">
-                    <label class="label" for="contactSubject">
-                      Subject
-                    </label>
-                    <div class="control">
-                      <div class="select">
-                        <select id="contactSubject">
-                          <option>Venue Hire</option>
-                          <option>Pitch Hire</option>
-
-                          <option>Party in the Park</option>
-                          <option>General Enquiry</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="field">
-                    <label class="label" for="contactMessage">
-                      Message
-                    </label>
-                    <div class="control">
-                      <textarea
-                        id="contactMessage"
-                        class="textarea"
-                        placeholder="Message here"
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  <div class="field is-grouped">
-                    <div class="control">
-                      <button class="button is-link">Submit</button>
-                    </div>
-                    <div class="control">
-                      <button class="button is-link is-light">Cancel</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </section>

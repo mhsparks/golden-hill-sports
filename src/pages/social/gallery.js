@@ -29,7 +29,7 @@ const GalleryPage = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Golden Hill Gallery</h1>
+            <h1 class="title is-size-4">Clubhouse Gallery</h1>
           </div>
         </div>
       </section>
@@ -37,14 +37,14 @@ const GalleryPage = ({ data }) => {
         <div class="container">
           <div class="tabs">
             <ul>
+              <li>
+                <Link to="/social/venue/">Venue Hire</Link>
+              </li>
               <li class="is-active has-text-weight-bold">
                 <a>Clubhouse</a>
               </li>
               <li>
                 <Link to="/social/fieldgallery">Sports Field</Link>
-              </li>
-              <li>
-                <Link to="/social/pitpgallery">Party in the Park</Link>
               </li>
             </ul>
           </div>

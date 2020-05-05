@@ -1,5 +1,5 @@
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import { faLocationArrow, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -53,15 +53,34 @@ const IndexPage = ({ data }) => {
                     contact us.
                   </p>
                   <section class="section">
-                    <div class="buttons has-addons is-left">
-                      <Link className="button is-primary" to="/location/">
-                        <span class="icon">
-                          <FontAwesomeIcon icon={faLocationArrow} />
-                        </span>
-                        <span>
-                          <strong>Find Us</strong>
-                        </span>
-                      </Link>
+                    <div class="columns">
+                      <div class="column">
+                        <div class="buttons has-addons is-left">
+                          <Link className="button is-primary" to="/location/">
+                            <span class="icon">
+                              <FontAwesomeIcon icon={faLocationArrow} />
+                            </span>
+                            <span>
+                              <strong>Find Us</strong>
+                            </span>
+                          </Link>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="buttons has-addons is-left">
+                          <Link
+                            className="button is-primary"
+                            to="/social/contact/"
+                          >
+                            <span class="icon">
+                              <FontAwesomeIcon icon={faEnvelope} />
+                            </span>
+                            <span>
+                              <strong>Contact Us</strong>
+                            </span>
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </section>
                 </div>
@@ -88,7 +107,7 @@ const IndexPage = ({ data }) => {
                       </figure>
                     </div>
                     <div class="media-content">
-                      <p class="title is-4">Golden Hill Cricket</p>
+                      <p class="title is-4">Cricket</p>
 
                       <p class="subtitle is-6">
                         <span class="icon has-text-primary">
@@ -101,7 +120,7 @@ const IndexPage = ({ data }) => {
                     </div>
                   </div>
 
-                  <div class="card-content">
+                  <div class="content">
                     <p>
                       Golden Hill CC runs five Saturday senior sides in the
                       Bristol & District Cricket League and have a youth policy
@@ -117,11 +136,6 @@ const IndexPage = ({ data }) => {
                       £40. Match fees are £10.00/£5.00. <br />
                       <br />
                     </p>
-                    <div class="buttons has-addons is-centered">
-                      <button class="button is-primary has-text-weight-bold">
-                        Contact Us
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -143,7 +157,7 @@ const IndexPage = ({ data }) => {
                       </figure>
                     </div>
                     <div class="media-content">
-                      <p class="title is-4">Golden Hill Sonics</p>
+                      <p class="title is-4">Sonics</p>
                       <p class="subtitle is-6 has-text-primary">
                         <span class="icon has-text-primary">
                           <FontAwesomeIcon icon={faTwitter} />
@@ -153,7 +167,7 @@ const IndexPage = ({ data }) => {
                     </div>
                   </div>
 
-                  <div class="card-content">
+                  <div class="content">
                     <p>
                       Golden Hill Sonics is a parent run football club, which
                       welcomes boys and girls in school years 2 to 11. The club
@@ -170,15 +184,13 @@ const IndexPage = ({ data }) => {
                       <br />
                       <br />
                       For more information on Golden Hill Sonics Football Club
-                      please visit their website:
+                      please visit their website:{" "}
+                      <a href="http://www.goldenhillsonics.co.uk">
+                        www.goldenhillsonics.co.uk
+                      </a>
                       <br />
                       <br />
                     </p>
-                    <div class="buttons has-addons is-centered">
-                      <button class="button is-primary has-text-weight-bold">
-                        Sonics Website
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -201,7 +213,7 @@ const IndexPage = ({ data }) => {
                     </div>
 
                     <div class="media-content">
-                      <p class="title is-4">Golden Hill Social</p>
+                      <p class="title is-4">Social</p>
                       <p class="subtitle is-6">
                         <span class="icon has-text-primary">
                           <FontAwesomeIcon icon={faTwitter} />
@@ -213,7 +225,7 @@ const IndexPage = ({ data }) => {
                     </div>
                   </div>
 
-                  <div class="card-content">
+                  <div class="content">
                     <p>
                       Golden Hill Sports & Social Club has a fully licensed bar,
                       enabling us to sell alcoholic drinks to our members and
@@ -234,11 +246,6 @@ const IndexPage = ({ data }) => {
                       <br />
                       <br />
                     </p>
-                    <div class="buttons has-addons is-centered">
-                      <button class="button is-primary has-text-weight-bold">
-                        Contact Us
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>

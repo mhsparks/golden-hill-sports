@@ -26,7 +26,7 @@ const FieldGallery = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Golden Hill Gallery</h1>
+            <h1 class="title is-size-4">Sports Field Gallery</h1>
           </div>
         </div>
       </section>
@@ -35,13 +35,13 @@ const FieldGallery = ({ data }) => {
           <div class="tabs">
             <ul>
               <li>
+                <Link to="/social/venue/">Venue Hire</Link>
+              </li>
+              <li>
                 <Link to="/social/gallery">Clubhouse</Link>
               </li>
               <li class="is-active has-text-weight-bold">
                 <Link to="/social/fieldgallery">Sports Field</Link>
-              </li>
-              <li>
-                <Link to="/social/pitpgallery">Party in the Park</Link>
               </li>
             </ul>
           </div>

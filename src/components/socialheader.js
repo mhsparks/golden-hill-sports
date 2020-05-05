@@ -41,14 +41,7 @@ const SocialHeader = () => {
             </div>
 
             <div class="navbar-item">
-              <Link to="/social/events/">Events</Link>
-            </div>
-            <div class="navbar-item">
-              <Link to="/social/gallery/">Gallery</Link>
-            </div>
-
-            <div class="navbar-item">
-              <Link to="/social/pitp/">Party in the Park</Link>
+              <Link to="/social/events/">Upcoming Events</Link>
             </div>
           </div>
         </div>

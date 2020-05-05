@@ -1,8 +1,7 @@
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
+import { Link, graphql } from "gatsby";
 
 const PitpPage = ({ data }) => {
   return (
@@ -11,6 +10,23 @@ const PitpPage = ({ data }) => {
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-size-4">Party in the Park</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs">
+            <ul>
+              <li class="is-active has-text-weight-bold">
+                <Link to="/social/pitp/">Party in the Park</Link>
+              </li>
+              <li>
+                <Link to="/social/pitpgallery/">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/social/contact/">Contact Form</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -88,83 +104,9 @@ const PitpPage = ({ data }) => {
                 <br />
                 <p class="has-text-weight-bold has-text-primary">Contact us</p>
                 If you would like a stall at PITP, or would like to be involved,
-                please contact us using the form below.
+                please contact us using the contact form link above.
               </p>
               <br />
-              <div class="columns">
-                <div class="column is-11">
-                  <div class="field">
-                    <label class="label" for="contactName">
-                      Name
-                    </label>
-                    <div class="control">
-                      <input
-                        id="contactName"
-                        class="input"
-                        type="text"
-                        placeholder="Your Name"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="field">
-                    <label class="label" for="contactEmail">
-                      Email
-                    </label>
-                    <div class="control has-icons-left has-icons-right">
-                      <span class="icon">
-                        <FontAwesomeIcon icon={faEnvelope} />
-                      </span>
-                      <input
-                        id="contactEmail"
-                        class="input"
-                        type="email"
-                        placeholder="Email input"
-                        value="Email address"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="field">
-                    <label class="label" for="contactSubject">
-                      Subject
-                    </label>
-                    <div class="control">
-                      <div class="select">
-                        <select id="contactSubject">
-                          <option>Party in the Park</option>
-                          <option>Venue Hire</option>
-                          <option>Pitch Hire</option>
-
-                          <option>General Enquiry</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="field">
-                    <label class="label" for="contactMessage">
-                      Message
-                    </label>
-                    <div class="control">
-                      <textarea
-                        id="contactMessage"
-                        class="textarea"
-                        placeholder="Message here"
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  <div class="field is-grouped">
-                    <div class="control">
-                      <button class="button is-link">Submit</button>
-                    </div>
-                    <div class="control">
-                      <button class="button is-link is-light">Cancel</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
