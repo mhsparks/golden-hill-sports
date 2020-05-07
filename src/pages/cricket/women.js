@@ -16,9 +16,32 @@ const WomensPage = ({ data }) => {
 
       <section>
         <div class="container">
-          <div class="tabs">
+          <div class="tabs is-boxed is-hidden-mobile">
             <ul>
-              <li class="is-active has-text-weight-bold">
+              <li class="is-active">
+                <Link to="/cricket/women/">Womens Cricket</Link>
+              </li>
+              <li>
+                <Link to="/cricket/womengallery/">Gallery</Link>
+              </li>
+              <li>
+                <a
+                  href="https://goldenhill.play-cricket.com/Teams/150046"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fixtures & Results
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-small is-centered is-boxed is-hidden-desktop is-hidden-tablet">
+            <ul>
+              <li class="is-active">
                 <Link to="/cricket/women/">Womens Cricket</Link>
               </li>
               <li>

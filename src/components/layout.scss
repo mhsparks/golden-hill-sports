@@ -29,11 +29,18 @@
   -webkit-appearance: none;
   border: 0;
 }
+
 .ghs-imageButton:hover {
   cursor: pointer;
 }
 
 // If need, change your variables before importing Bulma
+$tabs-border-bottom-color: #2c7814;
+$tabs-boxed-link-hover-background-color: #2c7814;
+$tabs-link-hover-color: #ffffff;
+$tabs-boxed-link-active-background-color: #2c7814;
+$tabs-link-active-color: #ffffff;
+$tabs-link-color: #2c7814;
 $navbar-item-img-max-height: 4rem;
 $primary: #2c7814;
 $footer-background-color: #2c7814;

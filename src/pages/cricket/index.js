@@ -1,6 +1,7 @@
 import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
+import { Link } from "gatsby";
 
 const CricketPage = ({ data }) => {
   return (
@@ -9,6 +10,52 @@ const CricketPage = ({ data }) => {
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-size-4">Golden Hill Cricket Club</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-boxed is-hidden-mobile">
+            <ul>
+              <li>
+                <Link to="/cricket/senior/">Senior</Link>
+              </li>
+              <li>
+                <Link to="/cricket/women/">Women</Link>
+              </li>
+              <li>
+                <Link to="/cricket/junior/">Boys</Link>
+              </li>
+              <li>
+                <Link to="/cricket/girls/">Girls</Link>
+              </li>
+              <li>
+                <a>More</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-small is-centered is-boxed is-hidden-desktop is-hidden-tablet">
+            <ul>
+              <li>
+                <Link to="/cricket/senior/">Senior</Link>
+              </li>
+              <li>
+                <Link to="/cricket/women/">Women</Link>
+              </li>
+              <li>
+                <Link to="/cricket/junior/">Boys</Link>
+              </li>
+              <li>
+                <Link to="/cricket/girls/">Girls</Link>
+              </li>
+              <li>
+                <a>More</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

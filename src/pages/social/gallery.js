@@ -33,21 +33,50 @@ const GalleryPage = ({ data }) => {
           </div>
         </div>
       </section>
+
       <section>
         <div class="container">
-          <div class="tabs">
+          <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li>
                 <Link to="/social/venue/">Venue Hire</Link>
               </li>
-              <li class="is-active has-text-weight-bold">
-                <a>Clubhouse</a>
+              <li>
+                <Link to="/social/events/">Upcoming Events</Link>
+              </li>
+              <li class="is-active">
+                <Link to="/social/gallery/">Gallery</Link>
               </li>
               <li>
-                <Link to="/social/fieldgallery">Sports Field</Link>
+                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-small is-centered is-hidden-desktop is-hidden-tablet is-boxed">
+            <ul>
+              <li>
+                <Link to="/social/venue/">Venue Hire</Link>
+              </li>
+              <li>
+                <Link to="/social/events/">Upcoming Events</Link>
+              </li>
+              <li class="is-active">
+                <Link to="/social/gallery/">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/social/contact/">Contact Form</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
           <Gallery data={data} pictures={pictures} />
         </div>
       </section>

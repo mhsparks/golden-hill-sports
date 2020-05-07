@@ -15,12 +15,26 @@ const SeniorPage = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs">
+          <div class="tabs is-boxed is-hidden-mobile">
             <ul>
-              <li class="is-active has-text-weight-bold">
+              <li class="is-active">
                 <Link to="/cricket/senior/">Senior Cricket</Link>
               </li>
-              <li>
+              <li class="has-text-primary">
+                <Link to="/cricket/seniorgallery/">Gallery</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-small is-centered is-boxed is-hidden-desktop is-hidden-tablet">
+            <ul>
+              <li class="is-active">
+                <Link to="/cricket/senior/">Senior Cricket</Link>
+              </li>
+              <li class="has-text-primary">
                 <Link to="/cricket/seniorgallery/">Gallery</Link>
               </li>
             </ul>

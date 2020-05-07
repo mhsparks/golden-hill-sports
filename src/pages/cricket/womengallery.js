@@ -53,12 +53,35 @@ const WomenGallery = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs">
+          <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li>
                 <Link to="/cricket/women/">Womens Cricket</Link>
               </li>
-              <li class="is-active has-text-weight-bold">
+              <li class="is-active">
+                <Link to="/cricket/womengallery/">Gallery</Link>
+              </li>
+              <li>
+                <a
+                  href="https://goldenhill.play-cricket.com/Teams/150046"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fixtures & Results
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-small is-centered is-hidden-desktop is-hidden-tablet is-boxed">
+            <ul>
+              <li>
+                <Link to="/cricket/women/">Womens Cricket</Link>
+              </li>
+              <li class="is-active">
                 <Link to="/cricket/womengallery/">Gallery</Link>
               </li>
               <li>

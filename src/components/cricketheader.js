@@ -2,115 +2,109 @@ import React from "react";
 import "./layout.scss";
 import headerlogo from "../images/headerlogo.png";
 import { Link } from "gatsby";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CricketHeader = () => {
-  const [navBarOpen, setNavBarOpen] = React.useState(false);
   return (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            <img src={headerlogo} />
-          </a>
+    <section class="section" style={{ paddingBottom: "1rem" }}>
+      <nav
+        class="navbar is-fixed-top 
+        "
+        role="navigation"
+        aria-label="main-navigation"
+      >
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item is-hidden-mobile" href="/">
+              <figure class="image is-48x48">
+                <img src={headerlogo} alt="GHS Logo" />
+              </figure>
+            </a>
+            <a class="navbar-item is-hidden-desktop is-hidden-tablet " href="/">
+              <figure class="image is-24x24">
+                <img src={headerlogo} alt="GHS Logo" />
+              </figure>
+            </a>
+            <Link
+              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
+              to="/cricket/"
+            >
+              Cricket
+            </Link>
+            <Link
+              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
+              to="/football/"
+            >
+              Football
+            </Link>
+            <Link
+              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
+              to="/social/"
+            >
+              Social
+            </Link>
+            <Link
+              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
+              to="/social/pitp/"
+            >
+              PITP
+            </Link>
+            <Link
+              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
+              to="/social/contact/"
+            >
+              Contact
+            </Link>
+          </div>
 
-          <a
-            role="button"
-            class={
-              navBarOpen
-                ? "navbar-burger burger is-active"
-                : "navbar-burger burger"
-            }
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-            onClick={() => setNavBarOpen(!navBarOpen)}
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div
-          id="navbarBasicExample"
-          class={navBarOpen ? "navbar-menu is-active" : "navbar-menu"}
-        >
-          <div class="navbar-start">
-            <div class="navbar-item">
-              <Link to="/cricket/senior/">Senior</Link>
+          <div class="navbar-menu">
+            <div class="navbar-start">
+              <Link
+                className="navbar-item has-text-primary has-text-weight-bold"
+                to="/cricket/"
+              >
+                Cricket
+              </Link>
+              <Link
+                className="navbar-item has-text-primary has-text-weight-bold"
+                to="/football/"
+              >
+                Football
+              </Link>
+              <Link
+                className="navbar-item has-text-primary has-text-weight-bold"
+                to="/social/"
+              >
+                Social
+              </Link>
+              <Link
+                className="navbar-item has-text-primary has-text-weight-bold"
+                to="/social/pitp/"
+              >
+                Party in the Park
+              </Link>
             </div>
-            <div class="navbar-item">
-              <Link to="/cricket/women/">Women</Link>
-            </div>
 
-            <div class="navbar-item">
-              <Link to="/cricket/junior/">Boys</Link>
-            </div>
-            <div class="navbar-item">
-              <Link to="/cricket/girls/">Girls</Link>
-            </div>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <div class="navbar-link has-text-primary">More</div>
-
-              <div class="navbar-dropdown">
-                <div class="navbar-item">
-                  <a
-                    href="https://www.logo-works.co.uk/webstore/Golden-Hill-CC-c28341020/"
-                    target="_blank"
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <Link
+                    className="button is-primary is-size-6-desktop is-size-7-mobile"
+                    to="/social/contact/"
                   >
-                    Club Shop
-                  </a>
+                    <span class="icon is-small is-left">
+                      <FontAwesomeIcon icon={faEnvelope} />
+                    </span>
+                    <strong>Contact Us</strong>
+                  </Link>
                 </div>
-                <hr class="navbar-divider" />
-                <div class="navbar-item">
-                  <Link to="/cricket/sponsors/">Sponsors</Link>
-                </div>
-                <hr class="navbar-divider" />
-                <div class="navbar-item">
-                  <Link to="/cricket/history/">History</Link>
-                </div>
-                <hr class="navbar-divider" />
-                <div class="navbar-item">
-                  <Link to="/cricket/policies/">Club Policies</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <Link
-                  className="button is-primary is-size-6-desktop is-size-7-mobile"
-                  to="/cricket/"
-                >
-                  <strong>Cricket</strong>
-                </Link>
-                <Link
-                  className="button is-primary is-size-6-desktop is-size-7-mobile"
-                  to="/football/"
-                >
-                  <strong>Football</strong>
-                </Link>
-                <Link
-                  className="button is-primary is-size-6-desktop is-size-7-mobile"
-                  to="/social/"
-                >
-                  <strong>Social</strong>
-                </Link>
-                <Link
-                  className="button is-primary is-size-6-desktop is-size-7-mobile"
-                  to="/social/pitp"
-                >
-                  <strong>Party in the Park</strong>
-                </Link>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
   );
 };
 

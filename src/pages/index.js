@@ -13,6 +13,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
+
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">

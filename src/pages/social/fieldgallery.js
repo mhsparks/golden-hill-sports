@@ -32,7 +32,7 @@ const FieldGallery = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs">
+          <div class="tabs is-boxed">
             <ul>
               <li>
                 <Link to="/social/venue/">Venue Hire</Link>
@@ -40,7 +40,7 @@ const FieldGallery = ({ data }) => {
               <li>
                 <Link to="/social/gallery">Clubhouse</Link>
               </li>
-              <li class="is-active has-text-weight-bold">
+              <li class="is-active">
                 <Link to="/social/fieldgallery">Sports Field</Link>
               </li>
             </ul>

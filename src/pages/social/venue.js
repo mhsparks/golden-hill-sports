@@ -15,10 +15,33 @@ const VenuePage = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs">
+          <div class="tabs is-boxed is-hidden-mobile">
             <ul>
-              <li class="is-active has-text-weight-bold">
+              <li class="is-active">
                 <Link to="/social/venue/">Venue Hire</Link>
+              </li>
+              <li>
+                <Link to="/social/events/">Upcoming Events</Link>
+              </li>
+              <li>
+                <Link to="/social/gallery/">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/social/contact/">Contact Form</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-small is-centered is-hidden-desktop is-hidden-tablet is-boxed">
+            <ul>
+              <li class="is-active">
+                <Link to="/social/venue/">Venue Hire</Link>
+              </li>
+              <li>
+                <Link to="/social/events/">Upcoming Events</Link>
               </li>
               <li>
                 <Link to="/social/gallery/">Gallery</Link>

@@ -1,6 +1,7 @@
 import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
+import { Link } from "gatsby";
 
 const SocialPage = ({ data }) => {
   return (
@@ -9,6 +10,46 @@ const SocialPage = ({ data }) => {
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-size-4">Golden Hill Social Club</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-boxed is-hidden-mobile">
+            <ul>
+              <li>
+                <Link to="/social/venue/">Venue Hire</Link>
+              </li>
+              <li>
+                <Link to="/social/events/">Upcoming Events</Link>
+              </li>
+              <li>
+                <Link to="/social/gallery/">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/social/contact/">Contact Form</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-small is-centered is-hidden-desktop is-hidden-tablet is-boxed">
+            <ul>
+              <li>
+                <Link to="/social/venue/">Venue Hire</Link>
+              </li>
+              <li>
+                <Link to="/social/events/">Upcoming Events</Link>
+              </li>
+              <li>
+                <Link to="/social/gallery/">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/social/contact/">Contact Form</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
