@@ -38,47 +38,54 @@ const EventsPage = () => {
         <div class="container">
           <div class="card">
             <div class="card-content">
-              <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
-              <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
-
-              <p>
-                We like to invite you along to our second social event of 2019
-                in the newly refurbished clubhouse which now features a brand
-                new bar! Fun for all the family!
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
-              <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
-              <p>
-                We like to invite you along to our second social event of 2019
-                in the newly refurbished clubhouse which now features a brand
-                new bar! Fun for all the family!
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
-              <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
-              <p>
-                We like to invite you along to our second social event of 2019
-                in the newly refurbished clubhouse which now features a brand
-                new bar! Fun for all the family!
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-6">GHS Quiz Night - Saturday 12th of Never</p>
-              <p class="subtitle is-7">From 7:30pm until 11:00pm</p>
-              <p>
-                We like to invite you along to our second social event of 2019
-                in the newly refurbished clubhouse which now features a brand
-                new bar! Fun for all the family!
-              </p>
+              <article class="message is-primary">
+                <div class="message-header">
+                  <p>Quiz Night! - Saturday 12th September</p>
+                </div>
+                <div class="message-body has-text-black">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                  <strong>Pellentesque risus mi</strong>, tempus quis placerat
+                  ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+                  fringilla. Nullam gravida purus diam, et dictum{" "}
+                  <a>felis venenatis</a> efficitur. Aenean ac{" "}
+                  <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu
+                  et sollicitudin porttitor, tortor urna tempor ligula, id
+                  porttitor mi magna a neque. Donec dui urna, vehicula et sem
+                  eget, facilisis sodales sem.
+                </div>
+              </article>
+              <article class="message is-primary">
+                <div class="message-header">
+                  <p>Quiz Night! - Saturday 12th September</p>
+                </div>
+                <div class="message-body has-text-black">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                  <strong>Pellentesque risus mi</strong>, tempus quis placerat
+                  ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+                  fringilla. Nullam gravida purus diam, et dictum{" "}
+                  <a>felis venenatis</a> efficitur. Aenean ac{" "}
+                  <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu
+                  et sollicitudin porttitor, tortor urna tempor ligula, id
+                  porttitor mi magna a neque. Donec dui urna, vehicula et sem
+                  eget, facilisis sodales sem.
+                </div>
+              </article>
+              <article class="message is-primary">
+                <div class="message-header">
+                  <p>Quiz Night! - Saturday 12th September</p>
+                </div>
+                <div class="message-body has-text-black">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                  <strong>Pellentesque risus mi</strong>, tempus quis placerat
+                  ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+                  fringilla. Nullam gravida purus diam, et dictum{" "}
+                  <a>felis venenatis</a> efficitur. Aenean ac{" "}
+                  <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu
+                  et sollicitudin porttitor, tortor urna tempor ligula, id
+                  porttitor mi magna a neque. Donec dui urna, vehicula et sem
+                  eget, facilisis sodales sem.
+                </div>
+              </article>
             </div>
           </div>
         </div>
