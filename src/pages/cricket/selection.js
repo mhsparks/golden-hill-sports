@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 
 const SelectionPage = () => {
   return (
-    <Layout isCricket>
+    <Layout>
       <section>
         <section class="hero is-primary">
           <div class="hero-body">

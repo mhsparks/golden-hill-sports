@@ -7,84 +7,120 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
+  const [navBarOpen, setNavBarOpen] = React.useState(false);
   return (
-    <section class="section" style={{ paddingBottom: "1rem" }}>
-      <nav
-        class="navbar is-fixed-top 
-        "
-        role="navigation"
-        aria-label="main-navigation"
-      >
+    <section>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item is-hidden-mobile" href="/">
+            <a class="navbar-item" href="/">
               <figure class="image is-48x48">
                 <img src={headerlogo} alt="GHS Logo" />
               </figure>
             </a>
-            <a class="navbar-item is-hidden-desktop is-hidden-tablet " href="/">
-              <figure class="image is-24x24">
-                <img src={headerlogo} alt="GHS Logo" />
-              </figure>
+
+            <a
+              role="button"
+              class={
+                navBarOpen
+                  ? "navbar-burger burger is-active"
+                  : "navbar-burger burger"
+              }
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+              onClick={() => setNavBarOpen(!navBarOpen)}
+            >
+              <span
+                style={{ color: "#2c7814", paddingTop: "2px" }}
+                aria-hidden="true"
+              ></span>
+              <span
+                style={{ color: "#2c7814", paddingTop: "2px" }}
+                aria-hidden="true"
+              ></span>
+              <span
+                style={{ color: "#2c7814", paddingTop: "2px" }}
+                aria-hidden="true"
+              ></span>
             </a>
-            <Link
-              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
-              to="/cricket/"
-            >
-              Cricket
-            </Link>
-            <Link
-              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
-              to="/football/"
-            >
-              Football
-            </Link>
-            <Link
-              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
-              to="/social/"
-            >
-              Social
-            </Link>
-            <Link
-              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
-              to="/social/pitp/"
-            >
-              PITP
-            </Link>
-            <Link
-              className="navbar-item is-hidden-desktop is-hidden-tablet is-size-7 has-text-primary has-text-weight-bold"
-              to="/social/contact/"
-            >
-              Contact
-            </Link>
           </div>
 
-          <div class="navbar-menu">
+          <div
+            id="navbarBasicExample"
+            class={navBarOpen ? "navbar-menu is-active" : "navbar-menu"}
+          >
             <div class="navbar-start">
-              <Link
-                className="navbar-item has-text-primary has-text-weight-bold"
-                to="/cricket/"
-              >
-                Cricket
-              </Link>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link has-text-primary has-text-weight-bold">
+                  Cricket
+                </a>
+
+                <div class="navbar-dropdown">
+                  <Link className="navbar-item" to="/cricket/">
+                    Overview
+                  </Link>
+                  <Link className="navbar-item" to="/cricket/senior/">
+                    Senior
+                  </Link>
+                  <Link className="navbar-item" to="/cricket/women/">
+                    Women
+                  </Link>
+                  <Link className="navbar-item" to="/cricket/junior/">
+                    Boys Youth
+                  </Link>
+                  <Link className="navbar-item" to="/cricket/girls/">
+                    Girls Youth
+                  </Link>
+                </div>
+              </div>
               <Link
                 className="navbar-item has-text-primary has-text-weight-bold"
                 to="/football/"
               >
                 Football
               </Link>
-              <Link
-                className="navbar-item has-text-primary has-text-weight-bold"
-                to="/social/"
-              >
-                Social
-              </Link>
-              <Link
-                className="navbar-item has-text-primary has-text-weight-bold"
-                to="/social/pitp/"
-              >
-                Party in the Park
-              </Link>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link has-text-primary has-text-weight-bold">
+                  Social
+                </a>
+
+                <div class="navbar-dropdown">
+                  <Link className="navbar-item" to="/social/">
+                    Overview
+                  </Link>
+                  <Link className="navbar-item" to="/social/venue/">
+                    Venue Hire
+                  </Link>
+
+                  <Link className="navbar-item" to="/social/gallery/">
+                    Gallery
+                  </Link>
+                  <Link className="navbar-item" to="/social/events/">
+                    Upcoming Events
+                  </Link>
+                  <Link className="navbar-item" to="/social/contact/">
+                    Contact Form
+                  </Link>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link has-text-primary has-text-weight-bold">
+                  Party in the Park
+                </a>
+
+                <div class="navbar-dropdown">
+                  <Link className="navbar-item" to="/social/pitp/">
+                    Overview
+                  </Link>
+                  <Link className="navbar-item" to="/social/pitpgallery/">
+                    Gallery
+                  </Link>
+                  <Link className="navbar-item" to="/social/contact/">
+                    Contact Form
+                  </Link>
+                </div>
+              </div>
             </div>
 
             <div class="navbar-end">

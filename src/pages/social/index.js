@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 
 const SocialPage = ({ data }) => {
   return (
-    <Layout isSocial>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
@@ -17,17 +17,14 @@ const SocialPage = ({ data }) => {
         <div class="container">
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
+              <li class="is-active">
+                <Link to="/social/">Overview</Link>
+              </li>
               <li>
                 <Link to="/social/venue/">Venue Hire</Link>
               </li>
               <li>
-                <Link to="/social/events/">Upcoming Events</Link>
-              </li>
-              <li>
                 <Link to="/social/gallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>
@@ -35,19 +32,16 @@ const SocialPage = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs is-small is-centered is-hidden-desktop is-hidden-tablet is-boxed">
+          <div class="tabs is-small is-hidden-desktop is-hidden-tablet is-boxed">
             <ul>
+              <li class="is-active">
+                <Link to="/social/">Overview</Link>
+              </li>
               <li>
                 <Link to="/social/venue/">Venue Hire</Link>
               </li>
               <li>
-                <Link to="/social/events/">Upcoming Events</Link>
-              </li>
-              <li>
                 <Link to="/social/gallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>

@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import React from "react";
 import Gallery from "../../components/gallery";
 import Layout from "../../components/layout";
@@ -7,29 +7,41 @@ const GalleryPage = ({ data }) => {
   const pictures = [
     [
       { alt: "Some text", src: "bar1" },
-      { alt: "Some different text", src: "floor1" },
+      { alt: "Some different text", src: "bench2" },
       { alt: "Some more text", src: "kitchen" },
-      { alt: "Some more text", src: "tables1" },
+      { alt: "Some text", src: "field1" },
+      { alt: "Some different text", src: "field3" },
     ],
+
     [
       { alt: "Some text", src: "bar2" },
-      { alt: "Some different text", src: "bench1" },
+      { alt: "Some more text", src: "tables3" },
       { alt: "Some more text", src: "kitchen2" },
-      { alt: "Some more text", src: "tables2" },
+      { alt: "Some more text", src: "field4" },
+      { alt: "Some different text", src: "pitch1" },
     ],
     [
       { alt: "Some text", src: "balcony" },
-      { alt: "Some different text", src: "bench2" },
+      { alt: "Some more text", src: "tables1" },
+      { alt: "Some different text", src: "bench1" },
+      { alt: "Some text", src: "field5" },
+      { alt: "Some more text", src: "pitch4" },
+    ],
+
+    [
+      { alt: "Some different text", src: "floor1" },
+      { alt: "Some more text", src: "tables2" },
       { alt: "Some more text", src: "space" },
-      { alt: "Some more text", src: "tables3" },
+      { alt: "Some more text", src: "pitch10" },
+      { alt: "Some text", src: "aerial" },
     ],
   ];
   return (
-    <Layout isSocial>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Clubhouse Gallery</h1>
+            <h1 class="title is-size-4">Gallery</h1>
           </div>
         </div>
       </section>
@@ -39,16 +51,13 @@ const GalleryPage = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li>
-                <Link to="/social/venue/">Venue Hire</Link>
+                <Link to="/social/">Overview</Link>
               </li>
               <li>
-                <Link to="/social/events/">Upcoming Events</Link>
+                <Link to="/social/venue/">Venue Hire</Link>
               </li>
               <li class="is-active">
                 <Link to="/social/gallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>
@@ -56,19 +65,17 @@ const GalleryPage = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs is-small is-centered is-hidden-desktop is-hidden-tablet is-boxed">
+          <div class="tabs is-small is-hidden-desktop is-hidden-tablet is-boxed">
             <ul>
+              <li>
+                <Link to="/social/">Overview</Link>
+              </li>
               <li>
                 <Link to="/social/venue/">Venue Hire</Link>
               </li>
-              <li>
-                <Link to="/social/events/">Upcoming Events</Link>
-              </li>
+
               <li class="is-active">
                 <Link to="/social/gallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>
@@ -132,6 +139,33 @@ export const query = graphql`
       ...fluidImage
     }
     tables3: file(relativePath: { eq: "tables-3.jpg" }) {
+      ...fluidImage
+    }
+    aerial: file(relativePath: { eq: "aerial.jpg" }) {
+      ...fluidImage
+    }
+    field1: file(relativePath: { eq: "field-1.jpg" }) {
+      ...fluidImage
+    }
+    field3: file(relativePath: { eq: "field-3.jpg" }) {
+      ...fluidImage
+    }
+    field4: file(relativePath: { eq: "field-4.jpg" }) {
+      ...fluidImage
+    }
+    field5: file(relativePath: { eq: "field-5.jpg" }) {
+      ...fluidImage
+    }
+    pitch1: file(relativePath: { eq: "pitch-1.jpg" }) {
+      ...fluidImage
+    }
+    pitch4: file(relativePath: { eq: "pitch-4.jpg" }) {
+      ...fluidImage
+    }
+    pitch6: file(relativePath: { eq: "pitch-6.jpg" }) {
+      ...fluidImage
+    }
+    pitch10: file(relativePath: { eq: "pitch-10.jpg" }) {
       ...fluidImage
     }
   }

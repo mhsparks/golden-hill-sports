@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 
 const GirlsPage = ({ data }) => {
   return (
-    <Layout isCricket>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
@@ -38,7 +38,7 @@ const GirlsPage = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs is-small is-centered is-boxed is-hidden-desktop is-hidden-tablet">
+          <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li class="is-active">
                 <Link to="/cricket/girls/">Girls Youth Cricket</Link>
@@ -151,7 +151,17 @@ const GirlsPage = ({ data }) => {
                 The ethos of the girls cricket at Golden Hill is to give “girls
                 a chance and to encourage participation”. <br />
                 <br />
+                <p class="has-text-primary has-text-weight-bold">Join us</p>
+                For any queries about the girls youth set-up or if you
+                interested in joining, please contact Chris Drew on{" "}
+                <a
+                  class="has-text-weight-bold"
+                  href="mailto:chris.drew333@icloud.com"
+                >
+                  chris.drew333@icloud.com
+                </a>
               </p>
+
               <br />
             </div>
           </div>

@@ -43,7 +43,7 @@ const GirlsGallery = ({ data }) => {
     ],
   ];
   return (
-    <Layout isCricket>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
@@ -76,7 +76,7 @@ const GirlsGallery = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs is-small is-centered is-boxed is-hidden-desktop is-hidden-tablet">
+          <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li>
                 <Link to="/cricket/girls/">Girls Youth Cricket</Link>
@@ -99,11 +99,7 @@ const GirlsGallery = ({ data }) => {
       </section>
       <section class="section">
         <div class="container">
-          <div class="card">
-            <div class="">
-              <Gallery data={data} pictures={pictures} />
-            </div>
-          </div>
+          <Gallery data={data} pictures={pictures} />
         </div>
       </section>
     </Layout>

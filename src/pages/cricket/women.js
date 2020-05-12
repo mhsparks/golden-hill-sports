@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 
 const WomensPage = ({ data }) => {
   return (
-    <Layout isCricket>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
@@ -39,7 +39,7 @@ const WomensPage = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs is-small is-centered is-boxed is-hidden-desktop is-hidden-tablet">
+          <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li class="is-active">
                 <Link to="/cricket/women/">Womens Cricket</Link>

@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 
 const JuniorPage = ({ data }) => {
   return (
-    <Layout isCricket>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
@@ -38,7 +38,7 @@ const JuniorPage = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs is-small is-centered is-boxed is-hidden-desktop is-hidden-tablet">
+          <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li class="is-active">
                 <Link to="/cricket/junior/">Boys Youth Cricket</Link>

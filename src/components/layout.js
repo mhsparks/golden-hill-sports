@@ -11,8 +11,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import "./layout.scss";
 import Header from "./header";
 import Footer from "./footer";
-import CricketHeader from "./cricketheader";
-import SocialHeader from "./socialheader";
 
 const Layout = ({ children, isCricket, isSocial }) => {
   const data = useStaticQuery(graphql`
@@ -27,7 +25,7 @@ const Layout = ({ children, isCricket, isSocial }) => {
 
   return (
     <div className="site">
-      {isCricket ? <CricketHeader /> : isSocial ? <SocialHeader /> : <Header />}
+      <Header />
       <main className="site-content">{children}</main>
       <Footer />
     </div>

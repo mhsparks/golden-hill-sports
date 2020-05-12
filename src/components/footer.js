@@ -39,34 +39,6 @@ const Footer = () => {
                   <strong>Find Us</strong>
                 </span>
               </Link>
-              <a
-                href="https://twitter.com/goldenhillsport"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="button is-primary is-inverted is-outlined ">
-                  <span class="icon">
-                    <FontAwesomeIcon icon={faTwitterSquare} />
-                  </span>
-                  <span>
-                    <strong> Twitter</strong>
-                  </span>
-                </button>
-              </a>
-              <a
-                href="https://www.facebook.com/pages/category/Sports-Club/Golden-Hill-Sports-Ground-216607021723146/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="button is-primary is-inverted is-outlined ">
-                  <span class="icon">
-                    <FontAwesomeIcon icon={faFacebook} />
-                  </span>
-                  <span>
-                    <strong> Facebook</strong>
-                  </span>
-                </button>
-              </a>
             </div>
             <div class="content has-text-centered">
               <p>© {new Date().getFullYear()}, Golden Hill Sport</p>

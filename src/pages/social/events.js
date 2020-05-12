@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const EventsPage = () => {
   return (
-    <Layout isSocial>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
@@ -16,17 +16,8 @@ const EventsPage = () => {
         <div class="container">
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
-              <li>
-                <Link to="/social/venue/">Venue Hire</Link>
-              </li>
               <li class="is-active">
                 <Link to="/social/events/">Upcoming Events</Link>
-              </li>
-              <li>
-                <Link to="/social/gallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>
@@ -34,19 +25,10 @@ const EventsPage = () => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs is-small is-centered is-hidden-desktop is-hidden-tablet is-boxed">
+          <div class="tabs is-small is-hidden-desktop is-hidden-tablet is-boxed">
             <ul>
-              <li>
-                <Link to="/social/venue/">Venue Hire</Link>
-              </li>
               <li class="is-active">
                 <Link to="/social/events/">Upcoming Events</Link>
-              </li>
-              <li>
-                <Link to="/social/gallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>

@@ -22,7 +22,7 @@ const FieldGallery = ({ data }) => {
     ],
   ];
   return (
-    <Layout isSocial>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
@@ -30,9 +30,10 @@ const FieldGallery = ({ data }) => {
           </div>
         </div>
       </section>
+
       <section>
         <div class="container">
-          <div class="tabs is-boxed">
+          <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li>
                 <Link to="/social/venue/">Venue Hire</Link>
@@ -45,6 +46,27 @@ const FieldGallery = ({ data }) => {
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
+            <ul>
+              <li>
+                <Link to="/social/venue/">Venue Hire</Link>
+              </li>
+              <li>
+                <Link to="/social/gallery">Clubhouse</Link>
+              </li>
+              <li class="is-active">
+                <Link to="/social/fieldgallery">Sports Field</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
           <Gallery data={data} pictures={pictures} />
         </div>
       </section>

@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 
 const HistoryPage = () => {
   return (
-    <Layout isCricket>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">

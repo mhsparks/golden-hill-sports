@@ -5,7 +5,7 @@ import { Link, graphql } from "gatsby";
 
 const PitpPage = ({ data }) => {
   return (
-    <Layout isSocial>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
@@ -18,13 +18,10 @@ const PitpPage = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li class="is-active has-text-weight-bold">
-                <Link to="/social/pitp/">Party in the Park</Link>
+                <Link to="/social/pitp/">Overview</Link>
               </li>
               <li>
                 <Link to="/social/pitpgallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>
@@ -39,9 +36,6 @@ const PitpPage = ({ data }) => {
               </li>
               <li>
                 <Link to="/social/pitpgallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>
@@ -65,8 +59,9 @@ const PitpPage = ({ data }) => {
                   What is Party in the Park?
                 </p>
                 For those of you that don’t know about PITP, it’s a community
-                event that raises money to pay for the upkeep of the community
-                owned field at Golden Hill. <br />
+                event that raises money to pay for the upkeep of the field that
+                the community helped to secure.
+                <br />
                 It’s a great event with a variety of stalls and entertainment on
                 offer for all the family. We print 10,000 programmes that are
                 hand delivered to homes in the local area and thousands of

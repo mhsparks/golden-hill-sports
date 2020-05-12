@@ -25,7 +25,7 @@ const PitpGallery = ({ data }) => {
     ],
   ];
   return (
-    <Layout isSocial>
+    <Layout>
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
@@ -38,13 +38,10 @@ const PitpGallery = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li>
-                <Link to="/social/pitp/">Party in the Park</Link>
+                <Link to="/social/pitp/">Overview</Link>
               </li>
               <li class="is-active has-text-weight-bold">
                 <Link to="/social/pitpgallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>
@@ -52,22 +49,19 @@ const PitpGallery = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs is-small is-centered is-boxed is-hidden-desktop is-hidden-tablet">
+          <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li>
-                <Link to="/social/pitp/">Party in the Park</Link>
+                <Link to="/social/pitp/">Overview</Link>
               </li>
               <li class="is-active has-text-weight-bold">
                 <Link to="/social/pitpgallery/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/social/contact/">Contact Form</Link>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div class="container">
           <Gallery data={data} pictures={pictures} />
         </div>

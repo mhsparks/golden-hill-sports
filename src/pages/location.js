@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Img from "gatsby-image";
+import { Link } from "gatsby";
 
 const LocationPage = ({ data }) => {
   return (
@@ -9,6 +10,34 @@ const LocationPage = ({ data }) => {
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-size-4">Where to find us</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-boxed is-hidden-mobile">
+            <ul>
+              <li>
+                <Link to="/social/contact/">Contact Form</Link>
+              </li>
+              <li class="is-active">
+                <Link to="/location/">Find Us</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="tabs is-small is-hidden-desktop is-hidden-tablet is-boxed">
+            <ul>
+              <li>
+                <Link to="/social/contact/">Contact Form</Link>
+              </li>
+              <li class="is-active">
+                <Link to="/location/">Find Us</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
