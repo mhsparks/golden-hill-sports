@@ -29,7 +29,7 @@ const PitpPage = ({ data }) => {
       </section>
       <section>
         <div class="container">
-          <div class="tabs is-small is-centered is-boxed is-hidden-desktop is-hidden-tablet">
+          <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li class="is-active has-text-weight-bold">
                 <Link to="/social/pitp/">Party in the Park</Link>
@@ -116,7 +116,7 @@ const PitpPage = ({ data }) => {
                 <br />
                 <p class="has-text-weight-bold has-text-primary">Contact us</p>
                 If you would like a stall at PITP, or would like to be involved,
-                please contact us using the contact form link above.
+                please <Link to="/social/contact/">Contact Us.</Link>
               </p>
               <br />
             </div>

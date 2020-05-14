@@ -1,13 +1,9 @@
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faLocationArrow, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
 import React from "react";
+import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import headerlogo from "../images/headerlogo.png";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
   return (
@@ -71,7 +67,12 @@ const IndexPage = ({ data }) => {
                       </figure>
                     </div>
                     <div class="column is-four-fifths">
-                      <p class="title is-4 has-text-primary">Cricket</p>
+                      <Link
+                        className="title is-4 has-text-primary"
+                        to="/cricket/"
+                      >
+                        Cricket
+                      </Link>
                     </div>
                   </div>
                   <div class="card-image">
@@ -108,7 +109,12 @@ const IndexPage = ({ data }) => {
                       </figure>
                     </div>
                     <div class="column is-four-fifths">
-                      <p class="title is-4 has-text-primary">Football</p>
+                      <Link
+                        className="title is-4 has-text-primary"
+                        to="/football/"
+                      >
+                        Football
+                      </Link>
                     </div>
                   </div>
                   <div class="card-image">
@@ -154,7 +160,12 @@ const IndexPage = ({ data }) => {
                       </figure>
                     </div>
                     <div class="column is-four-fifths">
-                      <p class="title is-4 has-text-primary">Social</p>
+                      <Link
+                        className="title is-4 has-text-primary"
+                        to="/social/"
+                      >
+                        Social
+                      </Link>
                     </div>
                   </div>
                   <div class="card-image">
