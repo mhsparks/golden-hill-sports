@@ -146,6 +146,22 @@ const GirlsPage = ({ data }) => {
                 <br />
                 <br />
                 <p class="has-text-primary has-text-weight-bold">
+                  How to find us
+                </p>
+                <span class="has-text-primary">Indoor training</span>​​ –
+                Orchard School, Filton Road, Bristol, BS7 0XZ.
+                <br />
+                <span class="has-text-primary">
+                  Outdoor training and home games
+                </span>
+                ​​ - Golden Hill Sports Ground, Wimbledon Road, Bristol, BS6
+                7YA.
+                <br />
+                Please note that there is​​ also an entrance gate at the top of
+                Henleaze Park Drive.
+                <br />
+                <br />
+                <p class="has-text-primary has-text-weight-bold">
                   Giving girls a chance
                 </p>
                 The ethos of the girls cricket at Golden Hill is to give “girls

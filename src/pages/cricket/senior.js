@@ -20,8 +20,12 @@ const SeniorPage = ({ data }) => {
               <li class="is-active">
                 <Link to="/cricket/senior/">Senior Cricket</Link>
               </li>
-              <li class="has-text-primary">
+
+              <li>
                 <Link to="/cricket/seniorgallery/">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/cricket/history/">History</Link>
               </li>
             </ul>
           </div>
@@ -34,8 +38,12 @@ const SeniorPage = ({ data }) => {
               <li class="is-active">
                 <Link to="/cricket/senior/">Senior Cricket</Link>
               </li>
-              <li class="has-text-primary">
+
+              <li>
                 <Link to="/cricket/seniorgallery/">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/cricket/history/">History</Link>
               </li>
             </ul>
           </div>

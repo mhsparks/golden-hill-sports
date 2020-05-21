@@ -2,7 +2,6 @@ import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
 import { Link } from "gatsby";
-import headerlogo from "../../images/headerlogo.png";
 
 const CricketPage = ({ data }) => {
   return (

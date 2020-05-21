@@ -72,6 +72,23 @@ const Header = () => {
                   <Link className="navbar-item" to="/cricket/girls/">
                     Girls Youth
                   </Link>
+                  <Link className="navbar-item" to="/cricket/coaching/">
+                    Coaching Links
+                  </Link>
+                  <Link className="navbar-item" to="/cricket/policies/">
+                    Club Policies
+                  </Link>
+                  <Link className="navbar-item" to="/cricket/sponsors/">
+                    Sponsors
+                  </Link>
+                  <a
+                    href="https://www.logo-works.co.uk/webstore/Bristol-YMCA-CC-c28341020"
+                    className="navbar-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Club Shop
+                  </a>
                 </div>
               </div>
               <Link

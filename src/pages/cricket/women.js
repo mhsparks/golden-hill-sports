@@ -9,7 +9,7 @@ const WomensPage = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Golden Hill Women's Cricket</h1>
+            <h1 class="title is-size-4">Golden Hill Womens Cricket</h1>
           </div>
         </div>
       </section>
@@ -110,7 +110,7 @@ const WomensPage = ({ data }) => {
                 the end of July) starting mid-April at 7.00 until 8.30pm (We
                 sometimes stay later if the weather / daylight allows). There
                 are toilets and changing facilities available. Contact Jan
-                (email above) for dates.
+                (email below) for dates.
                 <br /> Protective equipment and bats are available at our
                 training nights, so you just need to turn up with suitable
                 sports kit and trainers. If you have your own kit you can bring
@@ -188,7 +188,7 @@ const WomensPage = ({ data }) => {
               </div>
               <footer class="card-footer">
                 <a
-                  href="https://goldenhill.play-cricket.com/Teams/105276"
+                  href="https://goldenhill.play-cricket.com/Teams/150046"
                   class="card-footer-item"
                   target="_blank"
                   rel="noopener noreferrer"
