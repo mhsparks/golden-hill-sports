@@ -1,7 +1,8 @@
+import { graphql, Link } from "gatsby";
+import Img from "gatsby-image";
 import React from "react";
 import Layout from "../components/layout";
-import Img from "gatsby-image";
-import { Link, graphql } from "gatsby";
+import Map from "../components/Map";
 
 const LocationPage = ({ data }) => {
   return (
@@ -74,6 +75,11 @@ const LocationPage = ({ data }) => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <Map />
         </div>
       </section>
     </Layout>
