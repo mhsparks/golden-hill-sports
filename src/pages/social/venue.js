@@ -1,7 +1,7 @@
+import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
-import { Link } from "gatsby";
 
 const VenuePage = ({ data }) => {
   return (

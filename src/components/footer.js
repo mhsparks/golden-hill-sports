@@ -1,10 +1,6 @@
 import React from "react";
 import "./layout.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitterSquare,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
 

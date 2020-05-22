@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import React from "react";
 import Gallery from "../../components/gallery";
 import Layout from "../../components/layout";
