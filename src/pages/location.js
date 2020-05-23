@@ -50,6 +50,7 @@ const LocationPage = () => {
                   style={{ border: 0, height: 400, width: "100%" }}
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBoOXBhVo6zXxN95rQo3K9MZqYuYDMa2Pc&q=Golden+Hill+Sports&zoom=16"
                   allowfullscreen
+                  title="Map showing location of Golden Hill Sports"
                 ></iframe>
               </div>
               <div class="column">
