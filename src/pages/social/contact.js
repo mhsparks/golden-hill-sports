@@ -48,7 +48,18 @@ const ContactPage = () => {
       </section>
       <section class="section">
         <div class="container">
-          <form name="contact" method="POST" data-netlify="true">
+          <form
+            name="contact"
+            method="post"
+            action="/social/contact-success/"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <div class="field is-hidden">
+              <label>
+                Plase complete Mr Robot: <input name="bot-field" />
+              </label>
+            </div>
             <div class="field">
               <label class="label">Contact Name</label>
               <div class="control">
