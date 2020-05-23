@@ -55,6 +55,7 @@ const ContactPage = () => {
             data-netlify="true"
             netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div class="field is-hidden">
               <label>
                 Plase complete Mr Robot: <input name="bot-field" />
@@ -64,7 +65,12 @@ const ContactPage = () => {
               <label class="label">Contact Name</label>
               <div class="control">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="text" placeholder="Your Name" />
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Your Name"
+                    name="name"
+                  />
                   <span class="icon is-small is-left">
                     <FontAwesomeIcon icon={faUser} />
                   </span>
@@ -80,6 +86,7 @@ const ContactPage = () => {
                     class="input"
                     type="email"
                     placeholder="Email Address"
+                    name="email"
                   />
                   <span class="icon is-small is-left">
                     <FontAwesomeIcon icon={faEnvelope} />
@@ -91,7 +98,12 @@ const ContactPage = () => {
               <label class="label">Phone</label>
               <div class="control">
                 <p class="control has-icons-left">
-                  <input class="input" type="text" placeholder="Phone Number" />
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Phone Number"
+                    name="phone"
+                  />
                   <span class="icon is-small is-left">
                     <FontAwesomeIcon icon={faMobileAlt} />
                   </span>
@@ -103,7 +115,7 @@ const ContactPage = () => {
               <label class="label">Subject</label>
               <p class="control ">
                 <span class="select">
-                  <select>
+                  <select name="subject">
                     <option selected>Venue Hire</option>
                     <option>Party in the Park</option>
                     <option>Pitch Hire</option>
@@ -120,6 +132,7 @@ const ContactPage = () => {
                   class="textarea is-primary"
                   placeholder="Your Message Here"
                   rows="10"
+                  name="message"
                 ></textarea>
               </div>
             </div>
