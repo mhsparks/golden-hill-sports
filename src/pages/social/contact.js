@@ -48,76 +48,74 @@ const ContactPage = () => {
       </section>
       <section class="section">
         <div class="container">
-          <div class="field">
-            <label class="label">Contact Name</label>
-            <div class="control">
-              <p class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Your Name" />
-                <span class="icon is-small is-left">
-                  <FontAwesomeIcon icon={faUser} />
+          <form name="contact" method="POST" data-netlify="true">
+            <div class="field">
+              <label class="label">Contact Name</label>
+              <div class="control">
+                <p class="control has-icons-left has-icons-right">
+                  <input class="input" type="text" placeholder="Your Name" />
+                  <span class="icon is-small is-left">
+                    <FontAwesomeIcon icon={faUser} />
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <p class="control has-icons-left">
+                  <input
+                    class="input"
+                    type="email"
+                    placeholder="Email Address"
+                  />
+                  <span class="icon is-small is-left">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Phone</label>
+              <div class="control">
+                <p class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Phone Number" />
+                  <span class="icon is-small is-left">
+                    <FontAwesomeIcon icon={faMobileAlt} />
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Subject</label>
+              <p class="control ">
+                <span class="select">
+                  <select>
+                    <option selected>Venue Hire</option>
+                    <option>Party in the Park</option>
+                    <option>Pitch Hire</option>
+                    <option>General Enquiry</option>
+                  </select>
                 </span>
               </p>
             </div>
-          </div>
 
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
-              <p class="control has-icons-left">
-                <input
-                  class="input"
-                  type="password"
-                  placeholder="Email Address"
-                />
-                <span class="icon is-small is-left">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </span>
-              </p>
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea
+                  class="textarea is-primary"
+                  placeholder="Your Message Here"
+                  rows="10"
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <div class="field">
-            <label class="label">Phone</label>
             <div class="control">
-              <p class="control has-icons-left">
-                <input
-                  class="input"
-                  type="password"
-                  placeholder="Phone Number"
-                />
-                <span class="icon is-small is-left">
-                  <FontAwesomeIcon icon={faMobileAlt} />
-                </span>
-              </p>
+              <button class="button is-primary">Submit Message</button>
             </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Subject</label>
-            <p class="control ">
-              <span class="select">
-                <select>
-                  <option selected>Venue Hire</option>
-                  <option>Party in the Park</option>
-                  <option>Pitch Hire</option>
-                  <option>General Enquiry</option>
-                </select>
-              </span>
-            </p>
-          </div>
-
-          <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-              <textarea
-                class="textarea is-primary"
-                placeholder="Your Message Here"
-                rows="10"
-              ></textarea>
-            </div>
-          </div>
-          <div class="control">
-            <button class="button is-primary">Submit Message</button>
-          </div>
+          </form>
         </div>
       </section>
     </Layout>
