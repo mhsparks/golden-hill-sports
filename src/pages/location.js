@@ -1,10 +1,8 @@
-import { graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { Link } from "gatsby";
 import React from "react";
 import Layout from "../components/layout";
-import Map from "../components/Map";
 
-const LocationPage = ({ data }) => {
+const LocationPage = () => {
   return (
     <Layout>
       <section class="hero is-primary">
@@ -47,9 +45,12 @@ const LocationPage = ({ data }) => {
           <div class="card">
             <div class="columns">
               <div class="column">
-                <figure class="image">
-                  <Img fluid={data.map.childImageSharp.fluid} />
-                </figure>
+                <iframe
+                  frameborder="0"
+                  style={{ border: 0, height: 400, width: "100%" }}
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBoOXBhVo6zXxN95rQo3K9MZqYuYDMa2Pc&q=Golden+Hill+Sports&zoom=16"
+                  allowfullscreen
+                ></iframe>
               </div>
               <div class="column">
                 <div class="card-content has-background-primary has-text-white">
@@ -77,23 +78,7 @@ const LocationPage = ({ data }) => {
           </div>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <Map />
-        </div>
-      </section>
     </Layout>
   );
 };
 export default LocationPage;
-export const query = graphql`
-  query {
-    map: file(relativePath: { eq: "map1.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
