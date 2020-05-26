@@ -68,6 +68,7 @@ const ContactPage = () => {
                   <input
                     class="input"
                     type="text"
+                    required
                     placeholder="Your Name"
                     name="name"
                   />
@@ -85,6 +86,7 @@ const ContactPage = () => {
                   <input
                     class="input"
                     type="email"
+                    required
                     placeholder="Email Address"
                     name="email"
                   />
@@ -133,6 +135,7 @@ const ContactPage = () => {
                   placeholder="Your Message Here"
                   rows="10"
                   name="message"
+                  required
                 ></textarea>
               </div>
             </div>
