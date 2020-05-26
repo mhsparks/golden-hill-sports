@@ -65,7 +65,12 @@ const CricketPage = ({ data }) => {
                         <br />
                         <br />
                         <div class="buttons">
-                          <div class="button is-primary">Find out More</div>
+                          <Link
+                            className="button is-primary is-size-6-desktop is-size-7-mobile"
+                            to="/cricket/senior/"
+                          >
+                            More
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -93,7 +98,12 @@ const CricketPage = ({ data }) => {
                         <br />
                         <br />
                         <div class="buttons">
-                          <div class="button is-primary">Find out More</div>
+                          <Link
+                            className="button is-primary is-size-6-desktop is-size-7-mobile"
+                            to="/cricket/women/"
+                          >
+                            More
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -123,7 +133,12 @@ const CricketPage = ({ data }) => {
                         <br />
                         <br />
                         <div class="buttons">
-                          <div class="button is-primary">Find out More</div>
+                          <Link
+                            className="button is-primary is-size-6-desktop is-size-7-mobile"
+                            to="/cricket/junior/"
+                          >
+                            More
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -151,7 +166,12 @@ const CricketPage = ({ data }) => {
                         <br />
                         <br />
                         <div class="buttons">
-                          <div class="button is-primary">Find out More</div>
+                          <Link
+                            className="button is-primary is-size-6-desktop is-size-7-mobile"
+                            to="/cricket/girls/"
+                          >
+                            More
+                          </Link>
                         </div>
                       </div>
                     </div>
