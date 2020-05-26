@@ -26,69 +26,153 @@ const CricketPage = ({ data }) => {
               </figure>
             </div>
             <div class="columns">
-              <div class="column is-two-thirds">
+              <div class="column">
                 <div class="card-content">
                   <p>
-                    Welcome to Golden Hill Cricket Club.
-                    <br />
-                    <br />
-                    We are located about 3 miles north of Bristol city centre in
-                    a pleasant residential area.
-                    <br />
-                    <br />
-                    With two pitches, we run five Saturday{" "}
-                    <span class="has-text-weight-bold">
-                      <Link to="/cricket/senior/">senior</Link>
+                    <span class="is-size-3 has-text-primary">
+                      Welcome to Golden Hill Cricket Club
+                      <br />
                     </span>{" "}
-                    sides in the Bristol & District Cricket League and have a
-                    youth policy which rivals any local club; it is one of the
-                    biggest and most successful in the region.
-                    <br />
-                    <br /> In addition the club also puts out a midweek XI
-                    playing T20 matches on summer evenings, and an indoor side
-                    which competes in the Bristol Indoor Cricket League during
-                    the winter months. <br />
-                    <br />
-                    We run a comprehensive youth programme for{" "}
-                    <span class="has-text-weight-bold">
-                      {" "}
-                      <Link to="/cricket/junior/">boys</Link>
-                    </span>{" "}
-                    with opportunities to progress through the sides, along with
-                    a successful{" "}
-                    <span class="has-text-weight-bold">
-                      <Link to="/cricket/women/">women's</Link>
-                    </span>{" "}
-                    side and a hugely popular
-                    <span class="has-text-weight-bold">
-                      <Link to="/cricket/girls/"> girls</Link>
-                    </span>{" "}
-                    programme. So we probably have a team to suit your ability,
-                    age or gender. <br />
-                    <br />
-                    Come and join our friendly and welcoming club!
+                    a friendly and welcoming club,{" "}
+                    <Link className="has-text-weight-bold" to="/location/">
+                      located
+                    </Link>{" "}
+                    about 3 miles north of Bristol city centre, in a pleasant
+                    residential area.
                   </p>
-                  <br />
                 </div>
-              </div>
-              <div class="column is-one-third ">
-                <div class="card">
-                  <div class="card-content">
-                    <a
-                      class="twitter-timeline"
-                      data-width="300"
-                      data-height="400"
-                      href="https://twitter.com/GoldenHillCC?ref_src=twsrc%5Etfw"
-                    >
-                      Tweets by GoldenHillCC
-                    </a>{" "}
-                    <script
-                      async
-                      src="https://platform.twitter.com/widgets.js"
-                      charset="utf-8"
-                    ></script>
+                <div class="columns">
+                  <div class="column">
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title has-background-primary has-text-white">
+                          Senior Men
+                        </p>
+                      </header>
+                      <div class="card-image">
+                        <figure class="image">
+                          <Img
+                            fluid={data.Senior1.childImageSharp.fluid}
+                            alt="Placeholder"
+                          />
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                        Egestas pretium aenean pharetra magna ac placerat
+                        vestibulum. In vitae turpis massa sed elementum tempus
+                        egestas. Cursus mattis molestie a iaculis at erat
+                        pellentesque. Amet mauris commodo quis imperdiet massa.
+                        <br />
+                        <br />
+                        <div class="buttons">
+                          <div class="button is-primary">Find out More</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title has-background-primary has-text-white">
+                          Women
+                        </p>
+                      </header>
+                      <div class="card-image">
+                        <figure class="image">
+                          <Img
+                            fluid={data.Women1.childImageSharp.fluid}
+                            alt="Placeholder"
+                          />
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                        Egestas pretium aenean pharetra magna ac placerat
+                        vestibulum. In vitae turpis massa sed elementum tempus
+                        egestas. Cursus mattis molestie a iaculis at erat
+                        pellentesque. Amet mauris commodo quis imperdiet massa.
+                        <br />
+                        <br />
+                        <div class="buttons">
+                          <div class="button is-primary">Find out More</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div class="columns">
+                  <div class="column">
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title has-background-primary has-text-white">
+                          Boys Youth
+                        </p>
+                      </header>
+                      <div class="card-image">
+                        <figure class="image">
+                          <Img
+                            fluid={data.Youth1.childImageSharp.fluid}
+                            alt="Placeholder"
+                          />
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                        Egestas pretium aenean pharetra magna ac placerat
+                        vestibulum. In vitae turpis massa sed elementum tempus
+                        egestas. Cursus mattis molestie a iaculis at erat
+                        pellentesque. Amet mauris commodo quis imperdiet massa.
+                        <br />
+                        <br />
+                        <div class="buttons">
+                          <div class="button is-primary">Find out More</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title has-background-primary has-text-white">
+                          Girls Youth
+                        </p>
+                      </header>
+                      <div class="card-image">
+                        <figure class="image">
+                          <Img
+                            fluid={data.Girls1.childImageSharp.fluid}
+                            alt="Placeholder"
+                          />
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                        Egestas pretium aenean pharetra magna ac placerat
+                        vestibulum. In vitae turpis massa sed elementum tempus
+                        egestas. Cursus mattis molestie a iaculis at erat
+                        pellentesque. Amet mauris commodo quis imperdiet massa.
+                        <br />
+                        <br />
+                        <div class="buttons">
+                          <div class="button is-primary">Find out More</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-3 has-addons is-centered">
+                <a
+                  class="twitter-timeline"
+                  data-width="300"
+                  data-height="1000"
+                  href="https://twitter.com/GoldenHillCC?ref_src=twsrc%5Etfw"
+                >
+                  Tweets by GoldenHillCC
+                </a>{" "}
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
               </div>
             </div>
           </div>
@@ -102,6 +186,34 @@ export default CricketPage;
 
 export const query = graphql`
   query {
+    Girls1: file(relativePath: { eq: "girls-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Youth1: file(relativePath: { eq: "youth-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Women1: file(relativePath: { eq: "women-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Senior1: file(relativePath: { eq: "senior-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     CricketHome: file(relativePath: { eq: "cricket-home.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
