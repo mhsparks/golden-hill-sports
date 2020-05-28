@@ -34,7 +34,6 @@
   cursor: pointer;
 }
 
-
 .navbar-item {
   &.is-hoverable:hover {
     .navbar-dropdown {
@@ -42,7 +41,6 @@
     }
   }
 }
-
 
 // If need, change your variables before importing Bulma
 $navbar-item-hover-background-color: #ebf4e4;
