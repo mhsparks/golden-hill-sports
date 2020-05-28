@@ -78,6 +78,9 @@ const Header = () => {
                   <Link className="navbar-item" to="/cricket/policies/">
                     Club Policies
                   </Link>
+                  <Link className="navbar-item" to="/cricket/honours/">
+                    Club Honours
+                  </Link>
                   <Link className="navbar-item" to="/cricket/sponsors/">
                     Sponsors
                   </Link>

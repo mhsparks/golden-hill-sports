@@ -110,6 +110,13 @@ const GirlsPage = ({ data }) => {
                 which typically starts in late January through to July/August –
                 some years games in September.
                 <br />
+                <a
+                  href="http://goldenhillsports.com/wp-content/uploads/2019/12/Golden-Hill-Girls-Cricket-Registration-2020-1.docx"
+                  alt="Download the registration form here"
+                >
+                  Download the registration form here.
+                </a>
+                <br />
                 <br />
                 <p class="has-text-primary has-text-weight-bold">
                   Taster Sessions

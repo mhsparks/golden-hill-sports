@@ -17,43 +17,38 @@ const CoachingPage = () => {
           </div>
         </div>
       </section>
-
       <section class="section">
         <div class="container">
-          <nav class="panel is-primary">
-            <p class="panel-heading">Coaching Links</p>
+          <p class="panel-heading has-background-primary has-text-white">
+            The Cricket Consultant
+          </p>
 
-            <a class="panel-block">
-              <span class="icon">
+          <ul class="panel is-primary">
+            <li class="panel-block">
+              <span class="icon has-addons is-left">
                 <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
               </span>
-              <a href={Batting} class="has-background-information">
-                {" "}
-                The Cricket Consultant: Batting Drills
-              </a>
-            </a>
-            <a class="panel-block">
-              <span class="icon">
+              <a href={Batting}>Batting Drills</a>
+            </li>
+            <li class="panel-block">
+              <span class="icon has-addons is-left">
                 <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
               </span>
-              <a href={Bowling}> The Cricket Consultant: Pace Bowling Drills</a>
-            </a>
-            <a class="panel-block">
-              <span class="icon">
+              <a href={Bowling}>Pace Bowling Drills</a>
+            </li>
+            <li class="panel-block">
+              <span class="icon has-addons is-left">
                 <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
               </span>
-              <a href={Fielding}> The Cricket Consultant: Fielding Drills</a>
-            </a>
-            <a class="panel-block">
-              <span class="icon">
+              <a href={Fielding}>Fielding Drills</a>
+            </li>
+            <li class="panel-block">
+              <span class="icon has-addons is-left">
                 <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
               </span>
-              <a href={Wicketkeeping}>
-                {" "}
-                The Cricket Consultant: Wicketkeeping Drills
-              </a>
-            </a>
-          </nav>
+              <a href={Wicketkeeping}>Wicketkeeping Drills</a>
+            </li>
+          </ul>
         </div>
       </section>
     </Layout>

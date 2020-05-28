@@ -182,7 +182,7 @@ const CricketPage = ({ data }) => {
               <div class="column is-3 has-addons is-centered">
                 <a
                   class="twitter-timeline"
-                  data-width="300"
+                  data-width="100%"
                   data-height="1000"
                   href="https://twitter.com/GoldenHillCC?ref_src=twsrc%5Etfw"
                 >
