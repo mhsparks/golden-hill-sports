@@ -19,7 +19,10 @@ const WomensPage = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li class="is-active">
-                <Link to="/cricket/women/">Womens Cricket</Link>
+                <Link to="/cricket/women/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/womenhonours/">Honours</Link>
               </li>
               <li>
                 <Link to="/cricket/womengallery/">Gallery</Link>
@@ -30,7 +33,7 @@ const WomensPage = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>
@@ -42,7 +45,10 @@ const WomensPage = ({ data }) => {
           <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li class="is-active">
-                <Link to="/cricket/women/">Womens Cricket</Link>
+                <Link to="/cricket/women/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/womenhonours/">Honours</Link>
               </li>
               <li>
                 <Link to="/cricket/womengallery/">Gallery</Link>
@@ -53,7 +59,7 @@ const WomensPage = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>

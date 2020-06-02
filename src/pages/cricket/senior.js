@@ -18,14 +18,16 @@ const SeniorPage = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li class="is-active">
-                <Link to="/cricket/senior/">Senior Cricket</Link>
+                <Link to="/cricket/senior/">Home</Link>
               </li>
-
+              <li>
+                <Link to="/cricket/seniorhonours/">Honours</Link>
+              </li>
               <li>
                 <Link to="/cricket/seniorgallery/">Gallery</Link>
               </li>
               <li>
-                <Link to="/cricket/history/">History</Link>
+                <Link to="/cricket/seniorhistory/">History</Link>
               </li>
             </ul>
           </div>
@@ -38,12 +40,14 @@ const SeniorPage = ({ data }) => {
               <li class="is-active">
                 <Link to="/cricket/senior/">Senior Cricket</Link>
               </li>
-
+              <li>
+                <Link to="/cricket/seniorhonours/">Honours</Link>
+              </li>
               <li>
                 <Link to="/cricket/seniorgallery/">Gallery</Link>
               </li>
               <li>
-                <Link to="/cricket/history/">History</Link>
+                <Link to="/cricket/seniorhistory/">History</Link>
               </li>
             </ul>
           </div>

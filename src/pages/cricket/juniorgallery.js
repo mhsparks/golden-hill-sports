@@ -7,39 +7,23 @@ const JuniorGallery = ({ data }) => {
   const pictures = [
     [
       { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-    ],
-    [
+      { alt: "Some text", src: "youthhome1" },
       { alt: "Some text", src: "youth2" },
-      { alt: "Some different text", src: "youth5" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
     ],
     [
+      { alt: "Some text", src: "youthhome2" },
+      { alt: "Some text", src: "youth6" },
       { alt: "Some text", src: "youth3" },
-      { alt: "Some different text", src: "youth6" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
     ],
     [
-      { alt: "Some text", src: "youth3" },
-      { alt: "Some different text", src: "youth6" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
+      { alt: "Some text", src: "youthhome3" },
+      { alt: "Some text", src: "youth5" },
+      { alt: "Some text", src: "youth7" },
     ],
     [
-      { alt: "Some text", src: "youth3" },
-      { alt: "Some different text", src: "youth6" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-    ],
-    [
-      { alt: "Some text", src: "youth3" },
-      { alt: "Some different text", src: "youth6" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
+      { alt: "Some text", src: "youth4" },
+      { alt: "Some text", src: "youth9" },
+      { alt: "Some text", src: "youth8" },
     ],
   ];
   return (
@@ -47,7 +31,7 @@ const JuniorGallery = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Gallery</h1>
+            <h1 class="title is-size-4">Boys Youth Gallery</h1>
           </div>
         </div>
       </section>
@@ -56,7 +40,10 @@ const JuniorGallery = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li>
-                <Link to="/cricket/junior/">Boys Youth Cricket</Link>
+                <Link to="/cricket/junior/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/juniorhonours/">Honours</Link>
               </li>
               <li class="is-active ">
                 <Link to="/cricket/juniorgallery/">Gallery</Link>
@@ -67,7 +54,7 @@ const JuniorGallery = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>
@@ -79,7 +66,10 @@ const JuniorGallery = ({ data }) => {
           <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li>
-                <Link to="/cricket/junior/">Boys Youth Cricket</Link>
+                <Link to="/cricket/junior/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/juniorhonours/">Honours</Link>
               </li>
               <li class="is-active ">
                 <Link to="/cricket/juniorgallery/">Gallery</Link>
@@ -90,7 +80,7 @@ const JuniorGallery = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>
@@ -135,6 +125,24 @@ export const query = graphql`
       ...fluidImage
     }
     youth6: file(relativePath: { eq: "youth-6.jpg" }) {
+      ...fluidImage
+    }
+    youthhome1: file(relativePath: { eq: "youth-home-1.jpg" }) {
+      ...fluidImage
+    }
+    youthhome2: file(relativePath: { eq: "youth-home-2.jpg" }) {
+      ...fluidImage
+    }
+    youthhome3: file(relativePath: { eq: "youth-home-3.jpg" }) {
+      ...fluidImage
+    }
+    youth7: file(relativePath: { eq: "youth-7.jpg" }) {
+      ...fluidImage
+    }
+    youth8: file(relativePath: { eq: "youth-8.jpg" }) {
+      ...fluidImage
+    }
+    youth9: file(relativePath: { eq: "youth-9.jpg" }) {
       ...fluidImage
     }
   }

@@ -61,7 +61,7 @@ const Header = () => {
                     Overview
                   </Link>
                   <Link className="navbar-item" to="/cricket/senior/">
-                    Senior
+                    Senior Men
                   </Link>
                   <Link className="navbar-item" to="/cricket/women/">
                     Women
@@ -80,6 +80,9 @@ const Header = () => {
                   </Link>
                   <Link className="navbar-item" to="/cricket/honours/">
                     Club Honours
+                  </Link>
+                  <Link className="navbar-item" to="/cricket/history/">
+                    Club History
                   </Link>
                   <Link className="navbar-item" to="/cricket/sponsors/">
                     Sponsors

@@ -47,7 +47,7 @@ const SeniorGallery = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Gallery</h1>
+            <h1 class="title is-size-4">Senior Men Gallery</h1>
           </div>
         </div>
       </section>
@@ -56,14 +56,17 @@ const SeniorGallery = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li>
-                <Link to="/cricket/senior/">Senior Cricket</Link>
+                <Link to="/cricket/senior/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/seniorhonours/">Honours</Link>
               </li>
 
               <li class="is-active">
                 <Link to="/cricket/seniorgallery/">Gallery</Link>
               </li>
               <li>
-                <Link to="/cricket/history/">History</Link>
+                <Link to="/cricket/seniorhistory/">History</Link>
               </li>
             </ul>
           </div>
@@ -74,13 +77,16 @@ const SeniorGallery = ({ data }) => {
           <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li>
-                <Link to="/cricket/senior/">Senior Cricket</Link>
+                <Link to="/cricket/senior/">Home</Link>
               </li>
-              <li class="has-text-primary">
+              <li>
+                <Link to="/cricket/seniorhonours/">Honours</Link>
+              </li>
+              <li class="is-active">
                 <Link to="/cricket/seniorgallery/">Gallery</Link>
               </li>
               <li>
-                <Link to="/cricket/history/">History</Link>
+                <Link to="/cricket/seniorhistory/">History</Link>
               </li>
             </ul>
           </div>

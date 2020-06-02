@@ -47,7 +47,7 @@ const WomenGallery = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Gallery</h1>
+            <h1 class="title is-size-4">Womens Gallery</h1>
           </div>
         </div>
       </section>
@@ -56,7 +56,10 @@ const WomenGallery = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li>
-                <Link to="/cricket/women/">Womens Cricket</Link>
+                <Link to="/cricket/women/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/womenhonours/">Honours</Link>
               </li>
               <li class="is-active">
                 <Link to="/cricket/womengallery/">Gallery</Link>
@@ -67,7 +70,7 @@ const WomenGallery = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>
@@ -79,7 +82,10 @@ const WomenGallery = ({ data }) => {
           <div class="tabs is-small is-hidden-desktop is-hidden-tablet is-boxed">
             <ul>
               <li>
-                <Link to="/cricket/women/">Womens Cricket</Link>
+                <Link to="/cricket/women/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/womenhonours/">Honours</Link>
               </li>
               <li class="is-active">
                 <Link to="/cricket/womengallery/">Gallery</Link>
@@ -90,7 +96,7 @@ const WomenGallery = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>

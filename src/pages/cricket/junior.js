@@ -18,7 +18,10 @@ const JuniorPage = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li class="is-active">
-                <Link to="/cricket/junior/">Boys Youth Cricket</Link>
+                <Link to="/cricket/junior/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/juniorhonours/">Honours</Link>
               </li>
               <li>
                 <Link to="/cricket/juniorgallery/">Gallery</Link>
@@ -29,7 +32,7 @@ const JuniorPage = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>
@@ -41,7 +44,10 @@ const JuniorPage = ({ data }) => {
           <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li class="is-active">
-                <Link to="/cricket/junior/">Boys Youth Cricket</Link>
+                <Link to="/cricket/junior/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/juniorhonours/">Honours</Link>
               </li>
               <li>
                 <Link to="/cricket/juniorgallery/">Gallery</Link>
@@ -52,7 +58,7 @@ const JuniorPage = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>
@@ -64,18 +70,19 @@ const JuniorPage = ({ data }) => {
           <div class="card">
             <div class="columns">
               <div class="column">
-                <div class="card-image">
-                  <figure class="image">
-                    <Img fluid={data.youth1.childImageSharp.fluid} />
-                  </figure>
-                </div>
+                <figure class="image">
+                  <Img fluid={data.youthhome1.childImageSharp.fluid} />
+                </figure>
               </div>
               <div class="column">
-                <div class="card-image">
-                  <figure class="image">
-                    <Img fluid={data.youth2.childImageSharp.fluid} />
-                  </figure>
-                </div>
+                <figure class="image">
+                  <Img fluid={data.youthhome2.childImageSharp.fluid} />
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image">
+                  <Img fluid={data.youthhome3.childImageSharp.fluid} />
+                </figure>
               </div>
             </div>
 
@@ -159,16 +166,23 @@ export default JuniorPage;
 
 export const query = graphql`
   query {
-    youth1: file(relativePath: { eq: "youth-1.jpg" }) {
+    youthhome1: file(relativePath: { eq: "youth-home-1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 2688) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    youth2: file(relativePath: { eq: "youth-2.jpg" }) {
+    youthhome2: file(relativePath: { eq: "youth-home-2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 2688) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    youthhome3: file(relativePath: { eq: "youth-home-3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2688) {
           ...GatsbyImageSharpFluid
         }
       }

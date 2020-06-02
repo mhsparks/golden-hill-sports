@@ -19,7 +19,7 @@ const FootballPage = ({ data }) => {
             <div class="card-image">
               <figure class="image">
                 <Img
-                  fluid={data.sonicsteam2.childImageSharp.fluid}
+                  fluid={data.sonicshomepage.childImageSharp.fluid}
                   alt="Golden Hill Sonics"
                 />
               </figure>
@@ -97,9 +97,9 @@ export default FootballPage;
 
 export const query = graphql`
   query {
-    sonicsteam2: file(relativePath: { eq: "sonics-2.jpg" }) {
+    sonicshomepage: file(relativePath: { eq: "sonics-homepage.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 2688) {
           ...GatsbyImageSharpFluid
         }
       }

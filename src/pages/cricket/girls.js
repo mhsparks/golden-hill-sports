@@ -18,7 +18,10 @@ const GirlsPage = ({ data }) => {
           <div class="tabs is-boxed is-hidden-mobile">
             <ul>
               <li class="is-active">
-                <Link to="/cricket/girls/">Girls Youth Cricket</Link>
+                <Link to="/cricket/girls/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/girlshonours/">Honours</Link>
               </li>
               <li>
                 <Link to="/cricket/girlsgallery/">Gallery</Link>
@@ -29,7 +32,7 @@ const GirlsPage = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>
@@ -41,7 +44,10 @@ const GirlsPage = ({ data }) => {
           <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li class="is-active">
-                <Link to="/cricket/girls/">Girls Youth Cricket</Link>
+                <Link to="/cricket/girls/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cricket/girlshonours/">Honours</Link>
               </li>
               <li>
                 <Link to="/cricket/girlsgallery/">Gallery</Link>
@@ -52,7 +58,7 @@ const GirlsPage = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Fixtures & Results
+                  Matches
                 </a>
               </li>
             </ul>
@@ -65,18 +71,21 @@ const GirlsPage = ({ data }) => {
           <div class="card">
             <div class="columns">
               <div class="column">
-                <div class="card-image">
-                  <figure class="image">
-                    <Img fluid={data.girls1.childImageSharp.fluid} />
-                  </figure>
-                </div>
+                <figure class="image">
+                  <Img fluid={data.girlshome2.childImageSharp.fluid} />
+                </figure>
               </div>
+
               <div class="column">
-                <div class="card-image">
-                  <figure class="image">
-                    <Img fluid={data.girls2.childImageSharp.fluid} />
-                  </figure>
-                </div>
+                <figure class="image">
+                  <Img fluid={data.girlshome1.childImageSharp.fluid} />
+                </figure>
+              </div>
+
+              <div class="column">
+                <figure class="image">
+                  <Img fluid={data.girlshome4.childImageSharp.fluid} />
+                </figure>
               </div>
             </div>
 
@@ -198,16 +207,30 @@ export default GirlsPage;
 
 export const query = graphql`
   query {
-    girls1: file(relativePath: { eq: "girls-1.jpg" }) {
+    girlshome1: file(relativePath: { eq: "girlshome-1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    girls2: file(relativePath: { eq: "girls-2.jpg" }) {
+    girlshome2: file(relativePath: { eq: "girlshome-2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    girlshome3: file(relativePath: { eq: "girlshome-3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    girlshome4: file(relativePath: { eq: "girlshome-4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid
         }
       }
