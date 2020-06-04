@@ -38,7 +38,7 @@ const SeniorPage = ({ data }) => {
           <div class="tabs is-small is-boxed is-hidden-desktop is-hidden-tablet">
             <ul>
               <li class="is-active">
-                <Link to="/cricket/senior/">Senior Cricket</Link>
+                <Link to="/cricket/senior/">Home</Link>
               </li>
               <li>
                 <Link to="/cricket/seniorhonours/">Honours</Link>

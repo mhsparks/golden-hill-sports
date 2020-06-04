@@ -120,7 +120,7 @@ const CricketPage = ({ data }) => {
                       <div class="card-image">
                         <figure class="image">
                           <Img
-                            fluid={data.Youth1.childImageSharp.fluid}
+                            fluid={data.Youthindex1.childImageSharp.fluid}
                             alt="Placeholder"
                           />
                         </figure>
@@ -213,7 +213,7 @@ export const query = graphql`
         }
       }
     }
-    Youth1: file(relativePath: { eq: "youth-1.jpg" }) {
+    Youthindex1: file(relativePath: { eq: "youth-index-1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

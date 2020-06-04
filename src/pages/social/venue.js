@@ -118,12 +118,21 @@ const VenuePage = ({ data }) => {
                 <br />
                 <p class="has-text-weight-bold has-text-primary">Booking</p>
                 Please feel free to fill in the contact form using the link
-                above regarding your booking or alternatively you can call
-                07306034621 to discuss it over the phone.
+                above regarding your booking or alternatively you can call 07306
+                034621 to discuss it over the phone.
                 <br />
                 <br />
               </p>
             </div>
+            <iframe
+              src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=c29jaWFsQGdvbGRlbmhpbGxzcG9ydHMuY29t&amp;color=%23D81B60"
+              style={{
+                border: 0,
+                width: "100%",
+                height: 600,
+                frameborder: 0,
+              }}
+            ></iframe>
           </div>
         </div>
       </section>

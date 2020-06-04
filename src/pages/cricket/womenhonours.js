@@ -27,13 +27,7 @@ const WomenHonours = () => {
                 <Link to="/cricket/womengallery/">Gallery</Link>
               </li>
               <li>
-                <a
-                  href="https://goldenhill.play-cricket.com/Teams/150046"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Matches
-                </a>
+                <Link to="/cricket/womenhistory/">History</Link>
               </li>
             </ul>
           </div>
@@ -53,13 +47,9 @@ const WomenHonours = () => {
                 <Link to="/cricket/womengallery/">Gallery</Link>
               </li>
               <li>
-                <a
-                  href="https://goldenhill.play-cricket.com/Teams/150046"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Matches
-                </a>
+                <li>
+                  <Link to="/cricket/womenhistory/">History</Link>
+                </li>
               </li>
             </ul>
           </div>
