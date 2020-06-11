@@ -1,9 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
-import Batting from "../../pdfs/TCC_Batting_Document.pdf";
-import Bowling from "../../pdfs/TCC_Bowling_Document .pdf";
-import Fielding from "../../pdfs/TCC_Fielding_Document .pdf";
-import Wicketkeeping from "../../pdfs/TCC_Wicketkeeping_Document.pdf";
+
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -28,25 +25,49 @@ const CoachingPage = () => {
               <span class="icon has-addons is-left">
                 <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
               </span>
-              <a href={Batting}>Batting Drills</a>
+              <a
+                href="https://ghs-static.storage.googleapis.com/pdf/batting.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Batting Drills
+              </a>
             </li>
             <li class="panel-block">
               <span class="icon has-addons is-left">
                 <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
               </span>
-              <a href={Bowling}>Pace Bowling Drills</a>
+              <a
+                href="https://ghs-static.storage.googleapis.com/pdf/bowling.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pace Bowling Drills
+              </a>
             </li>
             <li class="panel-block">
               <span class="icon has-addons is-left">
                 <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
               </span>
-              <a href={Fielding}>Fielding Drills</a>
+              <a
+                href="https://ghs-static.storage.googleapis.com/pdf/fielding.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fielding Drills
+              </a>
             </li>
             <li class="panel-block">
               <span class="icon has-addons is-left">
                 <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
               </span>
-              <a href={Wicketkeeping}>Wicketkeeping Drills</a>
+              <a
+                href="https://ghs-static.storage.googleapis.com/pdf/wicketkeeping.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wicketkeeping Drills
+              </a>
             </li>
           </ul>
         </div>

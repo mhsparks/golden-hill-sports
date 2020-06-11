@@ -70,9 +70,7 @@ const SeniorPage = ({ data }) => {
                 <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title has-background-primary has-text-white">
-                      1st XI
-                    </p>
+                    <p class="card-header-title">1st XI</p>
                   </header>
                   <div class="card-content">
                     <div class="media">
@@ -119,9 +117,7 @@ const SeniorPage = ({ data }) => {
                 <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title has-background-primary has-text-white">
-                      2nd XI
-                    </p>
+                    <p class="card-header-title">2nd XI</p>
                   </header>
                   <div class="card-content">
                     <div class="media">
@@ -167,9 +163,7 @@ const SeniorPage = ({ data }) => {
                 <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title has-background-primary has-text-white">
-                      3rd XI
-                    </p>
+                    <p class="card-header-title">3rd XI</p>
                   </header>
                   <div class="card-content">
                     <div class="media">
@@ -215,9 +209,7 @@ const SeniorPage = ({ data }) => {
                 <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title has-background-primary has-text-white">
-                      4th XI
-                    </p>
+                    <p class="card-header-title">4th XI</p>
                   </header>
                   <div class="card-content">
                     <div class="media">
@@ -263,9 +255,7 @@ const SeniorPage = ({ data }) => {
                 <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title has-background-primary has-text-white">
-                      5th XI
-                    </p>
+                    <p class="card-header-title">5th XI</p>
                   </header>
                   <div class="card-content">
                     <div class="media">
@@ -314,62 +304,70 @@ const SeniorPage = ({ data }) => {
               <div class="column">
                 <div class="card-content">
                   <p class="has-text-primary has-text-weight-bold is-size-4">
-                    Golden Hill Cricket Club
+                    Golden Hill Senior Men
                   </p>
                   <br />
+                  <p class="has-text-weight-bold has-text-primary">
+                    Our teams
+                  </p>{" "}
                   <p>
-                    <p class="has-text-weight-bold has-text-primary">
-                      Our teams
-                    </p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim lobortis scelerisque fermentum dui faucibus in
-                    ornare quam viverra. Et ultrices neque ornare aenean euismod
-                    elementum. Nisi est sit amet facilisis magna etiam tempor
-                    orci eu.
+                    Golden Hill CC field 5 league sides on a Saturday to compete
+                    across the breadth of the cricketing league pyramid. <br />
                     <br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim lobortis scelerisque fermentum dui faucibus in
-                    ornare quam viverra. Et ultrices neque ornare aenean euismod
-                    elementum. Nisi est sit amet facilisis magna etiam tempor
-                    orci eu.
+                    Our sides comprise everything from the super-talented
+                    youngsters to the wily old foxes, the enthusiastic but
+                    ‘village’, to the press-ganged occasional player or the
+                    dedicated club stalwart.
                     <br />
                     <br />
-                    <p class="has-text-weight-bold has-text-primary">
-                      What divisions we play in
-                    </p>
-                    Egestas pretium aenean pharetra magna ac placerat
-                    vestibulum. In vitae turpis massa sed elementum tempus
-                    egestas. Cursus mattis molestie a iaculis at erat
-                    pellentesque. Amet mauris commodo quis imperdiet massa.
+                    There is a place for everyone at our club, no doubt enticed
+                    by our wonderful cricket teas, our great facilities and our
+                    welcoming environment. <br />
                     <br />
-                    Egestas pretium aenean pharetra magna ac placerat
-                    vestibulum. In vitae turpis massa sed elementum tempus
-                    egestas. Cursus mattis molestie a iaculis at erat
-                    pellentesque. Amet mauris commodo quis imperdiet massa.
-                    <br />
-                    <br />
-                    <p class="has-text-weight-bold has-text-primary">
-                      Membership fees
-                    </p>
-                    Ut morbi tincidunt augue interdum velit. Pretium aenean
-                    pharetra magna ac. Faucibus interdum posuere lorem ipsum
-                    dolor sit.
+                    In addition to Saturday League cricket, the club plays the
+                    occasional friendly match at the weekend together with a
+                    calendar of midweek T20 fixtures.
+                  </p>
+                  <br />
+                  <p class="has-text-weight-bold has-text-primary">
+                    What divisions we play in
+                  </p>
+                  <p>
+                    After back-to-back promotions, our 1st XI play in the
+                    Bristol and North Somerset division of the West of England
+                    Premier League (WEPL), equivalent to the third tier of
+                    regional club cricket.
                     <br />
                     <br />
-                    <p class="has-text-weight-bold has-text-primary">
-                      Training nights
-                    </p>
-                    Molestie nunc non blandit massa. Sed nisi lacus sed viverra
-                    tellus. In aliquam sem fringilla ut morbi tincidunt augue
-                    interdum velit. Viverra ipsum nunc aliquet bibendum enim
-                    facilisis. Cras tincidunt lobortis feugiat vivamus.
+                    The 2nd XI play in Division 4 of the Bristol and District
+                    Cricket League; the 3rds play in Division 9, the 4ths in
+                    Division 11 and the 5ths in Division 14. <br />
                     <br />
-                    Molestie nunc non blandit massa. Sed nisi lacus sed viverra
-                    tellus. In aliquam sem fringilla ut morbi tincidunt augue
-                    interdum velit. Viverra ipsum nunc aliquet bibendum enim
-                    facilisis. Cras tincidunt lobortis feugiat vivamus.
+                    All are committed to climbing even further up the league
+                    pyramid by retaining a competitive edge and a healthy and
+                    fun attitude to our game.
+                  </p>
+                  <br />
+                  <p class="has-text-weight-bold has-text-primary">
+                    Membership fees
+                  </p>
+                  <p>
+                    Annual subscription rates for senior members are £75.00 per
+                    year. Match fees are set at £10 per match or £5 for
+                    concessions. Winter nets are charged on a pay when you play
+                    basis.
+                  </p>
+                  <br />
+                  <p class="has-text-weight-bold has-text-primary">
+                    Training nights
+                  </p>
+                  <p>
+                    Senior summer-time training takes place on Tuesday evenings
+                    from 6pm for which there is no charge. <br />
+                    <br />
+                    When the ground is open, and our youth section is not
+                    training, our excellent practice facilities can also be
+                    used.
                   </p>
                 </div>
               </div>

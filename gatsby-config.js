@@ -5,6 +5,21 @@ module.exports = {
     author: `ghs@cyki.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-instagram-embed",
+            options: {
+              width: 320,
+              height: 320,
+            },
+          },
+          `gatsby-remark-responsive-iframe`, // optional plugin but recommended
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -13,9 +28,11 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-twitter`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

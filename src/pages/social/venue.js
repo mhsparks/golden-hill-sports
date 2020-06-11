@@ -125,6 +125,7 @@ const VenuePage = ({ data }) => {
               </p>
             </div>
             <iframe
+              title="GHS Social Calendar"
               src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=c29jaWFsQGdvbGRlbmhpbGxzcG9ydHMuY29t&amp;color=%23D81B60"
               style={{
                 border: 0,

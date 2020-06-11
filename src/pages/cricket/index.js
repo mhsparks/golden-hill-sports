@@ -180,19 +180,45 @@ const CricketPage = ({ data }) => {
               </div>
 
               <div class="column is-3 has-addons is-centered">
-                <a
-                  class="twitter-timeline"
-                  data-width="100%"
-                  data-height="1000"
-                  href="https://twitter.com/GoldenHillCC?ref_src=twsrc%5Etfw"
-                >
-                  Tweets by GoldenHillCC
-                </a>{" "}
-                <script
-                  async
-                  src="https://platform.twitter.com/widgets.js"
-                  charset="utf-8"
-                ></script>
+                <div class="column"></div>
+
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title has-background-primary has-text-white is-size-7">
+                      Golden Hill CC on Twitter
+                    </p>
+                  </header>
+                  <a
+                    class="twitter-timeline"
+                    data-width="100%"
+                    data-height="800"
+                    href="https://twitter.com/GoldenHillCC?ref_src=twsrc%5Etfw"
+                  >
+                    Tweets by GoldenHillCC
+                  </a>{" "}
+                  <script
+                    async
+                    src="https://platform.twitter.com/widgets.js"
+                    charset="utf-8"
+                  ></script>
+                </div>
+                <div class="column"></div>
+                <header class="card-header">
+                  <p class="card-header-title has-background-primary has-text-white is-size-7">
+                    Golden Hill CC on Instagram
+                  </p>
+                </header>
+                <div class="card">
+                  <iframe
+                    src="https://www.instagram.com/p/CA5G9puhAWv/embed"
+                    frameborder="0"
+                    allowfullscreen
+                    scrolling="no"
+                    allowtransparency
+                    width="100%"
+                    height="400"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>

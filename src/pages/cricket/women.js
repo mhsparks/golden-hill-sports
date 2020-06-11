@@ -70,9 +70,7 @@ const WomensPage = ({ data }) => {
                 <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title has-background-primary has-text-white">
-                      Womens 1st XI
-                    </p>
+                    <p class="card-header-title">Womens 1st XI</p>
                   </header>
                   <div class="card-content">
                     <div class="media">
