@@ -57,7 +57,7 @@ const StatsPage = () => {
                     scrolling="no"
                     allowtransparency
                     width="100%"
-                    height="900"
+                    height="800"
                   ></iframe>
                 </div>
               </div>
