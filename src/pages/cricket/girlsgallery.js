@@ -12,7 +12,7 @@ const GirlsGallery = ({ data }) => {
       { alt: "Some text", src: "girlsgallery4" },
     ],
     [
-      { alt: "Some different text", src: "girlsgallery5" },
+      { alt: "Some different text", src: "girlsgallery3" },
       { alt: "Some text", src: "girlsgallery6" },
       { alt: "Some text", src: "girlsgallery7" },
       { alt: "Some different text", src: "girlsgallery8" },
@@ -126,9 +126,7 @@ export const query = graphql`
     girlsgallery4: file(relativePath: { eq: "girls-gallery-4.jpg" }) {
       ...fluidImage
     }
-    girlsgallery5: file(relativePath: { eq: "girls-gallery-5.jpg" }) {
-      ...fluidImage
-    }
+
     girlsgallery6: file(relativePath: { eq: "girls-gallery-6.jpg" }) {
       ...fluidImage
     }
