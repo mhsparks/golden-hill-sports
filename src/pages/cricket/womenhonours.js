@@ -55,23 +55,6 @@ const WomenHonours = () => {
           </div>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <div class="card">
-            <div>
-              <iframe
-                src="https://www.instagram.com/p/CA5G9puhAWv/embed"
-                frameborder="0"
-                allowfullscreen
-                scrolling="no"
-                allowtransparency
-                width="320"
-                height="320"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };

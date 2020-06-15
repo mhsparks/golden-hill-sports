@@ -7,7 +7,7 @@ const GirlsGallery = ({ data }) => {
   const pictures = [
     [
       { alt: "Some text", src: "girlsgallery1" },
-      { alt: "Some different text", src: "girlsgallery2" },
+      { alt: "Some text", src: "girlsgallery13" },
       { alt: "Some text", src: "girlsgallery3" },
       { alt: "Some text", src: "girlsgallery4" },
     ],
@@ -21,11 +21,12 @@ const GirlsGallery = ({ data }) => {
       { alt: "Some text", src: "girlsgallery9" },
       { alt: "Some text", src: "girlsgallery10" },
       { alt: "Some different text", src: "girlsgallery11" },
-      { alt: "Some text", src: "girlsgallery12" },
+      { alt: "Some text", src: "girlsgallery20" },
     ],
 
     [
-      { alt: "Some text", src: "girlsgallery13" },
+      { alt: "Some different text", src: "girlsgallery2" },
+
       { alt: "Some different text", src: "girlsgallery14" },
       { alt: "Some text", src: "girlsgallery15" },
       { alt: "Some text", src: "girlsgallery16" },
@@ -145,9 +146,7 @@ export const query = graphql`
     girlsgallery11: file(relativePath: { eq: "girls-gallery-11.jpg" }) {
       ...fluidImage
     }
-    girlsgallery12: file(relativePath: { eq: "girls-gallery-12.jpg" }) {
-      ...fluidImage
-    }
+
     girlsgallery13: file(relativePath: { eq: "girls-gallery-13.jpg" }) {
       ...fluidImage
     }
@@ -161,6 +160,9 @@ export const query = graphql`
       ...fluidImage
     }
     girlsgallery17: file(relativePath: { eq: "girls-gallery-17.jpg" }) {
+      ...fluidImage
+    }
+    girlsgallery20: file(relativePath: { eq: "girls-gallery-20.jpg" }) {
       ...fluidImage
     }
   }

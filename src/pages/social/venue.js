@@ -89,31 +89,17 @@ const VenuePage = ({ data }) => {
                   The Pavilion
                 </p>
                 Includes a function room with laminate flooring, LED lighting,
-                kitchen on the first floor, and a fully licensed bar. Function
-                room The function room has a capacity of 80 people with access
-                to a projector and sound system for presentations or playing
-                music for birthday parties through.
+                kitchen on the first floor, and a licensed bar. The function
+                room has access to a projector and sound system for
+                presentations or playing music for birthday parties. A newly
+                fitted stairlift has been installed for access to the first
+                floor.
                 <br />
                 <br />
                 <p class="has-text-weight-bold has-text-primary">Kitchen</p>
                 A newly fitted kitchen with oven, hob, microwave, dishwasher,
                 fridge and freezer. Separate handwash basin and instant boiling
                 water tap, including a 5* Hygiene rating.
-                <br />
-                <br />
-                <p class="has-text-weight-bold has-text-primary">
-                  Disabled Access
-                </p>
-                A newly fitted stairlift has been fitted so that disabled access
-                is available to gain access to the first floor.
-                <br />
-                <br />
-                <p class="has-text-weight-bold has-text-primary">Catering</p>
-                We are able to provide you with subcontracted catering services.
-                Alternatively, you can provide your own food and refreshments as
-                the kitchen is stocked with 48 sets of plates, side plates,
-                bowls, mugs and cutlery along with chopping boards, knives as
-                the essential items required.
                 <br />
                 <br />
                 <p class="has-text-weight-bold has-text-primary">Booking</p>

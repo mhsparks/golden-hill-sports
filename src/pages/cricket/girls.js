@@ -108,7 +108,7 @@ const GirlsPage = ({ data }) => {
                 involved and there is no kit requirement. ​​ It is all about fun
                 and enjoyment. We provide girls cricket from year 3 right
                 through to Ladies Cricket. ​​​​ At the end of the 2019 season we
-                have 75 girls and 20 ladies registered and each year this
+                had 75 girls and 20 ladies registered and each year this
                 increases with a new intake of year 3 and 4 girls.
                 <br />
                 <br />
@@ -120,10 +120,12 @@ const GirlsPage = ({ data }) => {
                 some years games in September.
                 <br />
                 <a
-                  href="http://goldenhillsports.com/wp-content/uploads/2019/12/Golden-Hill-Girls-Cricket-Registration-2020-1.docx"
-                  alt="Download the registration form here"
+                  href="https://docs.google.com/forms/d/1z8stT2J0E-bh_EQy9k3--LrLlJHfLkgxra-4bvd40SE/viewform?edit_requested=true"
+                  alt="Golden Hill Girls Cricket Registration Form 2020"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Download the registration form here.
+                  <u>Golden Hill Girls Cricket Registration Form 2020</u>
                 </a>
                 <br />
                 <br />
@@ -156,6 +158,7 @@ const GirlsPage = ({ data }) => {
                 <a
                   class="has-text-weight-bold"
                   href="mailto:anthony383@btinternet.com"
+                  rel="noopener noreferrer"
                 >
                   anthony383@btinternet.com
                 </a>
@@ -189,6 +192,7 @@ const GirlsPage = ({ data }) => {
                 <a
                   class="has-text-weight-bold"
                   href="mailto:chris.drew333@icloud.com"
+                  rel="noopener noreferrer"
                 >
                   chris.drew333@icloud.com
                 </a>

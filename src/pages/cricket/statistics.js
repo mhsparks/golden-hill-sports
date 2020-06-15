@@ -51,6 +51,7 @@ const StatsPage = () => {
                 </header>
                 <div class="card">
                   <iframe
+                    title="Golden Hill on Instagram"
                     src="https://www.instagram.com/p/B6RO5Rrhv61/embed/"
                     frameborder="0"
                     allowfullscreen
@@ -184,7 +185,7 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="/" target="_blank" rel="noopener noreferrer">
                       Overall
                     </a>
                   </li>
@@ -192,7 +193,7 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="/" target="_blank" rel="noopener noreferrer">
                       1st XI
                     </a>
                   </li>
@@ -200,7 +201,7 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="/" target="_blank" rel="noopener noreferrer">
                       2nd XI
                     </a>
                   </li>
@@ -208,7 +209,7 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="/" target="_blank" rel="noopener noreferrer">
                       3rd XI
                     </a>
                   </li>
@@ -216,7 +217,7 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="/" target="_blank" rel="noopener noreferrer">
                       4th XI
                     </a>
                   </li>
@@ -225,7 +226,7 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="/" target="_blank" rel="noopener noreferrer">
                       5th XI
                     </a>
                   </li>
@@ -241,7 +242,7 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
                     </span>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="/" target="_blank" rel="noopener noreferrer">
                       Club Officials
                     </a>
                   </li>

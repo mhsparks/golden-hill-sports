@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../../components/layout";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-const GirlsHonours = () => {
+const GirlsHonours = ({ data }) => {
   return (
     <Layout>
       <section class="hero is-primary">
@@ -64,8 +65,84 @@ const GirlsHonours = () => {
           </div>
         </div>
       </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    2017 <br />
+                    U11s - Lady Taverners Tournament
+                    <br /> - Winners
+                  </p>
+                </header>
+                <figure class="image">
+                  <Img fluid={data.girlsgallery20.childImageSharp.fluid} />
+                </figure>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    2019
+                    <br /> U11s - County of Gloucestershire League <br />-
+                    Winners
+                  </p>
+                </header>
+                <figure class="image">
+                  <Img fluid={data.girlsgallery1.childImageSharp.fluid} />
+                </figure>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    2020
+                    <br />
+                    U12’s - Indoor League South
+                    <br /> - Winners
+                  </p>
+                </header>
+                <figure class="image">
+                  <Img fluid={data.girlsgallery2.childImageSharp.fluid} />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
 
 export default GirlsHonours;
+export const query = graphql`
+  query {
+    girlsgallery20: file(relativePath: { eq: "girls-gallery-20.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    girlsgallery1: file(relativePath: { eq: "girls-gallery-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    girlsgallery2: file(relativePath: { eq: "girls-gallery-2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

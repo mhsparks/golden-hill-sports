@@ -184,7 +184,7 @@ const CricketPage = ({ data }) => {
 
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title has-background-primary has-text-white is-size-7">
+                    <p class="card-header-title is-size-7">
                       Golden Hill CC on Twitter
                     </p>
                   </header>
@@ -204,7 +204,7 @@ const CricketPage = ({ data }) => {
                 </div>
                 <div class="column"></div>
                 <header class="card-header">
-                  <p class="card-header-title has-background-primary has-text-white is-size-7">
+                  <p class="card-header-title is-size-7">
                     Golden Hill CC on Instagram
                   </p>
                 </header>
