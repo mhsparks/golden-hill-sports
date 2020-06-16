@@ -58,10 +58,14 @@ const CricketPage = ({ data }) => {
                         </figure>
                       </div>
                       <div class="card-content">
-                        Egestas pretium aenean pharetra magna ac placerat
-                        vestibulum. In vitae turpis massa sed elementum tempus
-                        egestas. Cursus mattis molestie a iaculis at erat
-                        pellentesque. Amet mauris commodo quis imperdiet massa.
+                        Our sides comprise everything from the super-talented
+                        youngsters to the wily old foxes, the enthusiastic but
+                        ‘village’, to the press-ganged occasional player or the
+                        dedicated club stalwart. <br />
+                        <br />
+                        There is a place for everyone at our club, no doubt
+                        enticed by our wonderful cricket teas, our great
+                        facilities and our welcoming environment.
                         <br />
                         <br />
                         <div class="buttons">
@@ -93,8 +97,13 @@ const CricketPage = ({ data }) => {
                       <div class="card-content">
                         Egestas pretium aenean pharetra magna ac placerat
                         vestibulum. In vitae turpis massa sed elementum tempus
-                        egestas. Cursus mattis molestie a iaculis at erat
-                        pellentesque. Amet mauris commodo quis imperdiet massa.
+                        egestas. In vitae turpis massa sed elementum tempus
+                        egestas.
+                        <br />
+                        <br />
+                        Egestas pretium aenean pharetra magna ac placerat
+                        vestibulum. In vitae turpis massa sed elementum tempus
+                        egestas.
                         <br />
                         <br />
                         <div class="buttons">
@@ -128,9 +137,13 @@ const CricketPage = ({ data }) => {
                       <div class="card-content">
                         Egestas pretium aenean pharetra magna ac placerat
                         vestibulum. In vitae turpis massa sed elementum tempus
-                        egestas. Cursus mattis molestie a iaculis at erat
-                        pellentesque. Amet mauris commodo quis imperdiet massa.
+                        egestas. In vitae turpis massa sed elementum tempus
+                        egestas.
                         <br />
+                        <br />
+                        Egestas pretium aenean pharetra magna ac placerat
+                        vestibulum. In vitae turpis massa sed elementum tempus
+                        egestas. <br />
                         <br />
                         <div class="buttons">
                           <Link
@@ -159,10 +172,13 @@ const CricketPage = ({ data }) => {
                         </figure>
                       </div>
                       <div class="card-content">
-                        Egestas pretium aenean pharetra magna ac placerat
-                        vestibulum. In vitae turpis massa sed elementum tempus
-                        egestas. Cursus mattis molestie a iaculis at erat
-                        pellentesque. Amet mauris commodo quis imperdiet massa.
+                        We introduce the girls to​​ cricket from year 3 and this
+                        through soft ball cricket playing kwik cricket games and
+                        exercises. ​​ <br />
+                        <br />
+                        Everyone is involved and there is no kit requirement. ​​
+                        It is all about fun and enjoyment. We provide girls
+                        cricket from year 3 right through to Ladies Cricket.
                         <br />
                         <br />
                         <div class="buttons">

@@ -103,8 +103,12 @@ const VenuePage = ({ data }) => {
                 <br />
                 <br />
                 <p class="has-text-weight-bold has-text-primary">Booking</p>
-                Please feel free to fill in the contact form using the link
-                above regarding your booking or alternatively you can call 07306
+                Please feel free to fill in the{" "}
+                <Link to="/social/contact">
+                  {" "}
+                  <u>contact form</u>
+                </Link>{" "}
+                regarding your booking or alternatively you can call 07306
                 034621 to discuss it over the phone.
                 <br />
                 <br />

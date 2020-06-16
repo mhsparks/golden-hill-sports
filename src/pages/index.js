@@ -86,10 +86,14 @@ const IndexPage = ({ data }) => {
                   <div class="column"></div>
                   <div class="content">
                     <p>
-                      Golden Hill CC runs five Saturday senior sides in the
-                      Bristol & District Cricket League and have a youth policy
-                      which rivals any local club; it is one of the biggest and
-                      most successful in the region. <br />
+                      Golden Hill CC field 5 league sides on a Saturday to
+                      compete across the breadth of the cricketing league
+                      pyramid. <br />
+                      <br />
+                      Our sides comprise everything from the super-talented
+                      youngsters to the wily old foxes, the enthusiastic but
+                      ‘village’, to the press-ganged occasional player or the
+                      dedicated club stalwart. <br />
                       <br /> We run a comprehensive youth programme for boys
                       with opportunities to progress through the sides, along
                       with a successful women’s side and a hugely popular girls
@@ -98,6 +102,7 @@ const IndexPage = ({ data }) => {
                       <br /> Come and join our friendly and welcoming club!
                       <br />
                       <br />
+                      <Link to="/cricket/">Golden Hill Cricket</Link>
                     </p>
                   </div>
                 </div>
