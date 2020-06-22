@@ -74,8 +74,9 @@ const GirlsHonours = ({ data }) => {
                 <header class="card-header">
                   <p class="card-header-title">
                     2017 <br />
-                    U11s - Lady Taverners Tournament
-                    <br /> - Winners
+                    U11s - Winners
+                    <br />
+                    Lady Taverners Tournament
                   </p>
                 </header>
                 <figure class="image">
@@ -88,8 +89,8 @@ const GirlsHonours = ({ data }) => {
                 <header class="card-header">
                   <p class="card-header-title">
                     2019
-                    <br /> U11s - County of Gloucestershire League <br />-
-                    Winners
+                    <br /> U11s - Winners <br />
+                    County of Gloucestershire League
                   </p>
                 </header>
                 <figure class="image">
@@ -103,8 +104,9 @@ const GirlsHonours = ({ data }) => {
                   <p class="card-header-title">
                     2020
                     <br />
-                    U12’s - Indoor League South
-                    <br /> - Winners
+                    U12s - Winners
+                    <br />
+                    Indoor League South
                   </p>
                 </header>
                 <figure class="image">
