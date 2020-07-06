@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../../components/layout";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-const EventsPage = () => {
+const EventsPage = ({ data }) => {
   return (
     <Layout>
       <section class="hero is-primary">
@@ -41,9 +42,9 @@ const EventsPage = () => {
               <article class="media">
                 <figure class="media-left">
                   <p class="image is-128x128">
-                    <img
-                      src="https://bulma.io/images/placeholders/128x128.png"
-                      alt="placeholder"
+                    <Img
+                      fluid={data.quiz.childImageSharp.fluid}
+                      alt="Club bar"
                     />
                   </p>
                 </figure>
@@ -93,3 +94,15 @@ const EventsPage = () => {
 };
 
 export default EventsPage;
+
+export const query = graphql`
+  query {
+    quiz: file(relativePath: { eq: "quiz.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

@@ -1,8 +1,8 @@
 import Img from "gatsby-image";
 import React from "react";
+
 import Layout from "../../components/layout";
 import { Link, graphql } from "gatsby";
-import DateCountdown from "react-date-countdown-timer";
 
 const PitpPage = ({ data }) => {
   return (
@@ -15,12 +15,7 @@ const PitpPage = ({ data }) => {
                 <h1 class="title is-size-4">Party in the Park</h1>
               </div>
               <div class="column">
-                <button class="button is-primary is-inverted has-text-weight-bold">
-                  <DateCountdown
-                    dateTo="September 12, 2020 12:00:00 GMT"
-                    callback={() => alert("Hello")}
-                  />
-                </button>
+                <h2 class="title is-size-4">PITP 2020 in NN days</h2>
               </div>
             </div>
           </div>

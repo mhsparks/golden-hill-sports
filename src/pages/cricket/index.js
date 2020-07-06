@@ -58,15 +58,18 @@ const CricketPage = ({ data }) => {
                         </figure>
                       </div>
                       <div class="card-content">
-                        Our sides comprise everything from the super-talented
-                        youngsters to the wily old foxes, the enthusiastic but
-                        ‘village’, to the press-ganged occasional player or the
-                        dedicated club stalwart. <br />
+                        <p>
+                          Our sides comprise everything from the super-talented
+                          youngsters to the wily old foxes, the enthusiastic but
+                          ‘village’, to the press-ganged occasional player or
+                          the dedicated club stalwart.
+                        </p>
                         <br />
-                        There is a place for everyone at our club, no doubt
-                        enticed by our wonderful cricket teas, our great
-                        facilities and our welcoming environment.
-                        <br />
+                        <p>
+                          There is a place for everyone at our club, no doubt
+                          enticed by our wonderful cricket teas, our great
+                          facilities and our welcoming environment.
+                        </p>
                         <br />
                         <div class="buttons">
                           <Link
@@ -95,16 +98,18 @@ const CricketPage = ({ data }) => {
                         </figure>
                       </div>
                       <div class="card-content">
-                        Egestas pretium aenean pharetra magna ac placerat
-                        vestibulum. In vitae turpis massa sed elementum tempus
-                        egestas. In vitae turpis massa sed elementum tempus
-                        egestas.
+                        <p>
+                          Egestas pretium aenean pharetra magna ac placerat
+                          vestibulum. In vitae turpis massa sed elementum tempus
+                          egestas. In vitae turpis massa sed elementum tempus
+                          egestas.
+                        </p>
                         <br />
-                        <br />
-                        Egestas pretium aenean pharetra magna ac placerat
-                        vestibulum. In vitae turpis massa sed elementum tempus
-                        egestas.
-                        <br />
+                        <p>
+                          Egestas pretium aenean pharetra magna ac placerat
+                          vestibulum. In vitae turpis massa sed elementum tempus
+                          egestas.
+                        </p>
                         <br />
                         <div class="buttons">
                           <Link
@@ -135,15 +140,17 @@ const CricketPage = ({ data }) => {
                         </figure>
                       </div>
                       <div class="card-content">
-                        Egestas pretium aenean pharetra magna ac placerat
-                        vestibulum. In vitae turpis massa sed elementum tempus
-                        egestas. In vitae turpis massa sed elementum tempus
-                        egestas.
+                        <p>
+                          Egestas pretium aenean pharetra magna ac placerat
+                          vestibulum. In vitae turpis massa sed elementum tempus
+                          egestas.
+                        </p>
                         <br />
-                        <br />
-                        Egestas pretium aenean pharetra magna ac placerat
-                        vestibulum. In vitae turpis massa sed elementum tempus
-                        egestas. <br />
+                        <p>
+                          Egestas pretium aenean pharetra magna ac placerat
+                          vestibulum. In vitae turpis massa sed elementum tempus
+                          egestas.
+                        </p>
                         <br />
                         <div class="buttons">
                           <Link
@@ -155,7 +162,9 @@ const CricketPage = ({ data }) => {
                         </div>
                       </div>
                     </div>
+                    <div class="column"></div>
                   </div>
+
                   <div class="column">
                     <div class="card">
                       <header class="card-header">
@@ -172,14 +181,17 @@ const CricketPage = ({ data }) => {
                         </figure>
                       </div>
                       <div class="card-content">
-                        We introduce the girls to​​ cricket from year 3 and this
-                        through soft ball cricket playing kwik cricket games and
-                        exercises. ​​ <br />
+                        <p>
+                          We introduce the girls to​​ cricket from year 3 and
+                          this through soft ball cricket playing kwik cricket
+                          games and exercises.
+                        </p>
                         <br />
-                        Everyone is involved and there is no kit requirement. ​​
-                        It is all about fun and enjoyment. We provide girls
-                        cricket from year 3 right through to Ladies Cricket.
-                        <br />
+                        <p>
+                          Everyone is involved and there is no kit requirement.
+                          ​​ It is all about fun and enjoyment. We provide girls
+                          cricket from year 3 right through to Ladies Cricket.
+                        </p>
                         <br />
                         <div class="buttons">
                           <Link
@@ -191,6 +203,7 @@ const CricketPage = ({ data }) => {
                         </div>
                       </div>
                     </div>
+                    <div class="column"></div>
                   </div>
                 </div>
               </div>
@@ -207,7 +220,7 @@ const CricketPage = ({ data }) => {
                   <a
                     class="twitter-timeline"
                     data-width="100%"
-                    data-height="800"
+                    data-height="900"
                     href="https://twitter.com/GoldenHillCC?ref_src=twsrc%5Etfw"
                   >
                     Tweets by GoldenHillCC
@@ -219,22 +232,29 @@ const CricketPage = ({ data }) => {
                   ></script>
                 </div>
                 <div class="column"></div>
-                <header class="card-header">
-                  <p class="card-header-title is-size-7">
-                    Golden Hill CC on Instagram
-                  </p>
-                </header>
                 <div class="card">
-                  <iframe
-                    src="https://www.instagram.com/p/CA5G9puhAWv/embed"
-                    frameborder="0"
-                    allowfullscreen
-                    scrolling="no"
-                    allowtransparency
-                    width="100%"
-                    height="400"
-                  ></iframe>
+                  <header class="card-header">
+                    <p class="card-header-title is-size-7">
+                      Golden Hill CC on Facebook
+                    </p>
+                  </header>
+                  <div class="card">
+                    <iframe
+                      class="facebook-FB"
+                      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGoldenHillCC&tabs=timeline&width=318&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                      width="318"
+                      height="500"
+                      style={{ border: "none", overflow: "hidden" }}
+                      scrolling="no"
+                      frameborder="0"
+                      allowTransparency="true"
+                      allow="encrypted-media"
+                      adapt_container_width
+                    ></iframe>
+                  </div>
                 </div>
+
+                <div class="column"></div>
               </div>
             </div>
           </div>

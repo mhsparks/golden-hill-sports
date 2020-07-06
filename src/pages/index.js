@@ -33,11 +33,12 @@ const IndexPage = ({ data }) => {
               </div>
               <div class="column is-half">
                 <div class="card-content">
+                  <p class="title has-text-primary">Welcome to Golden Hill</p>
                   <p>
-                    <strong>Golden Hill Sports & Social Club</strong> is a
-                    registered sports charity which incorporates Golden Hill
-                    Cricket Club, Golden Hill Sonics Junior Football Club and a
-                    host of community based social groups.
+                    Golden Hill Sports & Social Club is a registered sports
+                    charity which incorporates Golden Hill Cricket Club, Golden
+                    Hill Sonics Junior Football Club and a host of community
+                    based social groups.
                     <br />
                     <br />
                     The club is based on Wimbledon Road in Henleaze and has been
@@ -48,7 +49,13 @@ const IndexPage = ({ data }) => {
                     If you are interested in joining Golden Hill Sports & Social
                     Club or want any more information, please do not hesitate to
                     <span>
-                      <Link to="/social/contact/"> contact us.</Link>
+                      <Link
+                        className="has-text-weight-bold"
+                        to="/social/contact/"
+                      >
+                        {" "}
+                        contact us.
+                      </Link>
                     </span>
                   </p>
                 </div>
@@ -88,21 +95,23 @@ const IndexPage = ({ data }) => {
                     <p>
                       Golden Hill CC field 5 league sides on a Saturday to
                       compete across the breadth of the cricketing league
-                      pyramid. <br />
-                      <br />
+                      pyramid.
+                    </p>
+                    <p>
                       Our sides comprise everything from the super-talented
                       youngsters to the wily old foxes, the enthusiastic but
                       ‘village’, to the press-ganged occasional player or the
-                      dedicated club stalwart. <br />
-                      <br /> We run a comprehensive youth programme for boys
-                      with opportunities to progress through the sides, along
-                      with a successful women’s side and a hugely popular girls
-                      programme.
-                      <br />
-                      <br /> Come and join our friendly and welcoming club!
-                      <br />
-                      <br />
-                      <Link to="/cricket/">Golden Hill Cricket</Link>
+                      dedicated club stalwart.{" "}
+                    </p>
+
+                    <p>
+                      We run a comprehensive youth programme for boys with
+                      opportunities to progress through the sides, along with a
+                      successful women’s side and a hugely popular girls
+                      programme.{" "}
+                      <Link className="has-text-weight-bold" to="/cricket/">
+                        More...
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -136,24 +145,27 @@ const IndexPage = ({ data }) => {
                       Golden Hill Sonics is a parent run football club, which
                       welcomes boys and girls in school years 2 to 11. The club
                       holds the FA Charter Standard Club accreditation.
-                      <br />
-                      <br />
+                    </p>
+                    <p>
+                      {" "}
                       U7’s to U11’s meet between at varying times 9:30am and
                       midday on Saturdays during the school term at the Golden
                       Hill Sports Ground just off Kellaway Avenue.
-                      <br />
-                      <br />
+                    </p>
+                    <p>
                       U11’s to U16’s all play in local competitive leagues
                       either on Saturday or Sunday mornings.
-                      <br />
-                      <br />
-                      For more information on Golden Hill Sonics Football Club
-                      please visit their website: <br />
-                      <br />
-                      <a href="http://www.goldenhillsonics.co.uk">
+                    </p>
+
+                    <p>
+                      {" "}
+                      For more information, please visit the Sonics website:{" "}
+                      <a
+                        className="has-text-weight-bold"
+                        href="http://www.goldenhillsonics.co.uk"
+                      >
                         www.goldenhillsonics.co.uk
                       </a>
-                      <br />
                     </p>
                   </div>
                 </div>
@@ -186,24 +198,25 @@ const IndexPage = ({ data }) => {
                     <p>
                       Golden Hill Sports & Social Club has a licensed bar,
                       enabling us to sell alcoholic drinks to our members and
-                      guests. <br />
-                      <br />
-                      We also run the hugely popular Party in the Park.
-                      <br />
-                      <br />
-                      Party in the Park is a community event that raises money
-                      to pay for the upkeep of the field that the community
-                      helped to secure.
-                      <br />
-                      <br /> It’s a great event with a variety of stalls and
+                      guests.
+                    </p>
+                    <p>
+                      {" "}
+                      We also run the hugely popular Party in the Park. Party in
+                      the Park is a community event that raises money to pay for
+                      the upkeep of the field that the community helped to
+                      secure.
+                    </p>
+
+                    <p>
+                      It’s a great event with a variety of stalls and
                       entertainment on offer for all the family.
-                      <br />
-                      <br />
-                      Our venue is also available for hire.
-                      <br />
-                      <br />
-                      <Link to="/social/venue"> Venue Hire</Link>
-                      <br />
+                    </p>
+                    <p>
+                      Our venue is also available for hire.{" "}
+                      <Link className="has-text-weight-bold" to="/social/venue">
+                        More...
+                      </Link>
                     </p>
                   </div>
                 </div>
