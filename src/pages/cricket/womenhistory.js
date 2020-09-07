@@ -73,23 +73,27 @@ const WomenHistory = ({ data }) => {
                   <div class="card-content">
                     <p class="has-text-primary has-text-weight-bold">History</p>
                     <p>
-                      In the summer of 2011, Golden Hill Cricket Club formed a
-                      new women’s team and 2 girl’s teams for U13 and U15
-                      players. The girls did very well for the first couple of
-                      years, with some being selected for county teams. <br />
-                      The women started playing matches in the Gloucestershire
-                      Women’s T20 Development League in 2011, and changed to
-                      playing in the Women’s T20 Competitive League in 2013.
-                      This league covers an area from Bristol up to Hereford,
-                      although this has changed to split into North and South
-                      areas as more women’s teams are formed and join the
-                      leagues. <br />
-                      We still organise the odd friendly with some of the teams
-                      in the North league, as we love playing them, (and they do
-                      great cake!)
-                      <br />
-                      <br />
+                      Golden Hill Cricket Club’s women’s team was established in
+                      2011.
                     </p>
+                    <br />
+                    <p>
+                      The team first played Gloucestershire Women’s T20
+                      Development League, and in 2013 advanced to playing in the
+                      Women’s T20 Competitive League in 2013.
+                    </p>
+                    <br />
+                    <p>
+                      Since 2019, the team has played in the Gloucestershire
+                      Cricket Board's Women’s League South.{" "}
+                    </p>
+                    <br />
+                    <p>
+                      Since 2018, we have played in the Bristol Women’s Indoor
+                      League. We won the league in 2018, 2019 and 2020.{" "}
+                    </p>
+                    <br />
+                    <br />
                   </div>
                 </div>
               </div>

@@ -107,8 +107,8 @@ const GirlsPage = ({ data }) => {
                 cricket playing kwik cricket games and exercises. ​​ Everyone is
                 involved and there is no kit requirement. ​​ It is all about fun
                 and enjoyment. We provide girls cricket from year 3 right
-                through to Ladies Cricket. ​​​​ At the end of the 2019 season we
-                had 75 girls and 20 ladies registered and each year this
+                through to Womens Cricket. ​​​​ At the end of the 2019 season we
+                had 75 girls and 20 women registered and each year this
                 increases with a new intake of year 3 and 4 girls.
                 <br />
                 <br />

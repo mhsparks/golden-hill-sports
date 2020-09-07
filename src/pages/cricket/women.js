@@ -131,13 +131,6 @@ const WomensPage = ({ data }) => {
                   </figure>
                 </div>
                 <div class="column"></div>
-
-                <div class="card">
-                  <figure class="card-image">
-                    <Img fluid={data.women1.childImageSharp.fluid} />
-                  </figure>
-                </div>
-                <div class="column"></div>
               </div>
 
               <div class="column">
@@ -146,81 +139,72 @@ const WomensPage = ({ data }) => {
                     Golden Hill Womens Cricket
                   </p>
                   <br />
+                  <p class="has-text-weight-bold has-text-primary">Our Team</p>
                   <p>
-                    <p class="has-text-weight-bold has-text-primary">
-                      Our Team
-                    </p>
-                    If you are interested in playing for a friendly and social
-                    ladies cricket team, we would love to have you join us.{" "}
-                    <br />
-                    <br />
-                    You can either contact Jan by{" "}
-                    <a href="mailto:smiley_j1@yahoo.co.uk">email</a> or simply
-                    turn up for one of our training nights, to see if cricket is
-                    for you – no obligation, we are happy for you to give it a
-                    try.
-                    <br />
-                    <br />
-                    <p class="has-text-primary has-text-weight-bold">
-                      Training
-                    </p>
-                    Winter indoor training / coaching is on Monday evenings from
-                    6.30pm – 8.00pm at Orchard School for until March. £5 per
-                    session, payable on the night. Contact Jan for dates. <br />
-                    Outside training takes place at our home ground at Wimbledon
-                    Road on Wednesday evenings throughout the summer, (April
-                    until the end of July) starting mid-April at 7.00 until
-                    8.30pm (We sometimes stay later if the weather / daylight
-                    allows). There are toilets and changing facilities
-                    available.{" "}
-                    <a
-                      class="has-text-weight-bold"
-                      href="mailto:smiley_j1@yahoo.co.uk"
-                    >
-                      Contact Jan
-                    </a>{" "}
-                    for dates.
-                    <br /> Protective equipment and bats are available at our
-                    training nights, so you just need to turn up with suitable
-                    sports kit and trainers. If you have your own kit you can
-                    bring it along to use. Note that spikes are not allowed in
-                    the nets.
-                    <br />
-                    <br />
-                    <p class="has-text-primary has-text-weight-bold">Matches</p>
-                    Matches are on Sundays with various start times, both home
-                    and away, and we provide teas for weekend home matches. We
-                    also have the occasional mid-week match on our Wednesday
-                    training night. <br />
-                    <br />
-                    <p class="has-text-primary has-text-weight-bold">
-                      Kit and Fees
-                    </p>
-                    We have new subsidised sponsored kit available to order.
-                    Costs are £20 for a new T20 style blue coloured top and £20
-                    for the matching trousers.
-                    <br />
-                    <br />
-                    Our annual subs are set at £35 each per season, which covers
-                    your registration and club insurances. <br />
-                    <br />
-                    <p class="has-text-primary has-text-weight-bold">
-                      Join us!
-                    </p>
-                    New players are always welcome, no matter how experienced
-                    you are. We have a range of abilities from complete
-                    beginners to those that have played a bit! We are a fun and
-                    friendly team, who are still learning from each other, and
-                    enjoying those summer afternoons of cricket in the pleasant
-                    surroundings of the Golden Hill Sports ground. <br />
-                    <br />
+                    Golden Hill is a friendly and sociable women's cricket team.
+                    New players (aged sixteen and above) of all abilities are
+                    welcome, from complete beginners to seasoned veterans.
                   </p>
+                  <br />
+                  <p>
+                    We field teams in a variety of formats: outdoor hardball and
+                    softball in the summer, and indoor softball in the winter.
+                    Currently, we play in the Gloucestershire Cricket Board's
+                    Women’s League South, and the Bristol Women’s Indoor League.
+                  </p>
+                  <br />
+                  <p>
+                    Training includes indoor and outdoor nets, coached sessions,
+                    and practice matches. Our ethos is about fostering
+                    improvement in a supportive and enjoyable environment. The
+                    first training session is free so do come along and try it
+                    out! If you would like to get involved, please CONTACT.
+                  </p>
+                  <br />
+                  <p class="has-text-primary has-text-weight-bold">Training</p>
+                  <p>
+                    Our winter indoor training (January to March) is held at
+                    Orchard School.
+                  </p>
+                  <br />
+                  <p>
+                    During the summer (April to August), we train outdoors at
+                    our home ground. This training includes nets, coached
+                    exercises, and practice matches.
+                  </p>
+                  <br />
+                  <p>The club has communal pads and bats available for use.</p>
+                  <br />
+                  <p>
+                    There are also opportunities to gain coaching
+                    qualifications.{" "}
+                  </p>
+                  <br />
+                  <p class="has-text-primary has-text-weight-bold">Leagues</p>
+                  <p>
+                    We play hardball in the Gloucestershire Cricket Board's
+                    Women’s League South. Hardball matches are usually played on
+                    Sundays and we provide teas for weekend home matches.
+                  </p>
+                  <br />
+                  <p>
+                    During the winter, we play softball in the Bristol Women’s
+                    Indoor League. In summer, we field a softball team in the
+                    Bristol Women’s Softball League.
+                  </p>
+                  <br />
+                  <p class="has-text-primary has-text-weight-bold">
+                    Membership Fees
+                  </p>
+                  Annual subscription rate is £35 year. Winter training is £5 a
+                  session. The first session is free.
+                  <br />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>{" "}
+      </section>
     </Layout>
   );
 };

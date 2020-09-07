@@ -2,6 +2,12 @@ import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookSquare,
+  faInstagramSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
 const CricketPage = ({ data }) => {
   return (
@@ -71,6 +77,7 @@ const CricketPage = ({ data }) => {
                           facilities and our welcoming environment.
                         </p>
                         <br />
+                        <br />
                         <div class="buttons">
                           <Link
                             className="button is-primary is-size-6-desktop is-size-7-mobile"
@@ -99,16 +106,18 @@ const CricketPage = ({ data }) => {
                       </div>
                       <div class="card-content">
                         <p>
-                          Egestas pretium aenean pharetra magna ac placerat
-                          vestibulum. In vitae turpis massa sed elementum tempus
-                          egestas. In vitae turpis massa sed elementum tempus
-                          egestas.
+                          Golden Hill is a friendly and sociable women's cricket
+                          team. New players (aged sixteen and above) of all
+                          abilities are welcome, from complete beginners to
+                          seasoned veterans.
                         </p>
                         <br />
                         <p>
-                          Egestas pretium aenean pharetra magna ac placerat
-                          vestibulum. In vitae turpis massa sed elementum tempus
-                          egestas.
+                          We field teams in a variety of formats: outdoor
+                          hardball and softball in the summer, and indoor
+                          softball in the winter. Currently, we play in the
+                          Gloucestershire Cricket Board's Women’s League South,
+                          and the Bristol Women’s Indoor League.
                         </p>
                         <br />
                         <div class="buttons">
@@ -141,16 +150,17 @@ const CricketPage = ({ data }) => {
                       </div>
                       <div class="card-content">
                         <p>
-                          Egestas pretium aenean pharetra magna ac placerat
-                          vestibulum. In vitae turpis massa sed elementum tempus
-                          egestas.
+                          We are very proud of our boys set-up, which is
+                          constantly in high demand and operates on a waiting
+                          list to join.
                         </p>
                         <br />
                         <p>
-                          Egestas pretium aenean pharetra magna ac placerat
-                          vestibulum. In vitae turpis massa sed elementum tempus
-                          egestas.
+                          To provide opportunities to as many young players as
+                          possible, we run at least two squads at each age group
+                          with 4 teams at the u11s age group.
                         </p>
+                        <br />
                         <br />
                         <div class="buttons">
                           <Link
@@ -239,18 +249,61 @@ const CricketPage = ({ data }) => {
                     </p>
                   </header>
                   <div class="card">
-                    <iframe
-                      class="facebook-FB"
-                      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGoldenHillCC&tabs=timeline&width=318&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                      width="318"
-                      height="500"
-                      style={{ border: "none", overflow: "hidden" }}
-                      scrolling="no"
-                      frameborder="0"
-                      allowTransparency="true"
-                      allow="encrypted-media"
-                      adapt_container_width
-                    ></iframe>
+                    <figure class="image">
+                      <Img
+                        fluid={data.fbhome.childImageSharp.fluid}
+                        alt="Placeholder"
+                      />
+                    </figure>
+
+                    <div class="buttons pt-2 pl-2 pr-2">
+                      <a
+                        className="button is-primary is-fullwidth"
+                        href="https://www.facebook.com/GoldenHillCC"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span class="icon">
+                          <FontAwesomeIcon icon={faFacebookSquare} />
+                        </span>
+                        <span>
+                          <strong>Facebook</strong>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="column"></div>
+
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title is-size-7">
+                      Golden Hill CC on Instagram
+                    </p>
+                  </header>
+                  <div class="card">
+                    <figure class="image">
+                      <Img
+                        fluid={data.instahome.childImageSharp.fluid}
+                        alt="Placeholder"
+                      />
+                    </figure>
+
+                    <div class="buttons pt-2 pl-2 pr-2">
+                      <a
+                        className="button is-primary  is-fullwidth"
+                        href="https://www.instagram.com/golden_hill_cc/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span class="icon">
+                          <FontAwesomeIcon icon={faInstagramSquare} />
+                        </span>
+                        <span>
+                          <strong>Instagram</strong>
+                        </span>
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -297,6 +350,20 @@ export const query = graphql`
       }
     }
     CricketHome: file(relativePath: { eq: "cricket-home.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fbhome: file(relativePath: { eq: "fbpage.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    instahome: file(relativePath: { eq: "instahome.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

@@ -37,57 +37,151 @@ const EventsPage = ({ data }) => {
       </section>
       <section class="section">
         <div class="container">
-          <div class="card">
-            <div class="card-content">
-              <article class="media">
-                <figure class="media-left">
-                  <p class="image is-128x128">
-                    <Img
-                      fluid={data.quiz.childImageSharp.fluid}
-                      alt="Club bar"
-                    />
-                  </p>
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Quiz Night</strong>{" "}
-                      <small>Saturday 12th September.</small>{" "}
-                      <small>7pm onwards</small>
-                      <br />
-                      <br />
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Proin ornare magna eros, eu pellentesque tortor vestibulum
-                      ut. <br />
-                      <br />
-                      Maecenas non massa sem. Etiam finibus odio quis feugiat
-                      facilisis.
-                    </p>
+          <div class="columns">
+            <div class="column">
+              <div class="card-header">
+                <p class="card-header-title">Saturday 14th September</p>
+              </div>
+              <div class="box">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-128x128">
+                      <Img
+                        fluid={data.quiz.childImageSharp.fluid}
+                        alt="Quiz Night"
+                      />
+                    </figure>
                   </div>
-                </div>
-              </article>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Quiz Night</strong>
+                        <br />
+                        <small>7pm onwards</small>
+                        <br />
+                        <br />
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Aenean efficitur sit amet massa fringilla
+                          egestas. Nullam condimentum luctus turpis.
+                        </p>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="card-header">
+                <p class="card-header-title">Saturday 14th September</p>
+              </div>
+              <div class="box">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-128x128">
+                      <Img
+                        fluid={data.trophy.childImageSharp.fluid}
+                        alt="Presentation Night"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Quiz Night</strong>
+                        <br />
+                        <small>7pm onwards</small>
+                        <br />
+                        <br />
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Aenean efficitur sit amet massa fringilla
+                          egestas. Nullam condimentum luctus turpis.
+                        </p>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="card-header">
+                <p class="card-header-title">Saturday 14th September</p>
+              </div>
+              <div class="box">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-128x128">
+                      <Img
+                        fluid={data.curry.childImageSharp.fluid}
+                        alt="Curry Night"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Curry Night</strong>
+                        <br />
+                        <small>7pm onwards</small>
+                        <br />
+                        <br />
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Aenean efficitur sit amet massa fringilla
+                          egestas. Nullam condimentum luctus turpis.
+                        </p>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="card-header">
+                <p class="card-header-title">Saturday 14th September</p>
+              </div>
+              <div class="box">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-128x128">
+                      <Img
+                        fluid={data.racing.childImageSharp.fluid}
+                        alt="Quiz Night"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Race Night</strong>
+                        <br />
+                        <small>7pm onwards</small>
+                        <br />
+                        <br />
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Aenean efficitur sit amet massa fringilla
+                          egestas. Nullam condimentum luctus turpis.
+                        </p>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <article class="message is-primary">
-                <div class="message-header">
-                  <p>Quiz Night! - Saturday 12th September</p>
-                </div>
-                <div class="message-body has-text-black">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-                  <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                  ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                  fringilla. Nullam gravida purus diam, et dictum felis
-                  venenatis efficitur. Aenean ac <em>eleifend lacus</em>, in
-                  mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                  tortor urna tempor ligula, id porttitor mi magna a neque.
-                  Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-                </div>
-              </article>
+            <div class="column">
+              <iframe
+                title="GHS Social Calendar"
+                src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=c29jaWFsQGdvbGRlbmhpbGxzcG9ydHMuY29t&amp;color=%23D81B60"
+                style={{
+                  border: 0,
+                  width: "100%",
+                  height: 600,
+                  frameborder: 0,
+                }}
+              ></iframe>
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="section">
+        <div class="container"></div>
       </section>
     </Layout>
   );
@@ -97,7 +191,28 @@ export default EventsPage;
 
 export const query = graphql`
   query {
-    quiz: file(relativePath: { eq: "quiz.jpg" }) {
+    quiz: file(relativePath: { eq: "quizhome.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    curry: file(relativePath: { eq: "curry-night.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    racing: file(relativePath: { eq: "race-night.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    trophy: file(relativePath: { eq: "trophy.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
