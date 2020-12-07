@@ -74,6 +74,18 @@ const StatsPage = () => {
                       <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
                     </span>
                     <a
+                      href="https://ghs-static.storage.googleapis.com/pdf/Season_2020.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      2020
+                    </a>
+                  </li>
+                  <li class="panel-block">
+                    <span class="icon has-addons is-left">
+                      <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
+                    </span>
+                    <a
                       href="https://ghs-static.storage.googleapis.com/pdf/season2019.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -154,7 +166,7 @@ const StatsPage = () => {
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
                     <a
-                      href="https://ghs-static.storage.googleapis.com/xls/Centurions.xlsx"
+                      href="https://ghs-static.storage.googleapis.com/xls/Centurions.xls"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -242,7 +254,11 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
                     </span>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://ghs-static.storage.googleapis.com/pdf/Club-Officials.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Club Officials
                     </a>
                   </li>
