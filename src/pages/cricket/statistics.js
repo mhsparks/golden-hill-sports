@@ -178,7 +178,7 @@ const StatsPage = () => {
                       <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
                     </span>
                     <a
-                      href="https://ghs-static.storage.googleapis.com/pdf/AllRounders.pdf"
+                      href="https://storage.googleapis.com/ghs-static/pdf/AllRounders.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -197,7 +197,11 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://ghs-static.storage.googleapis.com/xls/Overall-Records.xls"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Overall
                     </a>
                   </li>
@@ -205,7 +209,11 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://ghs-static.storage.googleapis.com/xls/1st-XI-Records.xls"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       1st XI
                     </a>
                   </li>
@@ -213,7 +221,11 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://ghs-static.storage.googleapis.com/xls/2nd-XI-Records.xls"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       2nd XI
                     </a>
                   </li>
@@ -221,7 +233,11 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://ghs-static.storage.googleapis.com/xls/3rd-XI-Records.xls"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       3rd XI
                     </a>
                   </li>
@@ -229,7 +245,11 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://ghs-static.storage.googleapis.com/xls/4th-XI-Records.xls"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       4th XI
                     </a>
                   </li>
@@ -238,8 +258,25 @@ const StatsPage = () => {
                     <span class="icon has-addons is-left">
                       <FontAwesomeIcon icon={faTable} aria-hidden="true" />
                     </span>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://ghs-static.storage.googleapis.com/xls/5th-XI-Records.xls"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       5th XI
+                    </a>
+                  </li>
+
+                  <li class="panel-block">
+                    <span class="icon has-addons is-left">
+                      <FontAwesomeIcon icon={faTable} aria-hidden="true" />
+                    </span>
+                    <a
+                      href="https://ghs-static.storage.googleapis.com/xls/6th-XI-Records.xls"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      6th XI
                     </a>
                   </li>
                 </ul>

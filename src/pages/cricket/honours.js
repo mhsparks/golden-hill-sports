@@ -13,23 +13,15 @@ const HonoursPage = ({ data }) => {
           </div>
         </div>
       </section>
+
       <section class="section">
         <div class="container">
           <div class="columns">
             <div class="column">
               <div class="card">
                 <header class="card-header">
-                  <p class="card-header-title">2020</p>
-                </header>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <div class="card">
-                <header class="card-header">
                   <p class="card-header-title">
-                    Winners - U12 Girls
+                    2020 Winners - U12 Girls
                     <br />
                     Indoor League South
                     <br />
@@ -40,25 +32,11 @@ const HonoursPage = ({ data }) => {
                 </figure>
               </div>
             </div>
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">2019</p>
-                </header>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
             <div class="column">
               <div class="card">
                 <header class="card-header">
                   <p class="card-header-title">
-                    Winners - U11 Girls
+                    2019 Winners - U11 Girls
                     <br />
                     County of Gloucestershire League
                     <br />
@@ -69,54 +47,11 @@ const HonoursPage = ({ data }) => {
                 </figure>
               </div>
             </div>
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">2018</p>
-                </header>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
             <div class="column">
               <div class="card">
                 <header class="card-header">
                   <p class="card-header-title">
-                    Some text
-                    <br />
-                    Some more text
-                    <br />
-                  </p>
-                </header>
-                <figure class="image">
-                  <img src="https://bulma.io/images/placeholders/640x480.png" />
-                </figure>
-              </div>
-            </div>
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">2017</p>
-                </header>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">
-                    Winners - U11 Girls
+                    2017 Winners - U11 Girls
                     <br />
                     Lady Taverners Tournament
                     <br />
@@ -127,8 +62,6 @@ const HonoursPage = ({ data }) => {
                 </figure>
               </div>
             </div>
-            <div class="column"></div>
-            <div class="column"></div>
             <div class="column"></div>
           </div>
         </div>
