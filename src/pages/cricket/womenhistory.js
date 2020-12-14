@@ -67,35 +67,31 @@ const WomenHistory = ({ data }) => {
               </figure>
             </div>
 
-            <div class="columns">
-              <div class="column">
-                <div class="card">
-                  <div class="card-content">
-                    <p class="has-text-primary has-text-weight-bold">History</p>
-                    <p>
-                      Golden Hill Cricket Club’s women’s team was established in
-                      2011.
-                    </p>
-                    <br />
-                    <p>
-                      The team first played Gloucestershire Women’s T20
-                      Development League, and in 2013 advanced to playing in the
-                      Women’s T20 Competitive League in 2013.
-                    </p>
-                    <br />
-                    <p>
-                      Since 2019, the team has played in the Gloucestershire
-                      Cricket Board's Women’s League South.{" "}
-                    </p>
-                    <br />
-                    <p>
-                      Since 2018, we have played in the Bristol Women’s Indoor
-                      League. We won the league in 2018, 2019 and 2020.{" "}
-                    </p>
-                    <br />
-                    <br />
-                  </div>
-                </div>
+            <div class="card">
+              <div class="card-content">
+                <p class="has-text-primary has-text-weight-bold">History</p>
+                <p>
+                  Golden Hill Cricket Club’s women’s team was established in
+                  2011.
+                </p>
+                <br />
+                <p>
+                  The team first played Gloucestershire Women’s T20 Development
+                  League, and in 2013 advanced to playing in the Women’s T20
+                  Competitive League in 2013.
+                </p>
+                <br />
+                <p>
+                  Since 2019, the team has played in the Gloucestershire Cricket
+                  Board's Women’s League South.{" "}
+                </p>
+                <br />
+                <p>
+                  Since 2018, we have played in the Bristol Women’s Indoor
+                  League. We won the league in 2018, 2019 and 2020.{" "}
+                </p>
+                <br />
+                <br />
               </div>
             </div>
           </div>

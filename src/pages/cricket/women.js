@@ -2,6 +2,7 @@ import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
+import headerlogo from "../../images/headerlogo.png";
 
 const WomensPage = ({ data }) => {
   return (
@@ -75,25 +76,22 @@ const WomensPage = ({ data }) => {
                   <div class="card-content">
                     <div class="media">
                       <div class="media-left">
-                        <figure class="image is-48x48">
-                          <img
-                            src="https://bulma.io/images/placeholders/96x96.png"
-                            alt="Placeholder"
-                          />
+                        <figure class="image is-48x48 is-hidden-mobile">
+                          <img src={headerlogo} alt="GHS Logo" />
                         </figure>
                       </div>
                       <div class="media-content">
-                        <p class="title is-6">Captain: Janet Street</p>
+                        <p class="title is-6">Captain: Emma Hunter</p>
                         <p class="subtitle is-6">
                           <span>Email: </span>
                           <span>
-                            <a href="mailto:smiley_j1@yahoo.co.uk">
-                              smiley_j1@yahoo.co.uk
+                            <a href="mailto:emmahunter25@hotmail.co.uk">
+                              emmahunter25@hotmail.co.uk
                             </a>
                           </span>
                           <br />
                           <span>Phone: </span>
-                          <span class="has-text-primary">07910 740757</span>
+                          <span class="has-text-primary">07999 522007</span>
                         </p>
                       </div>
                     </div>
@@ -142,8 +140,8 @@ const WomensPage = ({ data }) => {
                   <p class="has-text-weight-bold has-text-primary">Our Team</p>
                   <p>
                     Golden Hill is a friendly and sociable women's cricket team.
-                    New players (aged sixteen and above) of all abilities are
-                    welcome, from complete beginners to seasoned veterans.
+                    New players of all abilities are welcome, from complete
+                    beginners to seasoned veterans.
                   </p>
                   <br />
                   <p>
@@ -154,37 +152,48 @@ const WomensPage = ({ data }) => {
                   </p>
                   <br />
                   <p>
-                    Training includes indoor and outdoor nets, coached sessions,
-                    and practice matches. Our ethos is about fostering
-                    improvement in a supportive and enjoyable environment. The
-                    first training session is free so do come along and try it
-                    out! If you would like to get involved, please CONTACT.
+                    Our team has ambitions to be one of the top women's sides in
+                    Gloucestershire, with plenty of talent coming up through our
+                    strong girls set up.
+                  </p>
+                  <br />
+                  <p>
+                    Our ethos is about fostering improvement and development
+                    across women and girls cricket to provide top quality,
+                    competitive cricket in a supportive and enjoyable
+                    environment.
                   </p>
                   <br />
                   <p class="has-text-primary has-text-weight-bold">Training</p>
                   <p>
+                    Training includes indoor and outdoor nets, coached sessions,
+                    and practice matches. The first training session is free so
+                    do come along and try it out! If you would like to get
+                    involved, please get in touch.
+                  </p>
+                  <br />
+                  <p>
                     Our winter indoor training (January to March) is held at
-                    Orchard School.
+                    Orchard School or Shine Community Sports Hall.
                   </p>
                   <br />
                   <p>
                     During the summer (April to August), we train outdoors at
-                    our home ground. This training includes nets, coached
-                    exercises, and practice matches.
+                    our home ground on a Wednesday evening.
                   </p>
                   <br />
                   <p>The club has communal pads and bats available for use.</p>
                   <br />
                   <p>
                     There are also opportunities to gain coaching
-                    qualifications.{" "}
+                    qualifications.
                   </p>
                   <br />
                   <p class="has-text-primary has-text-weight-bold">Leagues</p>
                   <p>
                     We play hardball in the Gloucestershire Cricket Board's
                     Women’s League South. Hardball matches are usually played on
-                    Sundays and we provide teas for weekend home matches.
+                    Sundays with some mid-week games.
                   </p>
                   <br />
                   <p>
