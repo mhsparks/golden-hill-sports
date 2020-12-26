@@ -1,6 +1,7 @@
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import React from "react";
 import Layout from "../../components/layout";
-import Img from "gatsby-image";
 
 const SponsorsPage = ({ data }) => {
   return (
