@@ -5,6 +5,11 @@ import Layout from "../../components/layout";
 import { Link, graphql } from "gatsby";
 
 const PitpPage = ({ data }) => {
+  // Change to correct date when known
+  const eventDate = new Date('2020-09-18');
+  const now = new Date();
+  const days = Math.ceil((eventDate - now) / (1000 * 60 * 60 * 24));
+
   return (
     <Layout>
       <section class="hero is-primary">
@@ -15,7 +20,7 @@ const PitpPage = ({ data }) => {
                 <h1 class="title is-size-4">Party in the Park</h1>
               </div>
               <div class="column">
-                <h2 class="title is-size-4">PITP 2020 in NN days</h2>
+                <h2 class="title is-size-4">{days > 1 ? `PITP 2021 in ${days} days` : days === 1 ? `PITP 2021 in ${days} day` : null}</h2>
               </div>
             </div>
           </div>
