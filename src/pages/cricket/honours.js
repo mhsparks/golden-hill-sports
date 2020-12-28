@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 import { faFileWord } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
