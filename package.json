@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "ghs@cyki.com",
   "dependencies": {
+    "@browniebroke/gatsby-image-gallery": "^4.0.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",

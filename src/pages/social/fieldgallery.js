@@ -1,25 +1,66 @@
+import Gallery from '@browniebroke/gatsby-image-gallery';
+import '@browniebroke/gatsby-image-gallery/dist/style.css';
 import { graphql, Link } from "gatsby";
 import React from "react";
-import Gallery from "../../components/gallery";
 import Layout from "../../components/layout";
 
+
 const FieldGallery = ({ data }) => {
-  const pictures = [
-    [
-      { alt: "Some text", src: "field1" },
-      { alt: "Some different text", src: "field3" },
-      { alt: "Some more text", src: "field4" },
-    ],
-    [
-      { alt: "Some text", src: "field5" },
-      { alt: "Some different text", src: "pitch1" },
-      { alt: "Some more text", src: "pitch4" },
-    ],
-    [
-      { alt: "Some text", src: "aerial" },
-      { alt: "Some different text", src: "pitch6" },
-      { alt: "Some more text", src: "pitch10" },
-    ],
+  const images = [
+    {
+      ...data.field1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.field3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.field4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.field5.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitch1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitch4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.aerial.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitch6.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitch10.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
   ];
   return (
     <Layout>
@@ -67,7 +108,7 @@ const FieldGallery = ({ data }) => {
       </section>
       <section class="section">
         <div class="container">
-          <Gallery data={data} pictures={pictures} />
+          <Gallery images={images} />
         </div>
       </section>
     </Layout>
@@ -75,16 +116,6 @@ const FieldGallery = ({ data }) => {
 };
 
 export default FieldGallery;
-
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
 
 export const query = graphql`
   query {

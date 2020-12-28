@@ -1,36 +1,108 @@
+import Gallery from '@browniebroke/gatsby-image-gallery';
+import '@browniebroke/gatsby-image-gallery/dist/style.css';
 import { graphql, Link } from "gatsby";
 import React from "react";
-import Gallery from "../../components/gallery";
 import Layout from "../../components/layout";
 
 const GirlsGallery = ({ data }) => {
-  const pictures = [
-    [
-      { alt: "Some text", src: "girlsgallery1" },
-      { alt: "Some text", src: "girlsgallery13" },
-      { alt: "Some text", src: "girlsgallery3" },
-      { alt: "Some text", src: "girlsgallery4" },
-    ],
-    [
-      { alt: "Some different text", src: "girlsgallery3" },
-      { alt: "Some text", src: "girlsgallery6" },
-      { alt: "Some text", src: "girlsgallery7" },
-      { alt: "Some different text", src: "girlsgallery8" },
-    ],
-    [
-      { alt: "Some text", src: "girlsgallery9" },
-      { alt: "Some text", src: "girlsgallery10" },
-      { alt: "Some different text", src: "girlsgallery11" },
-      { alt: "Some text", src: "girlsgallery20" },
-    ],
+  const images = [
+    {
+      ...data.girlsgallery1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery13.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery6.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery7.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery8.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery9.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery10.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery11.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery20.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery2.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery14.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery15.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.girlsgallery16.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
 
-    [
-      { alt: "Some different text", src: "girlsgallery2" },
-
-      { alt: "Some different text", src: "girlsgallery14" },
-      { alt: "Some text", src: "girlsgallery15" },
-      { alt: "Some text", src: "girlsgallery16" },
-    ],
   ];
   return (
     <Layout>
@@ -95,23 +167,13 @@ const GirlsGallery = ({ data }) => {
       </section>
       <section class="section">
         <div class="container">
-          <Gallery data={data} pictures={pictures} />
+          <Gallery images={images} />
         </div>
       </section>
     </Layout>
   );
 };
 export default GirlsGallery;
-
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
 
 export const query = graphql`
   query {

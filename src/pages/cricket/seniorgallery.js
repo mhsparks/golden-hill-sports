@@ -1,46 +1,156 @@
+import Gallery from '@browniebroke/gatsby-image-gallery';
+import '@browniebroke/gatsby-image-gallery/dist/style.css';
 import { graphql, Link } from "gatsby";
 import React from "react";
-import Gallery from "../../components/gallery";
+// import Gallery from "../../components/gallery";
 import Layout from "../../components/layout";
 
 const SeniorGallery = ({ data }) => {
-  const pictures = [
-    [
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-    ],
-    [
-      { alt: "Some text", src: "youth2" },
-      { alt: "Some different text", src: "youth5" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-    ],
-    [
-      { alt: "Some text", src: "youth3" },
-      { alt: "Some different text", src: "youth6" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-    ],
-    [
-      { alt: "Some text", src: "youth3" },
-      { alt: "Some different text", src: "youth6" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-    ],
-    [
-      { alt: "Some text", src: "youth3" },
-      { alt: "Some different text", src: "youth6" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-    ],
-    [
-      { alt: "Some text", src: "youth3" },
-      { alt: "Some different text", src: "youth6" },
-      { alt: "Some text", src: "youth1" },
-      { alt: "Some different text", src: "youth4" },
-    ],
+  const images = [
+    {
+      ...data.youth1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth2.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth5.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth6.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth6.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth6.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth6.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.youth4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
   ];
   return (
     <Layout>
@@ -94,7 +204,7 @@ const SeniorGallery = ({ data }) => {
       </section>
       <section class="section">
         <div class="container">
-          <Gallery data={data} pictures={pictures} />
+          <Gallery images={images} />
         </div>
       </section>
     </Layout>
@@ -102,15 +212,6 @@ const SeniorGallery = ({ data }) => {
 };
 export default SeniorGallery;
 
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
 
 export const query = graphql`
   query {

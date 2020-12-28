@@ -1,28 +1,83 @@
+import Gallery from '@browniebroke/gatsby-image-gallery';
+import '@browniebroke/gatsby-image-gallery/dist/style.css';
 import { graphql, Link } from "gatsby";
 import React from "react";
-import Gallery from "../../components/gallery";
 import Layout from "../../components/layout";
 
 const PitpGallery = ({ data }) => {
-  const pictures = [
-    [
-      { alt: "Some text", src: "pitplogo" },
-      { alt: "Some different text", src: "pitp7" },
-      { alt: "Some more text", src: "pitp1" },
-      { alt: "Some more text", src: "fireworks1" },
-    ],
-    [
-      { alt: "Some text", src: "pitp10" },
-      { alt: "Some different text", src: "bbq" },
-      { alt: "Some more text", src: "pitp3" },
-      { alt: "Some more text", src: "fireworks2" },
-    ],
-    [
-      { alt: "Some text", src: "pitp9" },
-      { alt: "Some different text", src: "pitp6" },
-      { alt: "Some more text", src: "pitp5" },
-      { alt: "Some more text", src: "pitp8" },
-    ],
+  const images = [
+    {
+      ...data.pitplogo.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitp7.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitp1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.fireworks1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitp10.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.bbq.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitp3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.fireworks2.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitp9.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitp6.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitp5.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitp8.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
   ];
   return (
     <Layout>
@@ -63,7 +118,7 @@ const PitpGallery = ({ data }) => {
       </section>
       <section class="section">
         <div class="container">
-          <Gallery data={data} pictures={pictures} />
+          <Gallery images={images} />
         </div>
       </section>
     </Layout>
@@ -71,16 +126,6 @@ const PitpGallery = ({ data }) => {
 };
 
 export default PitpGallery;
-
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
 
 export const query = graphql`
   query {

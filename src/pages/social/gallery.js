@@ -1,41 +1,134 @@
-import { Link, graphql } from "gatsby";
+import Gallery from '@browniebroke/gatsby-image-gallery';
+import '@browniebroke/gatsby-image-gallery/dist/style.css';
+import { graphql, Link } from "gatsby";
 import React from "react";
-import Gallery from "../../components/gallery";
 import Layout from "../../components/layout";
 
 const GalleryPage = ({ data }) => {
-  const pictures = [
-    [
-      { alt: "Some text", src: "bar1" },
-      { alt: "Some different text", src: "bench2" },
-      { alt: "Some more text", src: "kitchen" },
-      { alt: "Some text", src: "field1" },
-      { alt: "Some different text", src: "field3" },
-    ],
+  const images = [
+    {
+      ...data.bar1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.bench2.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.kitchen.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.field1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.field3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.bar2.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.tables3.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.kitchen2.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.field4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitch1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    }, 
+    {
+      ...data.balcony.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.tables1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.bench1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.field5.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitch4.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.floor1.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.tables2.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.space.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.pitch10.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
+    {
+      ...data.aerial.childImageSharp, 
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },  
 
-    [
-      { alt: "Some text", src: "bar2" },
-      { alt: "Some more text", src: "tables3" },
-      { alt: "Some more text", src: "kitchen2" },
-      { alt: "Some more text", src: "field4" },
-      { alt: "Some different text", src: "pitch1" },
-    ],
-    [
-      { alt: "Some text", src: "balcony" },
-      { alt: "Some more text", src: "tables1" },
-      { alt: "Some different text", src: "bench1" },
-      { alt: "Some text", src: "field5" },
-      { alt: "Some more text", src: "pitch4" },
-    ],
-
-    [
-      { alt: "Some different text", src: "floor1" },
-      { alt: "Some more text", src: "tables2" },
-      { alt: "Some more text", src: "space" },
-      { alt: "Some more text", src: "pitch10" },
-      { alt: "Some text", src: "aerial" },
-    ],
   ];
+
   return (
     <Layout>
       <section class="hero is-primary">
@@ -84,7 +177,7 @@ const GalleryPage = ({ data }) => {
 
       <section class="section">
         <div class="container">
-          <Gallery data={data} pictures={pictures} />
+          <Gallery images={images} />
         </div>
       </section>
     </Layout>
@@ -92,16 +185,6 @@ const GalleryPage = ({ data }) => {
 };
 
 export default GalleryPage;
-
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
 
 export const query = graphql`
   query {

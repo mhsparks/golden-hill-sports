@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
                 <div class="card-image">
                   <figure class="image">
                     <Img
-                      fluid={data.pavilion.childImageSharp.fluid}
+                      fluid={data.pavilion.childImageSharp.full}
                       alt="Pavilion"
                     />
                   </figure>
@@ -85,7 +85,7 @@ const IndexPage = ({ data }) => {
                   <div class="card-image">
                     <figure class="image">
                       <Img
-                        fluid={data.cricket2.childImageSharp.fluid}
+                        fluid={data.cricket2.childImageSharp.full}
                         alt="Cricket"
                       />
                     </figure>
@@ -134,7 +134,7 @@ const IndexPage = ({ data }) => {
                   <div class="card-image">
                     <figure class="image">
                       <Img
-                        fluid={data.sonicsteam.childImageSharp.fluid}
+                        fluid={data.sonicsteam.childImageSharp.full}
                         alt="Sonics"
                       />
                     </figure>
@@ -188,7 +188,7 @@ const IndexPage = ({ data }) => {
                   <div class="card-image">
                     <figure class="image">
                       <Img
-                        fluid={data.pitp.childImageSharp.fluid}
+                        fluid={data.pitp.childImageSharp.full}
                         alt="Party in the Park"
                       />
                     </figure>
@@ -234,7 +234,10 @@ export default IndexPage;
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 1000) {
+      thumb: fluid(maxWidth: 350) {
+        ...GatsbyImageSharpFluid
+      }
+      full: fluid(maxWidth: 1024){
         ...GatsbyImageSharpFluid
       }
     }
