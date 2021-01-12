@@ -143,7 +143,7 @@ const CricketPage = ({ data }) => {
                       <div class="card-image">
                         <figure class="image">
                           <Img
-                            fluid={data.Youthindex1.childImageSharp.fluid}
+                            fluid={data.u11s2020.childImageSharp.fluid}
                             alt="Placeholder"
                           />
                         </figure>
@@ -366,6 +366,13 @@ export const query = graphql`
     instahome: file(relativePath: { eq: "instahome.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    u11s2020: file(relativePath: { eq: "u11-2020.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid
         }
       }

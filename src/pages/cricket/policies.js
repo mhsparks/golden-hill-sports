@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
-import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import tonyH from "../../images/tonyH.jpg";
 
@@ -59,91 +59,14 @@ const PoliciesPage = ({ data }) => {
                   </p>
                   <a
                     class="panel-block"
-                    href="http://www.goldenhillsports.com/wp-content/uploads/2018/07/YMCA-Safeguarding-policy-2018.pdf"
+                    href="https://storage.googleapis.com/ghs-static/pdf/GDPR-Policy.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
+                      <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
                     </span>
-                    Our individual club safeguarding policy statement
-                  </a>
-                  <a
-                    class="panel-block"
-                    href="http://www.goldenhillsports.com/wp-content/uploads/2018/07/YMCA-CC-Guidelines-on-Changing-Rooms-and-Showering-2018.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Guidance on changing rooms and showering facilities
-                  </a>
-                  <a
-                    class="panel-block"
-                    href="http://www.goldenhillsports.com/wp-content/uploads/2019/05/YMCA-CC-Photography-Filming-and-Social-media-broadcast-Guidelines-May19.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Photography, filming and social media broadcast guidelines
-                  </a>
-                  <a
-                    class="panel-block"
-                    href="http://www.goldenhillsports.com/wp-content/uploads/2018/07/YMC-CC-Guidelines-on-transport-to-and-from-matches-and-training-2018.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Guidance on transport to and from matches/training
-                  </a>
-                  <a class="panel-block">
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Guidance on managing children away from the club
-                  </a>
-                  <a class="panel-block">
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Guidance for clubs on sun safety
-                  </a>
-                  <a class="panel-block">
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Welcoming and safeguarding children with a disability
-                  </a>
-                  <a class="panel-block">
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Guidance for clubs on the use of social media, texts and
-                    email
-                  </a>
-                  <a class="panel-block">
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Missing children guidelines
-                  </a>
-                  <a class="panel-block">
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Guidance for clubs on the use of social media, texts and
-                    email
-                  </a>
-                  <a class="panel-block">
-                    <span class="panel-icon">
-                      <FontAwesomeIcon icon={faBook} aria-hidden="true" />
-                    </span>
-                    Anti bullying policy
+                    GDPR (General Data Protection Regulation) policy
                   </a>
                 </nav>
               </div>
