@@ -91,7 +91,7 @@ const Header = () => {
                     Sponsors
                   </Link>
                   <a
-                    href="https://www.logo-works.co.uk/webstore/Bristol-YMCA-CC-c28341020"
+                    href="https://www.tnfcricket.co.uk/golden-hill"
                     className="navbar-item"
                     target="_blank"
                     rel="noopener noreferrer"
