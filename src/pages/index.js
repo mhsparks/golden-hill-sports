@@ -101,7 +101,7 @@ const IndexPage = ({ data }) => {
                       Our sides comprise everything from the super-talented
                       youngsters to the wily old foxes, the enthusiastic but
                       ‘village’, to the press-ganged occasional player or the
-                      dedicated club stalwart.{" "}
+                      dedicated club stalwart.
                     </p>
 
                     <p>
@@ -237,7 +237,7 @@ export const fluidImage = graphql`
       thumb: fluid(maxWidth: 350) {
         ...GatsbyImageSharpFluid
       }
-      full: fluid(maxWidth: 1024){
+      full: fluid(maxWidth: 1024) {
         ...GatsbyImageSharpFluid
       }
     }
