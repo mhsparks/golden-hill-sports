@@ -120,12 +120,12 @@ const GirlsPage = ({ data }) => {
                 some years games in September.
                 <br />
                 <a
-                  href="https://docs.google.com/forms/d/1z8stT2J0E-bh_EQy9k3--LrLlJHfLkgxra-4bvd40SE/viewform?edit_requested=true"
-                  alt="Golden Hill Girls Cricket Registration Form 2020"
+                  href="https://forms.gle/5P372kF7bp3fYdtQ7"
+                  alt="Golden Hill Girls Cricket Registration Form 2021"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <u>Golden Hill Girls Cricket Registration Form 2020</u>
+                  <u>Golden Hill Girls Cricket Registration Form 2021</u>
                 </a>
                 <br />
                 <br />
