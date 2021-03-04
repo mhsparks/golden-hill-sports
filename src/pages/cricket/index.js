@@ -160,7 +160,7 @@ const CricketPage = ({ data }) => {
                           possible, we run at least two squads at each age group
                           with 4 teams at the u11s age group.
                         </p>
-                        <br />
+
                         <br />
                         <div class="buttons">
                           <Link

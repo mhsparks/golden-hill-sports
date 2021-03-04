@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => {
                   <div class="column"></div>
                   <div class="content">
                     <p>
-                      Golden Hill CC field 5 league sides on a Saturday to
+                      Golden Hill CC field 6 league sides on a Saturday to
                       compete across the breadth of the cricketing league
                       pyramid.
                     </p>

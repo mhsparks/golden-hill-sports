@@ -185,8 +185,21 @@ const StatsPage = () => {
                       All Rounders
                     </a>
                   </li>
+                  <li class="panel-block">
+                    <span class="icon has-addons is-left">
+                      <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" />
+                    </span>
+                    <a
+                      href="https://storage.googleapis.com/ghs-static/pdf/Captaincy-Records.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Captaincy
+                    </a>
+                  </li>
                 </ul>
               </div>
+
               <div class="column"></div>
               <div class="card">
                 <header class="card-header">
@@ -277,6 +290,18 @@ const StatsPage = () => {
                       rel="noopener noreferrer"
                     >
                       6th XI
+                    </a>
+                  </li>
+                  <li class="panel-block">
+                    <span class="icon has-addons is-left">
+                      <FontAwesomeIcon icon={faTable} aria-hidden="true" />
+                    </span>
+                    <a
+                      href="https://storage.googleapis.com/ghs-static/xls/YMCA-GH-History.xlsx"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      YMCA & Golden Hill History
                     </a>
                   </li>
                 </ul>
