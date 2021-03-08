@@ -14,17 +14,19 @@ const CalendarPage = () => {
       </section>
       <section class="section">
         <div class="container">
-          <div class="column">
-            <iframe
-              title="GHS Social Calendar"
-              src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=c29jaWFsQGdvbGRlbmhpbGxzcG9ydHMuY29t&amp;color=%23D81B60"
-              style={{
-                border: 0,
-                width: "100%",
-                height: 600,
-                frameborder: 0,
-              }}
-            ></iframe>
+          <div class="columns">
+            <div class="column">
+              <iframe
+                title="Golden Hill Cricket Calendar"
+                src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=Y19kbGtvdmhkanFkMmVsY3V1ZWxrYXQ3aGJ1Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19tajVrZmo5bjR0NzhyaGVxOWVhYWhiN2hmb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y190MjRkaTZhMWQ5ZnRpMTBzNTJmMmQ4c2Rqb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y192aXBlMXVkOTBrZWFyZXJtODcyZXJvdHNnZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;color=%23E4C441&amp;color=%23039BE5&amp;color=%23E67C73&amp;title=Golden%20Hill%20CC%20Fixtures&amp;showPrint=0"
+                style={{
+                  border: 0,
+                  width: "100%",
+                  height: 600,
+                  frameborder: 0,
+                }}
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
