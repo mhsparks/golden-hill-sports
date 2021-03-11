@@ -10,7 +10,7 @@ const WomensPage = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Golden Hill Womens Cricket</h1>
+            <h1 class="title is-size-4">Golden Hill Women's Cricket</h1>
           </div>
         </div>
       </section>
@@ -71,7 +71,7 @@ const WomensPage = ({ data }) => {
                 <div class="column"></div>
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title">Womens 1st XI</p>
+                    <p class="card-header-title">Women's 1st XI</p>
                   </header>
                   <div class="card-content">
                     <div class="media">
@@ -134,7 +134,7 @@ const WomensPage = ({ data }) => {
               <div class="column">
                 <div class="card-content">
                   <p class="has-text-primary has-text-weight-bold is-size-4">
-                    Golden Hill Womens Cricket
+                    Golden Hill Women's Cricket
                   </p>
                   <br />
                   <p class="has-text-weight-bold has-text-primary">Our Team</p>
@@ -146,9 +146,10 @@ const WomensPage = ({ data }) => {
                   <br />
                   <p>
                     We field teams in a variety of formats: outdoor hardball and
-                    softball in the summer, and indoor softball in the winter.
-                    Currently, we play in the Gloucestershire Cricket Board's
-                    Women’s League South, and the Bristol Women’s Indoor League.
+                    occasional softball in the summer, and indoor softball in
+                    the winter. Currently, we play in the Gloucestershire
+                    Cricket Board's Women’s League South, and the Bristol
+                    Women’s Indoor League.
                   </p>
                   <br />
                   <p>
@@ -159,7 +160,7 @@ const WomensPage = ({ data }) => {
                   <br />
                   <p>
                     Our ethos is about fostering improvement and development
-                    across women and girls cricket to provide top quality,
+                    across women and girls' cricket to provide top quality,
                     competitive cricket in a supportive and enjoyable
                     environment.
                   </p>
@@ -198,15 +199,9 @@ const WomensPage = ({ data }) => {
                   <br />
                   <p>
                     During the winter, we play softball in the Bristol Women’s
-                    Indoor League. In summer, we field a softball team in the
-                    Bristol Women’s Softball League.
+                    Indoor League. Please contact the women's team captain for
+                    further information.
                   </p>
-                  <br />
-                  <p class="has-text-primary has-text-weight-bold">
-                    Membership Fees
-                  </p>
-                  Annual subscription rate is £35 year. Winter training is £5 a
-                  session. The first session is free.
                   <br />
                 </div>
               </div>

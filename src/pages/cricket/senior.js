@@ -10,7 +10,7 @@ const SeniorPage = ({ data }) => {
       <section class="hero is-primary">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title is-size-4">Golden Hill Senior Cricket</h1>
+            <h1 class="title is-size-4">Golden Hill Senior Men</h1>
           </div>
         </div>
       </section>

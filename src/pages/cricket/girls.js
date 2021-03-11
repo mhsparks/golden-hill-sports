@@ -167,10 +167,10 @@ const GirlsPage = ({ data }) => {
                 <p class="has-text-primary has-text-weight-bold">
                   How to find us
                 </p>
-                <span class="has-text-primary">Indoor training</span>​​ –
+                <span class="has-text-weight-bold">Indoor training</span>​​ –
                 Orchard School, Filton Road, Bristol, BS7 0XZ.
                 <br />
-                <span class="has-text-primary">
+                <span class="has-text-weight-bold">
                   Outdoor training and home games
                 </span>
                 ​​ - Golden Hill Sports Ground, Wimbledon Road, Bristol, BS6

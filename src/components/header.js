@@ -13,7 +13,7 @@ const Header = () => {
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item" href="/">
+            <a class="navbar-item" href="https://www.goldenhillsports.com/">
               <figure class="image is-48x48">
                 <img src={headerlogo} alt="GHS Logo" />
               </figure>

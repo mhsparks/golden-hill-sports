@@ -76,7 +76,7 @@ const CricketPage = ({ data }) => {
                           enticed by our wonderful cricket teas, our great
                           facilities and our welcoming environment.
                         </p>
-                        <br />
+
                         <br />
                         <div class="buttons">
                           <Link
@@ -113,11 +113,9 @@ const CricketPage = ({ data }) => {
                         </p>
                         <br />
                         <p>
-                          We field teams in a variety of formats: outdoor
-                          hardball and softball in the summer, and indoor
-                          softball in the winter. Currently, we play in the
-                          Gloucestershire Cricket Board's Women’s League South,
-                          and the Bristol Women’s Indoor League.
+                          Our team has ambitions to be one of the top women's
+                          sides in Gloucestershire, with plenty of talent coming
+                          up through our strong girls set up.
                         </p>
                         <br />
                         <div class="buttons">
@@ -160,7 +158,7 @@ const CricketPage = ({ data }) => {
                           possible, we run at least two squads at each age group
                           with 4 teams at the u11s age group.
                         </p>
-
+                        <br />
                         <br />
                         <div class="buttons">
                           <Link
@@ -199,8 +197,8 @@ const CricketPage = ({ data }) => {
                         <br />
                         <p>
                           Everyone is involved and there is no kit requirement.
-                          ​​ It is all about fun and enjoyment. We provide girls
-                          cricket from year 3 right through to Ladies Cricket.
+                          ​​It is all about fun and enjoyment. We provide girls
+                          cricket from year 3 right through to Womens cricket.
                         </p>
                         <br />
                         <div class="buttons">

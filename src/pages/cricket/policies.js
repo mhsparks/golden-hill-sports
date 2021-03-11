@@ -88,7 +88,7 @@ const PoliciesPage = ({ data }) => {
               </div>
               <div class="column">
                 <figure class="card-image is-120x150">
-                  <img src={tonyH} />
+                  <img src={tonyH} alt="Tony Huszlicska" />
                 </figure>
               </div>
             </div>
