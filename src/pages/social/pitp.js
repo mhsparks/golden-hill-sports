@@ -6,7 +6,7 @@ import { Link, graphql } from "gatsby";
 
 const PitpPage = ({ data }) => {
   // Change to correct date when known
-  const eventDate = new Date('2020-09-18');
+  const eventDate = new Date("2021-09-11");
   const now = new Date();
   const days = Math.ceil((eventDate - now) / (1000 * 60 * 60 * 24));
 
@@ -20,7 +20,7 @@ const PitpPage = ({ data }) => {
                 <h1 class="title is-size-4">Party in the Park</h1>
               </div>
               <div class="column">
-                <h2 class="title is-size-4">{days > 1 ? `PITP 2021 in ${days} days` : days === 1 ? `PITP 2021 in ${days} day` : null}</h2>
+                <h2 class="title is-size-4">11 September 2021</h2>
               </div>
             </div>
           </div>
@@ -67,6 +67,23 @@ const PitpPage = ({ data }) => {
             </div>
             <div class="card-content">
               <p>
+                <p class="has-text-weight-bold has-text-primary">
+                  When is Party in the Park 2021?
+                </p>
+                This year's Party in the Park is set to take place on{" "}
+                <span class="has-text-weight-bold">
+                  Saturday 11th September
+                </span>
+                , that's only{" "}
+                <span class="has-text-weight-bold">
+                  {days > 1
+                    ? `${days} days away!`
+                    : days === 1
+                    ? `PITP 2021 in ${days} day`
+                    : null}
+                </span>
+                <br />
+                <br />
                 <p class="has-text-weight-bold has-text-primary">
                   What is Party in the Park?
                 </p>
