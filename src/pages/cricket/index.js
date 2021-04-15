@@ -333,7 +333,7 @@ export const query = graphql`
         }
       }
     }
-    Women1: file(relativePath: { eq: "women-1.jpg" }) {
+    Women1: file(relativePath: { eq: "womens-home-1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
