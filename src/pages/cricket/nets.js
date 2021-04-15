@@ -11,6 +11,45 @@ const NetsPage = () => {
           </div>
         </div>
       </section>
+      <section class="section pb-0">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title has-background-primary has-text-white">
+                    Golden Hill Cricket Nets
+                  </p>
+                </header>
+                <div class="card-content">
+                  <p>
+                    Aenean et tortor at risus viverra adipiscing at in.
+                    Pellentesque massa placerat duis ultricies lacus. Vel eros
+                    donec ac odio tempor orci dapibus ultrices in. Cursus risus
+                    at ultrices mi tempus imperdiet. Sed sed risus pretium quam
+                    vulputate dignissim. Risus viverra adipiscing at in.
+                    <br />
+                    <br />
+                    Mauris pellentesque pulvinar pellentesque habitant morbi
+                    tristique senectus et. Integer enim neque volutpat ac
+                    tincidunt vitae semper quis. Arcu dui vivamus arcu felis
+                    bibendum ut. Aliquam eleifend mi in nulla posuere
+                    sollicitudin aliquam ultrices. Urna duis convallis convallis
+                    tellus id interdum.
+                    <br />
+                    <br />
+                    Mi in nulla posuere sollicitudin aliquam ultrices sagittis.
+                    Viverra aliquet eget sit amet tellus cras. Neque convallis a
+                    cras semper auctor neque vitae. Facilisis gravida neque
+                    convallis a cras semper auctor. Egestas erat imperdiet sed
+                    euismod nisi. Hendrerit dolor magna eget est.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section">
         <div class="container">
           <div class="columns">

@@ -37,7 +37,7 @@ const Footer = () => {
               </Link>
             </div>
             <div class="content has-text-centered">
-              <p>© {new Date().getFullYear()}, Golden Hill Sport</p>
+              <p>© {new Date().getFullYear()}: Golden Hill Sports</p>
             </div>
           </div>
         </div>

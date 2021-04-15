@@ -54,21 +54,12 @@ const WomensPage = ({ data }) => {
           </div>
         </div>
       </section>
+
       <section class="section">
         <div class="container">
           <div class="card">
-            <div class="card-image">
-              <figure class="image">
-                <Img
-                  fluid={data.fieldlarge.childImageSharp.fluid}
-                  alt="Placeholder"
-                />
-              </figure>
-            </div>
-
             <div class="columns">
-              <div class="column">
-                <div class="column"></div>
+              <div class="column is-two-thirds">
                 <div class="card">
                   <header class="card-header">
                     <p class="card-header-title">Women's 1st XI</p>
@@ -91,7 +82,7 @@ const WomensPage = ({ data }) => {
                           </span>
                           <br />
                           <span>Phone: </span>
-                          <span class="has-text-primary">07999 522007</span>
+                          <span>07999 522007</span>
                         </p>
                       </div>
                     </div>
@@ -112,26 +103,6 @@ const WomensPage = ({ data }) => {
                     </span>
                   </footer>
                 </div>
-                <div class="column"></div>
-
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image">
-                      <Img fluid={data.women1.childImageSharp.fluid} />
-                    </figure>
-                  </div>
-                </div>
-                <div class="column"></div>
-
-                <div class="card">
-                  <figure class="card-image">
-                    <Img fluid={data.women2.childImageSharp.fluid} />
-                  </figure>
-                </div>
-                <div class="column"></div>
-              </div>
-
-              <div class="column">
                 <div class="card-content">
                   <p class="has-text-primary has-text-weight-bold is-size-4">
                     Golden Hill Women's Cricket
@@ -205,6 +176,35 @@ const WomensPage = ({ data }) => {
                   <br />
                 </div>
               </div>
+              <div class="column">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image">
+                      <Img fluid={data.women1.childImageSharp.fluid} />
+                    </figure>
+                  </div>
+                </div>
+                <div class="column"></div>
+
+                <div class="card">
+                  <figure class="card-image">
+                    <Img fluid={data.women2.childImageSharp.fluid} />
+                  </figure>
+                </div>
+                <div class="column"></div>
+                <div class="card">
+                  <figure class="card-image">
+                    <Img fluid={data.women3.childImageSharp.fluid} />
+                  </figure>
+                </div>
+                <div class="column"></div>
+                <div class="card">
+                  <figure class="card-image">
+                    <Img fluid={data.women4.childImageSharp.fluid} />
+                  </figure>
+                </div>
+                <div class="column"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -217,14 +217,28 @@ export default WomensPage;
 
 export const query = graphql`
   query {
-    women1: file(relativePath: { eq: "women-1.jpg" }) {
+    women1: file(relativePath: { eq: "womens-home-1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    women2: file(relativePath: { eq: "women-2.jpg" }) {
+    women2: file(relativePath: { eq: "womens-home-22.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    women3: file(relativePath: { eq: "women-home-3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    women4: file(relativePath: { eq: "womens-home-4.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
