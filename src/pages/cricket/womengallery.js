@@ -1,108 +1,89 @@
-import Gallery from '@browniebroke/gatsby-image-gallery';
-import '@browniebroke/gatsby-image-gallery/dist/style.css';
+import Gallery from "@browniebroke/gatsby-image-gallery";
+import "@browniebroke/gatsby-image-gallery/dist/style.css";
 import { graphql, Link } from "gatsby";
 import React from "react";
 import Layout from "../../components/layout";
 
-
 const WomenGallery = ({ data }) => {
   const images = [
     {
-      ...data.youth1.childImageSharp, 
-      thumbAlt: "",
-      title: "",
-      caption: "",
-    },  
-    {
-      ...data.youth4.childImageSharp, 
-      thumbAlt: "",
-      title: "",
-      caption: "",
-    },  
-    {
-      ...data.youth1.childImageSharp, 
-      thumbAlt: "",
-      title: "",
-      caption: "",
-    },  
-    {
-      ...data.youth4.childImageSharp, 
-      thumbAlt: "",
-      title: "",
-      caption: "",
-    },  
-    {
-      ...data.youth2.childImageSharp, 
-      thumbAlt: "",
-      title: "",
-      caption: "",
-    },  
-    {
-      ...data.youth5.childImageSharp, 
-      thumbAlt: "",
-      title: "",
-      caption: "",
-    },  
-    {
-      ...data.youth1.childImageSharp, 
-      thumbAlt: "",
-      title: "",
-      caption: "",
-    },  
-    {
-      ...data.youth4.childImageSharp, 
+      ...data.wgall1.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
     },
     {
-      ...data.youth3.childImageSharp, 
+      ...data.wgall2.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.youth6.childImageSharp, 
+      ...data.wgall4.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.youth1.childImageSharp, 
+      ...data.wgall8.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.youth4.childImageSharp, 
+      ...data.wgall3.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.youth3.childImageSharp, 
+      ...data.wgall5.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.youth6.childImageSharp, 
+      ...data.wgall6.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.youth1.childImageSharp, 
+      ...data.wgall7.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.youth4.childImageSharp, 
+      ...data.wgall9.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
+    {
+      ...data.wgall10.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.wgall11.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.wgall13.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.wgall12.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
   ];
   return (
     <Layout>
@@ -166,22 +147,43 @@ export default WomenGallery;
 
 export const query = graphql`
   query {
-    youth1: file(relativePath: { eq: "youth-1.jpg" }) {
+    wgall1: file(relativePath: { eq: "women-gallery-1.jpg" }) {
       ...fluidImage
     }
-    youth2: file(relativePath: { eq: "youth-2.jpg" }) {
+    wgall2: file(relativePath: { eq: "women-gallery-2.jpg" }) {
       ...fluidImage
     }
-    youth3: file(relativePath: { eq: "youth-3.jpg" }) {
+    wgall3: file(relativePath: { eq: "women-gallery-3.jpg" }) {
       ...fluidImage
     }
-    youth4: file(relativePath: { eq: "youth-4.jpg" }) {
+    wgall4: file(relativePath: { eq: "women-gallery-4.jpg" }) {
       ...fluidImage
     }
-    youth5: file(relativePath: { eq: "youth-5.jpg" }) {
+    wgall5: file(relativePath: { eq: "women-gallery-5.jpg" }) {
       ...fluidImage
     }
-    youth6: file(relativePath: { eq: "youth-6.jpg" }) {
+    wgall6: file(relativePath: { eq: "women-gallery-6.jpg" }) {
+      ...fluidImage
+    }
+    wgall7: file(relativePath: { eq: "women-gallery-7.jpg" }) {
+      ...fluidImage
+    }
+    wgall8: file(relativePath: { eq: "women-gallery-8.jpg" }) {
+      ...fluidImage
+    }
+    wgall9: file(relativePath: { eq: "women-gallery-9.jpg" }) {
+      ...fluidImage
+    }
+    wgall10: file(relativePath: { eq: "women-gallery-10.jpg" }) {
+      ...fluidImage
+    }
+    wgall11: file(relativePath: { eq: "women-gallery-11.jpg" }) {
+      ...fluidImage
+    }
+    wgall12: file(relativePath: { eq: "women-gallery-12.jpg" }) {
+      ...fluidImage
+    }
+    wgall13: file(relativePath: { eq: "women-gallery-13.jpg" }) {
       ...fluidImage
     }
   }
