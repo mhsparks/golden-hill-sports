@@ -72,6 +72,9 @@ const Header = () => {
                   <Link className="navbar-item" to="/cricket/girls/">
                     Girls Youth
                   </Link>
+                  <Link className="navbar-item" to="/cricket/news/">
+                    Club News
+                  </Link>
                   <Link className="navbar-item" to="/cricket/calendar/">
                     Cricket Calendar
                   </Link>
