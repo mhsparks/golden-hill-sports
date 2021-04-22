@@ -197,12 +197,7 @@ const WomensPage = ({ data }) => {
                     <Img fluid={data.women3.childImageSharp.fluid} />
                   </figure>
                 </div>
-                <div class="column"></div>
-                <div class="card">
-                  <figure class="card-image">
-                    <Img fluid={data.women4.childImageSharp.fluid} />
-                  </figure>
-                </div>
+
                 <div class="column"></div>
               </div>
             </div>
