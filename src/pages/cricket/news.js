@@ -21,7 +21,7 @@ const NewsPage = () => {
                 <div class="card">
                   <header class="card-header">
                     <p class="card-header-title">
-                      Stuart Priscott's Jogle bicycle challenge
+                      Stuart Priscott's JOGLE bicycle challenge
                     </p>
                   </header>
                   <div class="card-content">
@@ -29,6 +29,11 @@ const NewsPage = () => {
                       Golden Hill CC Youth Coach set to become oldest person
                       with Cystic Fibrosis to tackle the UK's greatest cycle
                       challenge
+                      <br />
+                      <br />
+                      <span class="is-size-7 has-text-weight-bold">
+                        Tues. 29th June 2021
+                      </span>
                     </p>
                     <p>
                       This July, one of Golden Hill CC’s youth coaches, Stuart
@@ -66,7 +71,13 @@ const NewsPage = () => {
                     <p class="card-header-title">In Memoriam</p>
                   </header>
                   <div class="card-content">
+                    <p class="title is-size-5">John Tanner</p>
                     <p>
+                      <span class="is-size-7 has-text-weight-bold">
+                        Tues. 20th April 2021
+                      </span>
+                      <br />
+                      <br />
                       We are very sad to announce that former player John Tanner
                       died earlier this month at the age of 88. <br />
                       <br />
@@ -91,9 +102,6 @@ const NewsPage = () => {
                       that youth team & now an accomplished musician!
                       <br />
                       <br />
-                      <span class="is-size-7 is-italic">
-                        Tues. 20th April 2021
-                      </span>
                     </p>
                   </div>
                 </div>

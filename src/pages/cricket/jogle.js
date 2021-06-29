@@ -30,6 +30,11 @@ const JoglePage = ({ data }) => {
                       Golden Hill CC Youth Coach set to become oldest person
                       with Cystic Fibrosis to tackle the UK's greatest cycle
                       challenge
+                      <br />
+                      <br />
+                      <span class="is-size-7 has-text-weight-bold">
+                        Tues. 29th June 2021
+                      </span>
                     </p>
 
                     <p>
@@ -183,9 +188,6 @@ const JoglePage = ({ data }) => {
                           their personal, social and mental well-being.
                           <br />
                           <br />
-                          <span class="is-size-7 is-italic">
-                            Tues. 29th June 2021
-                          </span>
                         </p>
                       </div>
                       <div class="column">
