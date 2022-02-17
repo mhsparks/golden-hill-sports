@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import Social from "../../components/social";
-import { Link, graphql } from "gatsby";
+import { Link } from "gatsby";
 
 const NewsPage = () => {
   return (

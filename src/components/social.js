@@ -69,7 +69,7 @@ const Social = () => {
           <div class="buttons pt-2 pl-2 pr-2 pb-5">
             <a
               className="button is-primary  is-fullwidth"
-              href="https://www.instagram.com/golden_hill_cc/"
+              href="https://www.instagram.com/goldenhillcc/"
               target="_blank"
               rel="noopener noreferrer"
             >

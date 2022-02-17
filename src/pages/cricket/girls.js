@@ -138,9 +138,9 @@ const GirlsPage = ({ data }) => {
                     The club operates within the ECB guidelines set out in the​​
                     ‘Safe Hands – Cricket’s Policy for Safeguarding Children’​​
                     and in accordance with any other relevant guidelines. Full
-                    details can be found on www.goldenhillsports.com Our child
-                    welfare officer is Tony Huszlicska; who can be contacted on
-                    07719 323532 or at{" "}
+                    details can be found on www.goldenhillsports.com. Our child
+                    Safeguarding Officer is Tony Huszlicska; who can be
+                    contacted on 07719 323532 or at{" "}
                     <a
                       class="has-text-weight-bold"
                       href="mailto:anthony383@btinternet.com"

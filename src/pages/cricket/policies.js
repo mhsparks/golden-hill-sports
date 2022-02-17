@@ -75,7 +75,7 @@ const PoliciesPage = ({ data }) => {
               <div class="column">
                 <p class="card-content">
                   <p class="has-text-primary has-text-weight-bold">
-                    Our Club Welfare Officer is Tony Huszlicska.
+                    Our Club Safeguarding Officer is Tony Huszlicska.
                   </p>
                   <br />
                   You can contact him:
