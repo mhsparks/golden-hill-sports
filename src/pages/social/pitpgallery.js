@@ -1,5 +1,5 @@
-import Gallery from '@browniebroke/gatsby-image-gallery';
-import '@browniebroke/gatsby-image-gallery/dist/style.css';
+import Gallery from "@browniebroke/gatsby-image-gallery";
+import "@browniebroke/gatsby-image-gallery/dist/style.css";
 import { graphql, Link } from "gatsby";
 import React from "react";
 import Layout from "../../components/layout";
@@ -7,77 +7,149 @@ import Layout from "../../components/layout";
 const PitpGallery = ({ data }) => {
   const images = [
     {
-      ...data.pitplogo.childImageSharp, 
+      ...data.pitpbakeoff.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.pitp7.childImageSharp, 
+      ...data.pitpbriony.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.pitp1.childImageSharp, 
+      ...data.pitpcakes.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.fireworks1.childImageSharp, 
+      ...data.pitpstilts.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.pitp10.childImageSharp, 
+      ...data.pitpcrumpets.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.bbq.childImageSharp, 
+      ...data.pitppizza.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.pitp3.childImageSharp, 
+      ...data.pitpbar.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.fireworks2.childImageSharp, 
+      ...data.pitpwinginit.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.pitp9.childImageSharp, 
+      ...data.pitpwards.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.pitp6.childImageSharp, 
+      ...data.pitpgoodmanlilley.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.pitp5.childImageSharp, 
+      ...data.pitpreco.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
     {
-      ...data.pitp8.childImageSharp, 
+      ...data.pitpjewellry.childImageSharp,
       thumbAlt: "",
       title: "",
       caption: "",
-    },  
+    },
+    {
+      ...data.pitplogo.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.pitp7.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.pitp1.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.fireworks1.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.pitp10.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.bbq.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.pitp3.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.fireworks2.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.pitp9.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.pitp6.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.pitp5.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
+    {
+      ...data.pitp8.childImageSharp,
+      thumbAlt: "",
+      title: "",
+      caption: "",
+    },
   ];
   return (
     <Layout>
@@ -129,6 +201,42 @@ export default PitpGallery;
 
 export const query = graphql`
   query {
+    pitpbriony: file(relativePath: { eq: "pitp-briony.jpg" }) {
+      ...fluidImage
+    }
+    pitpcakes: file(relativePath: { eq: "pitp-cakes.jpg" }) {
+      ...fluidImage
+    }
+    pitpstilts: file(relativePath: { eq: "pitp-stilts.jpg" }) {
+      ...fluidImage
+    }
+    pitpbakeoff: file(relativePath: { eq: "pitp-bakeoff.jpg" }) {
+      ...fluidImage
+    }
+    pitpjewellry: file(relativePath: { eq: "pitp-jewellry.jpg" }) {
+      ...fluidImage
+    }
+    pitpcrumpets: file(relativePath: { eq: "pitp-crumpets.jpg" }) {
+      ...fluidImage
+    }
+    pitppizza: file(relativePath: { eq: "pitp-pizza.jpg" }) {
+      ...fluidImage
+    }
+    pitpbar: file(relativePath: { eq: "pitp-bar.jpg" }) {
+      ...fluidImage
+    }
+    pitpwinginit: file(relativePath: { eq: "pitp-winginit.jpg" }) {
+      ...fluidImage
+    }
+    pitpwards: file(relativePath: { eq: "pitp-wards.jpg" }) {
+      ...fluidImage
+    }
+    pitpgoodmanlilley: file(relativePath: { eq: "pitp-goodmanlilley.jpg" }) {
+      ...fluidImage
+    }
+    pitpreco: file(relativePath: { eq: "pitp-reco.jpg" }) {
+      ...fluidImage
+    }
     pitp1: file(relativePath: { eq: "pitp-1.jpg" }) {
       ...fluidImage
     }

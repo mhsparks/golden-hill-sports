@@ -20,7 +20,7 @@ const PitpPage = ({ data }) => {
                 <h1 class="title is-size-4">Party in the Park</h1>
               </div>
               <div class="column">
-                <h2 class="title is-size-4">11 September 2021</h2>
+                <h2 class="title is-size-4">10 September 2022</h2>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ const PitpPage = ({ data }) => {
             <div class="card-image">
               <figure class="image">
                 <Img
-                  fluid={data.pitplogo.childImageSharp.fluid}
+                  fluid={data.pitpaerial2.childImageSharp.fluid}
                   alt="Party in the Park poster"
                 />
               </figure>
@@ -68,84 +68,99 @@ const PitpPage = ({ data }) => {
             <div class="card-content">
               <p>
                 <p class="has-text-weight-bold has-text-primary">
-                  When is Party in the Park 2021?
+                  When is Party in the Park 2022?
                 </p>
                 This year's Party in the Park is set to take place on{" "}
                 <span class="has-text-weight-bold">
-                  Saturday 11th September
+                  Saturday 10th September.
                 </span>
-                , that's only{" "}
+                {/* , that's only{" "}
                 <span class="has-text-weight-bold">
                   {days > 1
                     ? `${days} days away!`
                     : days === 1
                     ? `PITP 2021 in ${days} day`
                     : null}
-                </span>
+                </span> */}
                 <br />
                 <br />
                 <p class="has-text-weight-bold has-text-primary">
                   What is Party in the Park?
                 </p>
-                For those of you that don’t know about PITP, it’s a community
-                event that raises money to pay for the upkeep of the field that
-                the community helped to secure.
+                <p>
+                  For those of you that don’t know about PITP, it’s a community
+                  event that raises money to pay for the upkeep of our Sports
+                  field that the community helped to secure, equipment for the
+                  cricket and football teams and maintenance of the social
+                  facilities for all the community.
+                </p>
                 <br />
-                It’s a great event with a variety of stalls and entertainment on
-                offer for all the family. We print 10,000 programmes that are
-                hand delivered to homes in the local area and thousands of
-                people come along and enjoy the day which is open to everyone.
-                <br />
-                <br /> If you know of anyone who would like to be a stall holder
-                please ask them to contact us as the event continues to grow in
-                stature year on year.
-                <br />
+                <p>
+                  PITP is our major fundraising event of the year so we like to
+                  put everything into it! It’s a great event with a variety of
+                  food outlets, a bar, stalls and entertainment on offer for all
+                  the family. We print 10,000 programmes that are hand delivered
+                  to homes in the local area and thousands of people come along
+                  and enjoy the day which is open to everyone.
+                  <br />
+                  <br /> Previously we have had 4000+ people through the gates
+                  during the day so it is a great chance for the whole community
+                  to have fun together and raise money for the club.
+                </p>
                 <br />
                 <p class="has-text-weight-bold has-text-primary">
                   How can you help?
                 </p>
-                Party in the Park is our major fund raising event of the year
-                and allows us to continue to invest in grass-roots football and
-                cricket. This event takes a tremendous amount of effort and
-                co-ordination.
+                <p>
+                  This event takes a tremendous amount of effort and
+                  co-ordination to put on, so everyone's help is hugely
+                  important.
+                  <br />
+                  <br />
+                  All Golden Hill members can help by doing the following
+                  things:
+                  <br />
+                  <br />
+                  <ul class="list-spacing pl-4">
+                    <li>
+                      <span class="has-text-weight-bold has-text-primary">
+                        Donate&nbsp;
+                      </span>
+                      cakes, bottles, books and children's quality clothes and
+                      toys
+                    </li>
+                    <li>
+                      <span class="has-text-weight-bold has-text-primary">
+                        Sell&nbsp;
+                      </span>
+                      raffle tickets
+                    </li>
+                    <li>
+                      <span class="has-text-weight-bold has-text-primary">
+                        Tell&nbsp;
+                      </span>
+                      your friends and family about the event.
+                    </li>
+                    <li>
+                      <span class="has-text-weight-bold has-text-primary">
+                        Give&nbsp;
+                      </span>
+                      some of your time: either on the day, or for set up and
+                      tidy up on Friday or Sunday. Or would you like to be part
+                      of the organising committee?
+                    </li>
+                  </ul>
+                </p>
                 <br />
-                <br />
-                All Golden Hill members can help by doing the following things:
-                <br />
-                <br />
-                <ul class="list-spacing">
-                  <li>
-                    <span class="has-text-weight-bold has-text-primary">
-                      Donate&nbsp;
-                    </span>
-                    cakes - bottles - books - childrens' quality clothes and
-                    toys
-                  </li>
-                  <li>
-                    <span class="has-text-weight-bold has-text-primary">
-                      Sell&nbsp;
-                    </span>
-                    just 20 raffle tickets
-                  </li>
-                  <li>
-                    <span class="has-text-weight-bold has-text-primary">
-                      Tell&nbsp;
-                    </span>
-                    your friends and family about the event.
-                  </li>
-                  <li>
-                    <span class="has-text-weight-bold has-text-primary">
-                      Give&nbsp;
-                    </span>
-                    some of your time: either on the day, or for set up and tidy
-                    up on Friday or Sunday. Or would you like to be part of the
-                    organising committee?
-                  </li>
-                </ul>
+                <p>
+                  Even if you are not a member, we would love you to bring your
+                  stall, donate a raffle prize or volunteer to help in other
+                  ways.
+                </p>
                 <br />
                 <p class="has-text-weight-bold has-text-primary">Contact us</p>
-                If you would like a stall at PITP, or would like to be involved,
-                please <Link to="/social/contact/">Contact Us.</Link>
+                If you would like to know more about any of this, please{" "}
+                <Link to="/social/contact/">Contact Us.</Link>
               </p>
               <br />
             </div>
@@ -161,6 +176,13 @@ export default PitpPage;
 export const query = graphql`
   query {
     pitplogo: file(relativePath: { eq: "pitp-logoCrop.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    pitpaerial2: file(relativePath: { eq: "pitp-aerial2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
